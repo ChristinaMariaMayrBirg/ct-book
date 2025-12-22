@@ -10,10 +10,10 @@ before_script:
 pages:
   stage: deploy
   script:
-    - jupyter-book build .
+    - rm -rf /tmp/jb public
+    - jupyter-book build . --path-output /tmp/jb #fix Docker issue with launch buttons
     - mkdir -p public
-    - cp -r _build/html/* public/
+    - cp -a /tmp/jb/_build/html/. public/
   artifacts:
     paths:
       - public
-
