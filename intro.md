@@ -1,5 +1,5 @@
 (sec-intro)=
-# Computational Thinking
+# Ingeniuerinformatik 1 - test
 
 Willkommen im Kurs [Computational Thinking](sec-what-is-ct)!  
 Dieses interaktive Lehrbuch begleitet die Vorlesung als ergänzendes Lehrmaterial.  
