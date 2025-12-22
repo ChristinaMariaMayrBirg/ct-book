@@ -1,0 +1,20 @@
+# GitLab CI/CD configuration for building and deploying Jupyter Book
+# This will automatically build and deploy your book when you push to the repository
+
+image: python:3.10
+
+before_script:
+  - pip install --upgrade pip
+  - pip install jupyter-book numpy matplotlib seaborn ipywidgets pandas sphinx-exercise sphinx-inline-tabs names roboworld jupyterquiz docutils==0.17.1 mdit-py-plugins~=0.3.1
+
+pages:
+  stage: deploy
+  script:
+    - jupyter-book build .
+    - mkdir -p public
+    - cp -r _build/html/* public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - test  # Change this to your main branch name if different
