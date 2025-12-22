@@ -5,6 +5,7 @@ ipywidgets
 pandas
 sphinx-exercise
 sphinx-inline-tabs
+sphinx-proof
 names
 roboworld
 jupyter-book<2.0.0

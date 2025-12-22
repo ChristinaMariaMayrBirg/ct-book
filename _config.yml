@@ -1,4 +1,4 @@
-title: Computational Thinking
+title: Ingeniuerinformatik 1 - test
 logo: figs/logo-HM-small.png
 author: "" #
 email: zoennchen.benedikt@hm.edu
@@ -9,6 +9,7 @@ only_build_toc_files: true
 # See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: auto #  off
+  allow_errors: true # due to CI setup in Gitlab
   timeout: 200
 
 bibtex_bibfiles: "references.bib"
@@ -18,12 +19,14 @@ latex:
   latex_documents:
     targetname: book.tex
 
+
+
 sphinx:
   language: de
   extra_extensions:
   - sphinx_exercise
   - sphinx_inline_tabs
-  #- sphinx_proof
+  - sphinx_proof
   config:
     myst_enable_extensions: ["dollarmath", "amsmath", "colon_fence", "deflist"]
     myst_heading_anchors : 3
