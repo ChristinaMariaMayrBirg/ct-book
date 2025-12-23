@@ -2,7 +2,6 @@ image: christinamariamayr/ingenieurinformatik:latest
 
 pages:
   stage: deploy
-  when: manual
   script:
     - rm -rf /tmp/jb public
     - jupyter-book build . --path-output /tmp/jb # fix Docker issue with launch buttons
@@ -27,8 +26,8 @@ pdf:
           convert "${gif}[0]" "$png" && echo "generated: $png"
         fi
       done
-    - rm -rf _build
-    - jupyter-book build . --builder pdflatex
+    - rm -rf _build  
+    - jupyter-book build . --builder pdflatex --latex-engine="pdflatex -interaction=nonstopmode"
     - mkdir -p "$CI_PROJECT_DIR/output"
     - cp _build/latex/book.pdf "$CI_PROJECT_DIR/output/book.pdf"
     - cp _build/latex/book.log "$CI_PROJECT_DIR/output/book.log"
@@ -37,4 +36,3 @@ pdf:
     paths:
       - $CI_PROJECT_DIR/output/book.pdf
     expire_in: 1 week
-    when: always
