@@ -28,7 +28,8 @@ pdf:
         fi
       done
     - rm -rf _build  
-    - jupyter-book build . --builder pdflatex --latex-engine="pdflatex -interaction=nonstopmode"
+    - export LATEXMKOPTS="-interaction=nonstopmode"
+    - jupyter-book build . --builder pdflatex
     - mkdir -p "$CI_PROJECT_DIR/output"
     - cp _build/latex/book.pdf "$CI_PROJECT_DIR/output/book.pdf"
     - cp _build/latex/book.log "$CI_PROJECT_DIR/output/book.log"
