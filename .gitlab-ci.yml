@@ -1,7 +1,7 @@
 # GitLab CI/CD configuration for building and deploying Jupyter Book
 # This will automatically build and deploy your book when you push to the repository
 
-image: jupyter-ubuntu22-ext:latest
+image: christinamariamayr/jupyter-ubuntu22-ext:latest
 
 
 pages:
