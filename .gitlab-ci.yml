@@ -1,4 +1,4 @@
-image: christinamariamayr/jupyter-ubuntu22-ext:latest
+image: christinamariamayr/ingenieurinformatik:latest
 
 pages:
   stage: deploy
