@@ -2,6 +2,7 @@ image: christinamariamayr/ingenieurinformatik:latest
 
 pages:
   stage: deploy
+  when: manual
   script:
     - rm -rf /tmp/jb public
     - jupyter-book build . --path-output /tmp/jb # fix Docker issue with launch buttons
@@ -13,7 +14,6 @@ pages:
 
 pdf:
   stage: deploy
-  needs: ["pages"]
   when: manual
   script:
     - rm -rf /tmp/ct-book
@@ -30,7 +30,9 @@ pdf:
     - jupyter-book build . --builder pdflatex
     - mkdir -p "$CI_PROJECT_DIR/output"
     - cp _build/latex/book.pdf "$CI_PROJECT_DIR/output/book.pdf"
+    - cp _build/latex/book.log "$CI_PROJECT_DIR/output/book.log"
+
   artifacts:
     paths:
-      - output/book.pdf
+      - $CI_PROJECT_DIR/output/book.pdf
     expire_in: 1 week
