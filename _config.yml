@@ -12,7 +12,8 @@ execute:
   allow_errors: true # due to CI setup in Gitlab
   timeout: 200
 
-bibtex_bibfiles: "references.bib"
+bibtex_bibfiles: 
+ - references.bib
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -35,6 +36,12 @@ sphinx:
     html_favicon: figs/favicon/favicon.ico
     html_search_language: de
     bibtex_reference_style: author_year
+    latex_engine: pdflatex
+    latex_elements:
+      fontpkg: |
+        \usepackage[T1]{fontenc}
+        \usepackage[utf8]{inputenc}
+
 
 # Information about where the book exists on the web
 repository:
@@ -47,7 +54,7 @@ launch_buttons:
   #binderhub_url: "https://mybinder.org"
   #colab_url: "https://colab.research.google.com"
   jupyterhub_url: "https://datahub.cs.hm.edu/"
-  thebe: true
+  thebe: true # enables live code execution in the browser
 
 html:
   navbar_number_sections    : True  # Add a number to each section in your left navbar
@@ -55,7 +62,8 @@ html:
   use_repository_button     : True  # Whether to add a link to your repository button
   use_issues_button         : True  # Whether to add an "open an issue" button
   home_page_in_navbar       : True  # Whether to include your home page in the left Navigation Bar
-  google_analytics_id       : G-JTQKVRRRDB # Google Analytics
+  analytics:
+    google_analytics_id: G-JTQKVRRRDB
   extra_navbar: Unterstützt durch <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
   extra_footer: #
     <div class="container">
