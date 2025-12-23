@@ -1236,12 +1236,24 @@ Schritte, wobei $\left \lceil{\cdot}\right \rceil$ gleich dem [Aufrunden](sec-ma
 
 Das animierte Ergebnis sieht wie folgt aus
 
+```{only} html
 ```{figure} ../../figs/roboworld/robo-world-det-walk.gif
 ---
 width: 400px
 name: fig-robo-world-det-walk
 ---
 Ein determinierter Lauf zum Ziel.
+```
+```
+
+```{only} latex
+```{figure} ../../figs/roboworld/robo-world-det-walk.png
+---
+width: 400px
+name: fig-robo-world-det-walk
+---
+Ein determinierter Lauf zum Ziel.
+```
 ```
 
 Erneut ergeben sich interessante Fragen:

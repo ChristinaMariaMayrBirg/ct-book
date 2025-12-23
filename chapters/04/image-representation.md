@@ -28,11 +28,22 @@ name: fig-zero-and-one-to-bw-picture
 
 und Animationen zu generieren.
 
+```{only} html
 ```{figure} ../../figs/image-representation/flower.gif
 ---
 width: 200px
 name: fig-flower
 ---
+```
+```
+
+```{only} latex
+```{figure} ../../figs/image-representation/flower.png
+---
+width: 200px
+name: fig-flower
+---
+```
 ```
 
 Sie werden lernen wie [Informationen](sec-information) erst durch einen [Interpreter](def-interpreter) eine bestimmte Bedeutung erlangen.
@@ -808,11 +819,22 @@ def animate(pictures, interval = 100, save = False, title = '', dpi = 80):
 ````{exercise} Einfaches Daumenkino
 Generieren Sie folgendes GIF/Daumenkino bzw. Animation:
 
+```{only} html
 ```{figure} ../../figs/image-representation/daumenkino.gif
 ---
 height: 150px
 name: fig-daumenkino
 ---
+```
+```
+
+```{only} latex
+```{figure} ../../figs/image-representation/daumenkino.png
+---
+height: 150px
+name: fig-daumenkino
+---
+```
 ```
 
 **Tipp:** Sie benötigen lediglich mehrere Aufrufe von ``generate_border_picture()``.
@@ -843,11 +865,22 @@ Wir haben jetzt die Möglichkeit eine unbegrenzte Menge an Animationen zu erzeug
 ````{exercise} Simulation eines Partikels
 Generieren Sie eine Animation eines Balls, welcher sich in einer Box bewegt, d.h. der Ball bewegt sich mit konstanter Geschwindigkeit und prallt von der Wand ab.
 
+```{only} html
 ```{figure} ../../figs/image-representation/daumenkino_ball.gif
 ---
 height: 150px
 name: fig-daumenkino-ball
 ---
+```
+```
+
+```{only} latex
+```{figure} ../../figs/image-representation/daumenkino_ball.png
+---
+height: 150px
+name: fig-daumenkino-ball
+---
+```
 ```
 
 **Tipps:** Schreiben Sie erst eine Methode die einen *Kreis* ``circle = (m = (x,y), r)`` in einer Box fortbewegt und diese Bewegung als Liste von Kreisen zurückgibt.
