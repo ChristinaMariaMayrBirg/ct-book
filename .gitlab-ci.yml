@@ -2,6 +2,7 @@ image: christinamariamayr/ingenieurinformatik:latest
 
 pages:
   stage: deploy
+  when: manual
   script:
     - rm -rf /tmp/jb public
     - jupyter-book build . --path-output /tmp/jb # fix Docker issue with launch buttons
