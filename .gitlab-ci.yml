@@ -27,6 +27,7 @@ pdf:
           convert "${gif}[0]" "$png" && echo "generated: $png"
         fi
       done
+    - rm -rf _build
     - jupyter-book build . --builder pdflatex
     - mkdir -p "$CI_PROJECT_DIR/output"
     - cp _build/latex/book.pdf "$CI_PROJECT_DIR/output/book.pdf"
@@ -36,3 +37,4 @@ pdf:
     paths:
       - $CI_PROJECT_DIR/output/book.pdf
     expire_in: 1 week
+    when: always
