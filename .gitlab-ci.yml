@@ -1,11 +1,8 @@
 # GitLab CI/CD configuration for building and deploying Jupyter Book
 # This will automatically build and deploy your book when you push to the repository
 
-image: jupyter/base-notebook:x86_64-ubuntu-22.04
+image: jupyter-ubuntu22-ext:latest
 
-before_script:
-  - pip install --upgrade pip
-  - pip install -r doc-requirements.txt
 
 pages:
   stage: deploy
@@ -17,3 +14,22 @@ pages:
   artifacts:
     paths:
       - public
+
+pdf:
+  stage: deploy
+  needs:
+    - pages
+  when: manual
+  script:
+    - rm -rf /tmp/ct-book
+    - mkdir -p /tmp/ct-book
+    - cp -R ~/work/* /tmp/ct-book/
+    - cd /tmp/ct-book
+    - find figs -name "*.gif" -print0 | while IFS= read -r -d '' gif; do png="${gif%.gif}.png"; [ -f "$png" ] || { convert "${gif}[0]" "$png" && echo "generated: $png"; }; done
+    - jupyter-book build . --builder pdflatex
+    - mkdir -p ~/output
+    - cp _build/latex/book.pdf ~/output/
+  artifacts:
+    paths:
+      - ~/output/book.pdf
+    expire_in: 1 week
