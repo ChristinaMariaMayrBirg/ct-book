@@ -1,14 +1,10 @@
-# GitLab CI/CD configuration for building and deploying Jupyter Book
-# This will automatically build and deploy your book when you push to the repository
-
 image: christinamariamayr/jupyter-ubuntu22-ext:latest
-
 
 pages:
   stage: deploy
   script:
     - rm -rf /tmp/jb public
-    - jupyter-book build . --path-output /tmp/jb #fix Docker issue with launch buttons
+    - jupyter-book build . --path-output /tmp/jb # fix Docker issue with launch buttons
     - mkdir -p public
     - cp -a /tmp/jb/_build/html/. public/
   artifacts:
@@ -17,19 +13,24 @@ pages:
 
 pdf:
   stage: deploy
-  needs:
-    - pages
+  needs: ["pages"]
   when: manual
   script:
     - rm -rf /tmp/ct-book
     - mkdir -p /tmp/ct-book
-    - cp -R ~/work/* /tmp/ct-book/
+    - cp -R "$CI_PROJECT_DIR"/. /tmp/ct-book/
     - cd /tmp/ct-book
-    - find figs -name "*.gif" -print0 | while IFS= read -r -d '' gif; do png="${gif%.gif}.png"; [ -f "$png" ] || { convert "${gif}[0]" "$png" && echo "generated: $png"; }; done
+    - |
+      find figs -name "*.gif" -print0 | while IFS= read -r -d '' gif; do
+        png="${gif%.gif}.png"
+        if [ ! -f "$png" ]; then
+          convert "${gif}[0]" "$png" && echo "generated: $png"
+        fi
+      done
     - jupyter-book build . --builder pdflatex
-    - mkdir -p ~/output
-    - cp _build/latex/book.pdf ~/output/
+    - mkdir -p "$CI_PROJECT_DIR/output"
+    - cp _build/latex/book.pdf "$CI_PROJECT_DIR/output/book.pdf"
   artifacts:
     paths:
-      - ~/output/book.pdf
+      - output/book.pdf
     expire_in: 1 week
