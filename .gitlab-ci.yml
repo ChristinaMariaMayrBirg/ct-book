@@ -69,7 +69,7 @@ update_website:
   dependencies:
     - build_website_html
   script:
-    - echo "Update website: https://ingenieurinformatik-buch-fcbc5c.pages.gitlab.lrz.de/intro.html"
+    - 'echo "Update website: https://ingenieurinformatik-buch-fcbc5c.pages.gitlab.lrz.de/intro.html"'
   artifacts:
     paths:
       - _website_html/_build/html
