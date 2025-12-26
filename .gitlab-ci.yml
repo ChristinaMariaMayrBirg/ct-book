@@ -37,7 +37,4 @@ pdf:
   artifacts:
     paths:
       - $CI_PROJECT_DIR/output/book.pdf
-      - /tmp/ct-book/_build/latex/book.pdf
-      - /tmp/ct-book/_build/latex/book.log
     expire_in: 1 week
-    when: always
