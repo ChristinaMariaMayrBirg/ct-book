@@ -24,13 +24,13 @@ pdf:
   stage: deploy
   when: manual
   script:
-    - gosu jovyan bash -c |
-      find figs -name "*.gif" -print0 | while IFS= read -r -d '' gif; do
+    - |
+      gosu jovyan sh -c 'find figs -name "*.gif" -print0 | while IFS= read -r -d "" gif; do
         png="${gif%.gif}.png"
         if [ ! -f "$png" ]; then
           convert "${gif}[0]" "$png" && echo "generated: $png"
         fi
-      done
+      done'
     - gosu jovyan bash -c "rm -rf _build"
     - gosu jovyan bash -c "export LATEXMKOPTS='-interaction=nonstopmode' && jupyter-book build . --builder pdflatex"
     - gosu jovyan bash -c "mkdir -p output"
