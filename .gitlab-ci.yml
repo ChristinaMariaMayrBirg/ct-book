@@ -1,4 +1,4 @@
-image: christinamariamayr/ingenieurinformatik:latest
+image: gitlab.lrz.de:5005/fk03ingenieurinformatik/ingenieurinformatik-buch:latest
 
 variables:
   DOCKER_DRIVER: overlay2
