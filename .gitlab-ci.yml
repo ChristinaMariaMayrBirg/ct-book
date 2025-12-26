@@ -1,13 +1,21 @@
 image: christinamariamayr/ingenieurinformatik:latest
 
+variables:
+  DOCKER_DRIVER: overlay2
+
+# Fix permissions for CI_PROJECT_DIR so non-root user can write
+# This is safer than running all commands as root
+before_script:
+  - chown -R $(id -u jovyan):$(id -g jovyan) "$CI_PROJECT_DIR" || true
+
 pages:
   stage: deploy
   when: manual
   script:
-    - rm -rf /tmp/jb public
-    - jupyter-book build . --path-output /tmp/jb # fix Docker issue with launch buttons
-    - mkdir -p public
-    - cp -a /tmp/jb/_build/html/. public/
+    - gosu jovyan bash -c "rm -rf public _build"
+    - gosu jovyan bash -c "jupyter-book build ."
+    - gosu jovyan bash -c "mkdir -p public"
+    - gosu jovyan bash -c "cp -a _build/html/. public/"
   artifacts:
     paths:
       - public
@@ -16,25 +24,22 @@ pdf:
   stage: deploy
   when: manual
   script:
-    - rm -rf /tmp/ct-book
-    - mkdir -p /tmp/ct-book
-    - cp -R "$CI_PROJECT_DIR"/. /tmp/ct-book/
-    - cd /tmp/ct-book
-    - |
+    - gosu jovyan bash -c |
       find figs -name "*.gif" -print0 | while IFS= read -r -d '' gif; do
         png="${gif%.gif}.png"
         if [ ! -f "$png" ]; then
           convert "${gif}[0]" "$png" && echo "generated: $png"
         fi
       done
-    - rm -rf _build  
-    - export LATEXMKOPTS="-interaction=nonstopmode"
-    - jupyter-book build . --builder pdflatex
-    - mkdir -p "$CI_PROJECT_DIR/output"
-    - cp _build/latex/book.pdf "$CI_PROJECT_DIR/output/book.pdf"
-    - cp _build/latex/book.log "$CI_PROJECT_DIR/output/book.log"
+    - gosu jovyan bash -c "rm -rf _build"
+    - gosu jovyan bash -c "export LATEXMKOPTS='-interaction=nonstopmode' && jupyter-book build . --builder pdflatex"
+    - gosu jovyan bash -c "mkdir -p output"
+    - gosu jovyan bash -c "cp _build/latex/book.pdf output/book.pdf"
+    - gosu jovyan bash -c "cp _build/latex/book.log output/book.log"
 
   artifacts:
     paths:
-      - $CI_PROJECT_DIR/output/book.pdf
+      - output/book.pdf
+      - output/book.log
     expire_in: 1 week
+    when: always

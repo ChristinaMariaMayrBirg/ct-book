@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     texlive-fonts-recommended \
     texlive-fonts-extra \
     texlive-lang-german \
+    gosu \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
