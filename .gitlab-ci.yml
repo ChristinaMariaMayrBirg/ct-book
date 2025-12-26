@@ -9,7 +9,7 @@ variables:
 before_script:
   - chown -R $(id -u jovyan):$(id -g jovyan) "$CI_PROJECT_DIR" || true
 
-pages:
+create_website_html:
   stage: deploy
   when: manual
   variables:
@@ -21,10 +21,9 @@ pages:
     paths:
       - $HTML_BUILD_DIR/_build/html
   pages:
-    publish:
-      - $HTML_BUILD_DIR/_build/html
+    publish: "_website_html/_build/html"
 
-pdf:
+create_book_pdf:
   stage: deploy
   when: manual
   variables:
