@@ -24,6 +24,8 @@ pages:
 pdf:
   stage: deploy
   when: manual
+  variables:
+    PDF_BUILD_DIR: "_book_as_pdf"
   script:
     - |
       gosu jovyan sh -c 'find figs -name "*.gif" -print0 | while IFS= read -r -d "" gif; do
@@ -32,12 +34,11 @@ pdf:
           convert "${gif}[0]" "$png" && echo "generated: $png"
         fi
       done'
-    - gosu jovyan bash -c "rm -rf _build"
-    - gosu jovyan bash -c "export LATEXMKOPTS='-interaction=nonstopmode' && jupyter-book build . --builder pdflatex"
+    - gosu jovyan bash -c "export LATEXMKOPTS='-interaction=nonstopmode' && jupyter-book build . --builder pdflatex --path-output $PDF_BUILD_DIR"
 
   artifacts:
     paths:
-      - $CI_PROJECT_DIR/_build/latex/book.pdf
-      - $CI_PROJECT_DIR/_build/latex/book.log
+      - $PDF_BUILD_DIR/_build/latex/book.pdf
+      - $PDF_BUILD_DIR/_build/latex/book.log
     expire_in: 1 week
     when: always
