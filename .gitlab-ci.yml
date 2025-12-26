@@ -2,6 +2,7 @@ image: christinamariamayr/ingenieurinformatik:latest
 
 variables:
   DOCKER_DRIVER: overlay2
+  PYDEVD_DISABLE_FILE_VALIDATION: "1"
 
 # Fix permissions for CI_PROJECT_DIR so non-root user can write
 # This is safer than running all commands as root
@@ -33,13 +34,10 @@ pdf:
       done'
     - gosu jovyan bash -c "rm -rf _build"
     - gosu jovyan bash -c "export LATEXMKOPTS='-interaction=nonstopmode' && jupyter-book build . --builder pdflatex"
-    - gosu jovyan bash -c "mkdir -p output"
-    - gosu jovyan bash -c "cp _build/latex/book.pdf output/book.pdf"
-    - gosu jovyan bash -c "cp _build/latex/book.log output/book.log"
 
   artifacts:
     paths:
-      - output/book.pdf
-      - output/book.log
+      - $CI_PROJECT_DIR/_build/latex/book.pdf
+      - $CI_PROJECT_DIR/_build/latex/book.log
     expire_in: 1 week
     when: always
