@@ -2,32 +2,42 @@ image: christinamariamayr/ingenieurinformatik:latest
 
 variables:
   DOCKER_DRIVER: overlay2
-  PYDEVD_DISABLE_FILE_VALIDATION: "1"
 
-# Fix permissions for CI_PROJECT_DIR so non-root user can write
-# This is safer than running all commands as root
-before_script:
-  - chown -R $(id -u jovyan):$(id -g jovyan) "$CI_PROJECT_DIR" || true
+stages:
+  - build
+  - deploy
 
-create_website_html:
-  stage: deploy
-  when: manual
+# ============================================================================
+# BUILD JOBS
+# ============================================================================
+
+build_website_html:
+  stage: build
   variables:
     HTML_BUILD_DIR: "_website_html"
+    PYDEVD_DISABLE_FILE_VALIDATION: "1"
+  before_script:
+    # Fix permissions for CI_PROJECT_DIR so non-root user can write
+    # This is safer than running all commands as root
+    - chown -R $(id -u jovyan):$(id -g jovyan) "$CI_PROJECT_DIR" || true
   script:
-    - gosu jovyan bash -c "rm -rf _build"
+    - gosu jovyan bash -c "rm -rf _build $HTML_BUILD_DIR"
     - gosu jovyan bash -c "jupyter-book build . --path-output $HTML_BUILD_DIR"
   artifacts:
     paths:
       - $HTML_BUILD_DIR/_build/html
-  pages:
-    publish: "_website_html/_build/html"
+    when: always
 
-create_book_pdf:
-  stage: deploy
+build_book_pdf:
+  stage: build
   when: manual
   variables:
     PDF_BUILD_DIR: "_book_as_pdf"
+    PYDEVD_DISABLE_FILE_VALIDATION: "1"
+  before_script:
+    # Fix permissions for CI_PROJECT_DIR so non-root user can write
+    # This is safer than running all commands as root
+    - chown -R $(id -u jovyan):$(id -g jovyan) "$CI_PROJECT_DIR" || true
   script:
     - |
       gosu jovyan sh -c 'find figs -name "*.gif" -print0 | while IFS= read -r -d "" gif; do
@@ -37,10 +47,31 @@ create_book_pdf:
         fi
       done'
     - gosu jovyan bash -c "export LATEXMKOPTS='-interaction=nonstopmode' && jupyter-book build . --builder pdflatex --path-output $PDF_BUILD_DIR"
-
   artifacts:
     paths:
       - $PDF_BUILD_DIR/_build/latex/book.pdf
       - $PDF_BUILD_DIR/_build/latex/book.log
     expire_in: 1 week
     when: always
+
+# ============================================================================
+# DEPLOYMENT JOBS
+# ============================================================================
+
+update_website:
+  stage: deploy
+  needs:
+    - job: build_website_html
+      artifacts: true
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "master"
+      when: manual
+  dependencies:
+    - build_website_html
+  script:
+    - echo "Update website: https://ingenieurinformatik-buch-fcbc5c.pages.gitlab.lrz.de/intro.html"
+  artifacts:
+    paths:
+      - _website_html/_build/html
+  pages:
+    publish: "_website_html/_build/html"
