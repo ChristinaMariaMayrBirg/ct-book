@@ -20,6 +20,9 @@ pages:
   artifacts:
     paths:
       - $HTML_BUILD_DIR/_build/html
+  pages:
+    publish:
+      - $HTML_BUILD_DIR/_build/html
 
 pdf:
   stage: deploy
