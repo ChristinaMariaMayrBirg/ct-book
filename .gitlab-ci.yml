@@ -12,14 +12,14 @@ before_script:
 pages:
   stage: deploy
   when: manual
+  variables:
+    HTML_BUILD_DIR: "_website_html"
   script:
-    - gosu jovyan bash -c "rm -rf public _build"
-    - gosu jovyan bash -c "jupyter-book build ."
-    - gosu jovyan bash -c "mkdir -p public"
-    - gosu jovyan bash -c "cp -a _build/html/. public/"
+    - gosu jovyan bash -c "rm -rf _build"
+    - gosu jovyan bash -c "jupyter-book build . --path-output $HTML_BUILD_DIR"
   artifacts:
     paths:
-      - public
+      - $HTML_BUILD_DIR/_build/html
 
 pdf:
   stage: deploy
