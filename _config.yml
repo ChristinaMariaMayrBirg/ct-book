@@ -36,11 +36,14 @@ sphinx:
     html_favicon: figs/favicon/favicon.ico
     html_search_language: de
     bibtex_reference_style: author_year
-    latex_engine: pdflatex
+    latex_engine: xelatex
     latex_elements:
       fontpkg: |
-        \usepackage[T1]{fontenc}
-        \usepackage[utf8]{inputenc}
+        \usepackage{fontspec}
+        \setmainfont{Latin Modern Roman}
+        \usepackage{amsmath}
+        \usepackage{amssymb}
+        \usepackage{mathtools}
 
 
 # Information about where the book exists on the web
