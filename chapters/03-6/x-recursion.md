@@ -113,8 +113,8 @@ Ist unsere Rekursion zu tief, läuft der Stacks voll:
 ---
 tags: [raises-exception]
 ---
-
-fac(1000)
+# Suppress output to avoid LaTeX overflow issues
+_ = fac(1000)
 ```
 
 Wir können die maximale erlaubte Rekursionstiefe auch anpassen:
@@ -126,7 +126,8 @@ tags: [raises-exception]
 import sys
 sys.setrecursionlimit(5000)
 
-fac(1000)
+# Suppress output to avoid LaTeX overflow issues
+_ = fac(1000)
 ```
 
 Der andere Speicherbereich, welcher nicht zum *Stack* gehört, bezeichnen wir als *Heap*.
