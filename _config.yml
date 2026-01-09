@@ -1,7 +1,7 @@
-title: Ingeniuerinformatik 1 - test
+title: Ingenieurinformatik 1 
 logo: figs/logo-HM-small.png
-author: "" #
-email: zoennchen.benedikt@hm.edu
+author: "Dr. Christina Maria Mayr" #
+email: christina_maria.mayr@hm.edu
 exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "de_computational-thinking.md", "Planung-Computational-Thinking-ALLGEMEIN.md", "README.md"]
 only_build_toc_files: true
 
@@ -48,7 +48,7 @@ sphinx:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/BZoennchen/ct-book  # Online location of your book
+  url: https://gitlab.lrz.de/fk03ingenieurinformatik/Ingenieurinformatik-buch.git # Online location of your book
   path_to_book: ""
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
@@ -76,7 +76,7 @@ html:
       </a>
     <div>
     <div class="col1">
-      Verfasst durch <a href="https://mucdai.hm.edu/kontakte_de/phonebook_detailseite_18243.de.html">Benedikt Zönnchen</a>.
+      Verfasst durch <a href="https://mucdai.hm.edu/kontakte_de/phonebook_detailseite_18243.de.html">Benedikt Zönnchen</a>, Christina Maria Mayr.
       Lizenziert durch <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>.
     </div>
     </div>

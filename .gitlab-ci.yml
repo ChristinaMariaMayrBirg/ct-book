@@ -60,12 +60,10 @@ build_book_pdf:
 
 update_website:
   stage: deploy
+  when: manual
   needs:
     - job: build_website_html
       artifacts: true
-  rules:
-    - if: $CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "master"
-      when: manual
   dependencies:
     - build_website_html
   script:
