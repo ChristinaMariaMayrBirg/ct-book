@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="240mm"
+   height="280mm"
+   viewBox="0 0 240 280"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="compilationvsinterpretation.svg"
+   inkscape:export-filename="interpretationcompilation.png"
+   inkscape:export-xdpi="120"
+   inkscape:export-ydpi="120"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">SoftwareDevProcess</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="0.5"
+     inkscape:cx="395"
+     inkscape:cy="422"
+     inkscape:window-width="1710"
+     inkscape:window-height="1073"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#ffffffff">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999999"
+       spacingy="0.99999999"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true"
+       dotted="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+    <inkscape:path-effect
+       effect="powerstroke"
+       message=""
+       id="path-effect15"
+       is_visible="true"
+       lpeversion="1.3"
+       scale_width="1"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       end_linecap_type="zerowidth"
+       offset_points="1,0.49"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       not_jump="false"
+       sort_points="true" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       message=""
+       id="path-effect13"
+       is_visible="true"
+       lpeversion="1.3"
+       scale_width="1"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       end_linecap_type="zerowidth"
+       offset_points="1,4.9921383"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       not_jump="false"
+       sort_points="true" />
+    <rect
+       x="139.28633"
+       y="27.666464"
+       width="43.884735"
+       height="50.562847"
+       id="rect2" />
+    <symbol
+       id="FlowSymbols.svg:InputOutput">
+      <title
+         id="title3">Input/Output</title>
+      <desc
+         id="desc3">General input/output functions.</desc>
+      <path
+         d="m 35,35 h 100 l -20,80 H 15 Z"
+         style="stroke-width:2"
+         id="path3" />
+    </symbol>
+    <symbol
+       id="FlowSymbols.svg:Process">
+      <title
+         id="title2">Process</title>
+      <desc
+         id="desc2">Any processing function.</desc>
+      <rect
+         x="15"
+         y="35"
+         width="120"
+         height="80"
+         style="stroke-width:2"
+         id="rect2-9" />
+    </symbol>
+    <symbol
+       id="FlowSymbols.svg:Document">
+      <title
+         id="title4">Document</title>
+      <desc
+         id="desc4">A document or report</desc>
+      <path
+         d="M 15,35 H 135 V 95 C 85,90 65,130 15,105 Z"
+         style="stroke-width:2"
+         id="path4" />
+    </symbol>
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="bsplinespiro"
+       autoreverse="false"
+       close="false"
+       join="false"
+       linkedpaths="#path13,0,1"
+       id="path-effect14"
+       is_visible="true"
+       lpeversion="0" />
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="bsplinespiro"
+       autoreverse="false"
+       close="false"
+       join="false"
+       linkedpaths="#path14,0,1"
+       id="path-effect16"
+       is_visible="true"
+       lpeversion="0" />
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-4-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-8-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-4-6-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-8-1-1" />
+    </marker>
+    <symbol
+       id="AigaSymbols.svg:RightArrow">
+      <title
+         id="title272">Right Arrow</title>
+      <path
+         d="M 63,36 41,58 H 26 L 42,42 H 10 V 30 H 42 L 26,14 h 15 z"
+         style="stroke:none"
+         id="path272" />
+    </symbol>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#000000" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-6"
+       transform="translate(34.890171,18.196809)" />
+    <rect
+       style="opacity:0.586207;fill:#0a0000;fill-opacity:1;stroke-width:1.365;stroke-dasharray:none"
+       id="rect4"
+       width="0"
+       height="22.717506"
+       x="133.52844"
+       y="9.0870028"
+       rx="0" />
+    <use
+       xlink:href="#FlowSymbols.svg:Process"
+       style="fill:#b3b3b3;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       id="use1-3"
+       transform="matrix(0.39657501,0,0,0.42546834,109.60046,38.22838)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1"
+       transform="matrix(1.4640889,0,0,1.3241987,104.10323,56.304589)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan17"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan16">Compiler</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-1"
+       transform="matrix(1.4640889,0,0,1.3241987,-2.9452383,-4.5960098)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan23"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan22">Kompilierte Sprache</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-1-6"
+       transform="matrix(1.4640889,0,0,1.3241987,21.520443,137.05492)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan25"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan24">Interpretierte Sprache (Skriptsprache)</tspan></tspan></text>
+    <use
+       xlink:href="#FlowSymbols.svg:Document"
+       style="fill:#c8ab37;stroke:#000000"
+       id="use1"
+       transform="matrix(0.30819579,0,0,0.28951509,57.517676,48.666542)" />
+    <use
+       xlink:href="#FlowSymbols.svg:Document"
+       style="fill:#aaccee;stroke:#000000"
+       id="use1-6"
+       transform="matrix(0.30819579,0,0,0.28951509,174.96777,49.074043)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-2-1"
+       transform="matrix(0.77380923,0,0,0.79191002,87.021207,53.770754)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan27"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan26">
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="15.640748"
+         id="tspan29"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan28">int main(void) 
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="20.932411"
+         id="tspan31"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan30">{printf(&quot;Hello World\n&quot;);    
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="26.224073"
+         id="tspan33"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan32">return 0;}</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3"
+       transform="translate(166.87445,47.129772)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan34">HelloWorld.exe</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-5"
+       transform="translate(47.932791,46.219635)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan35">HelloWorld.c</tspan></text>
+    <use
+       xlink:href="#FlowSymbols.svg:Document"
+       style="fill:#c8ab37;stroke:#000000"
+       id="use1-1"
+       transform="matrix(0.30819579,0,0,0.28951509,57.577763,11.937644)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-2-1-4"
+       transform="matrix(0.77380923,0,0,0.79191002,87.081292,17.04186)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan37"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan36">
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="15.640748"
+         id="tspan39"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan38">int main(void) 
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="20.932411"
+         id="tspan41"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan40">{printf(&quot;Hello World\n&quot;);    
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="26.224073"
+         id="tspan43"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan42">return 0;}</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-5-9"
+       transform="translate(47.992878,9.4907367)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan44">HelloWorld.c</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-9"
+       transform="translate(168.77673,53.302554)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan45"> 01010101110
+</tspan></text>
+    <use
+       xlink:href="#FlowSymbols.svg:Document"
+       style="fill:#aaccee;stroke:#000000"
+       id="use1-6-6"
+       transform="matrix(0.30819579,0,0,0.28951509,176.38282,84.559701)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-54"
+       transform="translate(168.2895,82.61543)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan46">HelloWorld.exe</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-9-1"
+       transform="translate(170.19178,88.788212)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan47"> 01010101110
+</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.379468;stroke-miterlimit:3.9;stroke-dasharray:none;marker-end:url(#ConcaveTriangle)"
+       d="M 99.714161,68.386059 H 113.34431"
+       id="path17" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.379468;stroke-miterlimit:3.9;stroke-dasharray:none;marker-end:url(#ConcaveTriangle-4)"
+       d="m 163.38765,68.965148 h 13.63014"
+       id="path17-5" />
+    <use
+       xlink:href="#FlowSymbols.svg:Process"
+       style="fill:#b3b3b3;stroke:#000000;stroke-width:0;stroke-dasharray:none"
+       id="use1-3-5"
+       transform="matrix(0.39657501,0,0,0.42546834,109.63183,147.07037)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-0"
+       transform="matrix(1.4640889,0,0,1.3241987,104.1346,165.14667)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan49"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan48">Compiler</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-0-3-7-8"
+       transform="matrix(1.4640889,0,0,1.3241987,46.921825,12.090367)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan50">Step 1: 
+</tspan><tspan
+         x="-28.470535"
+         y="14.317835"
+         id="tspan51">Write program</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-0-3-7-8-8"
+       transform="matrix(1.4640889,0,0,1.3241987,48.425976,50.132388)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan52">Step 2: 
+</tspan><tspan
+         x="-28.470535"
+         y="14.317835"
+         id="tspan53">Compile program</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-0-3-7-8-8-4"
+       transform="matrix(1.4640889,0,0,1.3241987,48.989165,89.275565)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan54">Step 3: 
+</tspan><tspan
+         x="-28.470535"
+         y="14.317835"
+         id="tspan55">Execute program</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-0-3-7-8-6"
+       transform="matrix(1.4640889,0,0,1.3241987,47.143914,161.58065)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan56">Step 1: 
+</tspan><tspan
+         x="-28.470535"
+         y="14.317835"
+         id="tspan57">Build interpreter</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-0-3-7-8-7"
+       transform="matrix(1.4640889,0,0,1.3241987,46.724347,203.5472)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan58">Step 2: 
+</tspan><tspan
+         x="-28.470535"
+         y="14.317835"
+         id="tspan59">Write program</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-0-3-7-8-7-6"
+       transform="matrix(1.4640889,0,0,1.3241987,46.400098,242.44916)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan60">Step 3: 
+</tspan><tspan
+         x="-28.470535"
+         y="14.317835"
+         id="tspan61">Let the interpreter 
+</tspan><tspan
+         x="-28.470535"
+         y="18.286585"
+         id="tspan62">execute your program</tspan></text>
+    <use
+       xlink:href="#FlowSymbols.svg:Document"
+       style="fill:#c8ab37;stroke:#000000"
+       id="use1-4"
+       transform="matrix(0.30819579,0,0,0.28951509,57.549048,157.50858)" />
+    <use
+       xlink:href="#FlowSymbols.svg:Document"
+       style="fill:#c8ab37;stroke:#000000"
+       id="use1-4-4"
+       transform="matrix(0.30819579,0,0,0.28951509,57.479515,200.63317)" />
+    <use
+       xlink:href="#FlowSymbols.svg:Document"
+       style="fill:#aaccee;stroke:#000000"
+       id="use1-6-5"
+       transform="matrix(0.30819579,0,0,0.28951509,174.99905,157.91609)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-2-1-1"
+       transform="matrix(0.77380923,0,0,0.79191002,87.052579,162.61282)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan64"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan63">
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="15.640748"
+         id="tspan66"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan65">int main(void) 
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="20.932411"
+         id="tspan68"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan67">{...}</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-2"
+       transform="translate(166.90573,155.9718)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan69">python3.exe</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-2-0"
+       transform="translate(48.072835,198.04507)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan70">HelloWorld.py</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-5-3"
+       transform="translate(47.964168,155.06166)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan71">python3.c</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-9-7"
+       transform="translate(168.80801,163.20296)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan72"> 01010101110
+</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-9-7-6"
+       transform="translate(55.918355,206.0575)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan73"> print(&quot;Hello World&quot;)</tspan></text>
+    <use
+       xlink:href="#FlowSymbols.svg:Document"
+       style="fill:#c8ab37;stroke:#000000"
+       id="use1-4-4-9"
+       transform="matrix(0.30819579,0,0,0.28951509,58.248711,240.34848)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-2-0-4"
+       transform="translate(48.842031,237.76038)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan74">HelloWorld.py</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-9-7-6-3"
+       transform="translate(56.687551,245.77281)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan75"> print(&quot;Hello World&quot;)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.379468;stroke-miterlimit:3.9;stroke-dasharray:none;marker-end:url(#ConcaveTriangle-1)"
+       d="M 99.745533,177.22821 H 113.37568"
+       id="path17-2" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.379468;stroke-miterlimit:3.9;stroke-dasharray:none;marker-end:url(#ConcaveTriangle-4-6)"
+       d="m 163.41893,177.80731 h 13.63014"
+       id="path17-5-4" />
+    <use
+       xlink:href="#FlowSymbols.svg:Document"
+       style="fill:#aaccee;stroke:#000000"
+       id="use1-6-5-9"
+       transform="matrix(0.30819579,0,0,0.28951509,172.69446,238.58723)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-2-6"
+       transform="translate(164.60114,236.64296)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan76">python3.exe</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-3-9-7-1"
+       transform="translate(166.50342,243.87408)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan77"> 01010101110
+</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.476021;stroke-miterlimit:3.9;stroke-dasharray:none;marker-end:url(#ConcaveTriangle-4-6-1)"
+       d="m 100.49761,258.66542 h 73.62598"
+       id="path17-5-4-0" />
+    <use
+       xlink:href="#AigaSymbols.svg:RightArrow"
+       style="fill:#000000;stroke:#000000"
+       id="use1-2-5"
+       transform="matrix(0.26458333,0,0,0.26458333,218.70315,94.566403)" />
+    <use
+       xlink:href="#AigaSymbols.svg:RightArrow"
+       style="fill:#000000;stroke:#000000"
+       id="use1-2-5-6"
+       transform="matrix(0.26458333,0,0,0.26458333,214.4776,248.95137)" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>SoftwareDevProcess</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
