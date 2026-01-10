@@ -1,6 +1,6 @@
 title: Ingenieurinformatik 1 
 logo: figs/logo-HM-small.png
-author: "Dr. Christina Maria Mayr" #
+author: "" 
 email: christina_maria.mayr@hm.edu
 exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "de_computational-thinking.md", "Planung-Computational-Thinking-ALLGEMEIN.md", "README.md"]
 only_build_toc_files: true
@@ -68,7 +68,7 @@ html:
   analytics:
     google_analytics_id: G-JTQKVRRRDB
   extra_navbar: Unterstützt durch <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
-  extra_footer: #
+  extra_footer: |
     <div class="container">
     <div class="col1">
       <a href="https://hm.edu/">
@@ -76,7 +76,7 @@ html:
       </a>
     <div>
     <div class="col1">
-      Verfasst durch <a href="https://mucdai.hm.edu/kontakte_de/phonebook_detailseite_18243.de.html">Benedikt Zönnchen</a>, Christina Maria Mayr.
-      Lizenziert durch <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>.
+      Autoren: <a href="contributors.html">alle anzeigen</a>. 
+      Lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>.
     </div>
     </div>

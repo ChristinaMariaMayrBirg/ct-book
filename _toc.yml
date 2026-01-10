@@ -92,4 +92,5 @@ parts:
       - file: chapters/12-fallbeispiel/2-eigenentwicklung
   - caption: Appendix
     chapters:
+    - file: contributors
     - file: chapters/misc/bibliography
