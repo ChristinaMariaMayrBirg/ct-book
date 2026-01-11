@@ -9,7 +9,6 @@ parts:
       - file: chapters/01-course-overview/1-arbeitsmaterialien
       - file: chapters/01-course-overview/2-pruefung
       - file: chapters/01-course-overview/3-inhalte
-      - file: chapters/01-course-overview/5-lesehinweise
     - file: chapters/02-course-concept/0-uebersicht
       sections:
       - file: chapters/02-course-concept/2-softwaretypen
@@ -92,5 +91,6 @@ parts:
       - file: chapters/12-fallbeispiel/2-eigenentwicklung
   - caption: Appendix
     chapters:
-    - file: contributors
+    - file: chapters/misc/contributors
+    - file: chapters/misc/downloads
     - file: chapters/misc/bibliography

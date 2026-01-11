@@ -2,8 +2,8 @@
 Entweder Sind Sie gerade auf einer interkativen Website unterwegs oder Sie haben ein Skript vor sich liegen. So oder so: Schritt 1 ist geschafft - Sie haben bereits mindestens einen Teil Ihrer Arbeitsmaterialien erfolgreich im Einsatz. 
 
 Um die Inhalte der Vorlesung möglichst effizient zu konsumieren, empfehle ich Ihnen, dass sie die folgenden Arbeitsmaterialien nutzen: 
-- die interaktive Website: 
-- das Vorlesungs-Skript (eine PDF-Datei, die Sie in Ihrem Moodle-Kurs finden)
+- die interaktive Website
+- das Vorlesungs-Skript (siehe [Downloads](../misc/downloads.html))
 
 Die Website und das Skript sind thematisch identisch. 
 Das Skript dient Ihnen dazu während der Vorlesung Notizen zu machen. 

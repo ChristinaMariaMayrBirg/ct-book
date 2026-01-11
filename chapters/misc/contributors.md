@@ -1,5 +1,9 @@
 # Autoren
 
+```{toctree}
+:hidden:
+```
+
 Dieses Buch wurde durch Beiträge verschiedener Personen ermöglicht. 
 
 [Benedikt Zönnchen](https://mucdai.hm.edu/kontakte_de/phonebook_detailseite_18243.de.html)
@@ -17,7 +21,7 @@ Durchgeführte Änderungen:
 - Der Teil **Theorie** aus Benedikts Fassung wurde teilweise wiederverwendet, teilweise entfernt
 - Die Praxisbeispiele im letzten Teil wurden durch ein neues Fallbeispiel ersetzt
 
-## Weitere Autoren
+**Weitere Autoren**
 
 Wenn Sie Beiträge zu diesem Buch geleistet haben und hier aufgeführt werden möchten, kontaktieren Sie Christina Maria Mayr.
 
