@@ -258,7 +258,7 @@ Dann verändern wir das zweite Element der Liste (eine Liste startet mit dem 0-t
 Die **Adresse** der *Variable* ``numbers`` ändert sich bei diesem Vorgang nicht!
 Allerdings ändert sich die Adresse des Elements ``numbers[2]`` und somit der **Wert** von ``numbers``.
 
-```{figure} ../../figs/python-tutorial/datatypes/list.png
+```{figure} ../../../figs/python-tutorial/datatypes/list.png
 ---
 width: 600px
 name: fig-data-type-list
@@ -271,7 +271,7 @@ In unserem Beispiel ändern wir den Wert am Index 2 von 5 auf -20.
 Dadurch verändert sich die Adresse von $adr_2^*$ auf $adr_2'$.
 Vergleichen Sie die {numref}`Abbildung {number} <fig-data-type-list>` und {numref}`{number} <fig-data-type-list-2>`.
 
-```{figure} ../../figs/python-tutorial/datatypes/list-2.png
+```{figure} ../../../figs/python-tutorial/datatypes/list-2.png
 ---
 width: 600px
 name: fig-data-type-list-2
@@ -310,7 +310,7 @@ In diesem Beispiel verändern wir ein Element der Datenstruktur, welche unsere L
 Der Effekt ist ein anderer als zuvor, denn die Adresse $adr_1^*$ ändert sich diesmal nicht!
 Stattdessen verändern wir die Adresse $adr_{1,0}^*$ der Datenstruktur, welche unsere Liste enthält.
 
-```{figure} ../../figs/python-tutorial/datatypes/list-in-list.png
+```{figure} ../../../figs/python-tutorial/datatypes/list-in-list.png
 ---
 width: 400px
 name: fig-data-type-list-in-list
@@ -321,7 +321,7 @@ Die Liste aus unserem obigen Beispiel **bevor** wir den Wert ``'a'`` auf ``'c'``
 Die **Adressen** welche ``mylist`` enthält bleiben **unverändert** und trotzdem ändern wir den Inhalt von ``mylist``.
 Vergleichen Sie die {numref}`Abbildung {number} <fig-data-type-list-in-list>` und {numref}`{number} <fig-data-type-list-in-list-2>`.
 
-```{figure} ../../figs/python-tutorial/datatypes/list-in-list-2.png
+```{figure} ../../../figs/python-tutorial/datatypes/list-in-list-2.png
 ---
 width: 400px
 name: fig-data-type-list-in-list-2

@@ -180,37 +180,44 @@ Dabei ist wichtig, dass ein *Zeiger* wiederum auf einen weiteren *Zeiger* *zeige
 Ein *Zeiger* ist ein Objekt welches eine Speicheradresse repräsentiert.
 Programmiersprachen bieten die Mittel um Zeiger *aufzulösen*, was den Zugriff auf das Objekt auf das sie verweisen ermöglicht.
 ```
-Für detaillierte Informationen über die Speicherorganisation und wie Datenstrukturen im Speicher abgelegt werden, verweisen wir auf das [Expertenwissen: Speicherlayout von Datenstrukturen](sec-memory-layout).
+
 
 ### Überblick über wichtige Datenstrukturen
 
-(sec-stack)=
-#### Der Stapel (Stack)
+Das folgende Bild gibt einen Überblick über die Klassifikation von Datenstrukturen.
+Datenstrukturen werden zunächst in **lineare** und **nicht-lineare** Strukturen unterteilt:
 
+- **Lineare Datenstrukturen**: Die Elemente sind in einer bestimmten Reihenfolge angeordnet.
+  - **Statische lineare Strukturen**: Die Größe ist fest und kann sich nicht ändern.
+  - **Dynamische lineare Strukturen**: Die Größe kann zur Laufzeit verändert werden.
+- **Nicht-lineare Datenstrukturen**: Die Elemente sind nicht in einer einfachen Reihenfolge angeordnet.
+
+```{figure} ../../figs/overview/datenstrukturen.png
+:name: fig-data-structures-overview
+:width: 100%
+:align: center
+
+Überblick über wichtige Datenstrukturen
+```
+
+(sec-stack)=
 Der *Stapel* (engl. *Stack*) oder auch *Stapelspeicher/Keller* ist einer der einfachsten [dynamischen Sammlungen](def-dynamic-ds), welche dem *Last-In-First-Out (LIFO)* Prinzip folgt.
 LIFO bedeutet soviel wie: *zuletzt hinein - zuerst heraus*.
 Das was zuletzt hinein gekommen ist, wird auch als erstes herausgenommen.
-
 Stellen Sie sich einen Stapel aus Büchern vor.
 Das Buch was Sie zuletzt auf den Bücherstapel gelegt haben liegt zugriffsbereit ganz oben.
 
 (sec-queue)=
-#### Die Warteschlange (Queue)
-
 Die *Warteschlange* (engl. *Queue*) ist eine [dynamische Sammlung](def-dynamic-ds) und folgt dem sog. *First-In-First-Out (FIFO)* Prinzip.
 FIFO bedeutet soviel wie: *zuerst hinein - zuerst hinaus*.
 Das was zuerst hinein gekommen ist, wird auch als erstes herausgenommen.
-
 Der Name rührt daher, dass die Datenstruktur wie eine Warteschlange an der Kasse funktioniert.
 Kunden die sich zuerst in die Schlange einreihen, werden auch zuerst bedient.
 
 (sec-array)=
-#### Arrays
-
-Ein *Array* ist eine [statische Sammlung](def-static-ds).
+Ein *Array* ist eine [statische Sammlung](def-static-ds) mit direktem Indexzugriff.
 Es wird durch einen zusammenhängenden Speicherbereich realisiert.
 Ein Array beinhaltet üblicherweise Elemente die alle vom gleichen [Datentyp](def-datatypes) sind.
-
 Arrays bieten effizienten Zugriff über einen Index, können aber ihre Größe nicht dynamisch ändern.
 
 ```{admonition} Arrays in Python?
@@ -224,22 +231,20 @@ Es gibt sog. [Tupel](sec-tuple), die einem Array nahekommen, jedoch kann man die
 Details zu Tupeln und Listen finden Sie im Kapitel [Tupel](sec-tuple) und [Listen](sec-list).
 
 (sec-dynamic-array)=
-#### Dynamische Arrays
-
 *Dynamische Arrays* kombinieren die Vorteile von Arrays (effizienter Indexzugriff) mit der Flexibilität dynamischer Sammlungen (Größenänderung zur Laufzeit).
 Sie basieren auf einem zusammenhängenden Speicherbereich, der jedoch bei Bedarf neu angelegt wird.
-
 Die ``Python``-[Liste](sec-list) ist ein *dynamisches Array*.
 Details zur Arbeit mit Listen in ``Python`` finden Sie im Kapitel [Listen](sec-list).
 
 (sec-linked-list)=
-#### Verkettete Listen
-
 Eine *verkettete Liste* (engl. *Linked List*) besteht aus Knoten, die durch [Zeiger](def-pointer) verbunden sind.
 Jeder Knoten enthält Daten und einen Zeiger auf den nächsten Knoten.
 Sie ist eine [dynamische Sammlung](def-dynamic-ds), d.h. sie kann zur Laufzeit vergrößert und verkleinert werden.
-
 Haben wir direkten Zugriff auf einen Knoten so können wir in die *verkettete Liste* ein neues Element effizient einfügen ohne dabei die anderen Elemente der Liste zu verschieben -- ein wesentlicher Vorteil dieser Datenstruktur.
 
 
-Für detaillierte Informationen über die Speicherorganisation von Datenstrukturen verweisen wir auf das [Expertenwissen: Speicherlayout von Datenstrukturen](sec-memory-layout).
+
+```{admonition} Mehr Hintergrund
+:class: note
+Mehr Hintergrund zum Thema Speichern von Datenstrukturen finden Sie im [Expertenwissen: Speicherlayout von Datenstrukturen](sec-memory-layout).
+```
