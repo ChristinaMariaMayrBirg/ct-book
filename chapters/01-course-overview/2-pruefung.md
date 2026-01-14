@@ -32,4 +32,21 @@ Zur Prüfungsvorbereitung dienen Ihnen die Aufgabenbeispiele aus der Vorlesung u
 
 Die Prüfungen finden Sie unter [Downloads](../misc/downloads.html).
 
+## Zugelassene Unterlagen
+
+Bisher waren folgende Unterlagen zugelassen:
++ Eigene Hilfsmittel (Skripte, ...)
+ausgenommen:
++ Taschenrechner
++ PC/Notebook/Handy/Tablet
+
+Hinweise: Bearbeitung mit Bleistift ist zugelassen. 
+
+```{admonition} Hinweis
+:name: hint-pruefung-aenderungen
+:class: hint
+
+Wir weisen Sie vor der Prüfung nochmal darauf hin, ob sich Änderungen ergeben haben.
+```
+
 

@@ -20,11 +20,12 @@ parts:
     - file: chapters/03-computer-sciences-basics/0-intro
       sections:
       - file: chapters/03-computer-sciences-basics/1-basics
-      - file: chapters/03-computer-sciences-basics/1-algorithms
+      - file: chapters/03-computer-sciences-basics/1-codierung
+      - file: chapters/03-computer-sciences-basics/1-zahlensysteme
       - file: chapters/03-computer-sciences-basics/2-programming
       - file: chapters/03-computer-sciences-basics/2-repetition-is-the-key
-      - file: chapters/03-computer-sciences-basics/3-control-structures
-      - file: chapters/03-computer-sciences-basics/4-data-structures
+      - file: chapters/03-computer-sciences-basics/3-programmierkonstrukte
+      - file: chapters/03-computer-sciences-basics/6-visualization
   - caption: Python verstehen
     numbered: True
     chapters:
@@ -32,10 +33,13 @@ parts:
       sections:
       - file: chapters/04-language-properties/1-interpretation
       - file: chapters/04-language-properties/2-paradigma
-      - file: chapters/04-language-properties/3-syntax
-      - file: chapters/04-language-properties/4-references
+      - file: chapters/04-language-properties/11-speicherverwaltung
+      - file: chapters/04-language-properties/21-seiteneffekte
+      - file: chapters/04-language-properties/3-references
+      - file: chapters/04-language-properties/4-syntax
       - file: chapters/04-language-properties/5-typing
       - file: chapters/04-language-properties/6-primitive-data
+      - file: chapters/04-language-properties/7-speicherverwaltung
   - caption: Python anwenden
     numbered: True
     chapters:
@@ -53,26 +57,31 @@ parts:
       - file: chapters/07-python-basics/3-invoking-functions
     - file: chapters/08-python-data-types/0-intro
       sections:
-      - file: chapters/08-python-data-types/1-data-types
-      - file: chapters/08-python-data-types/2-int
-      - file: chapters/08-python-data-types/3-float
-      - file: chapters/08-python-data-types/4-bool
-      - file: chapters/08-python-data-types/5-list
-      - file: chapters/08-python-data-types/6-tuple
-      - file: chapters/08-python-data-types/7-string
-      - file: chapters/08-python-data-types/8-set
-      - file: chapters/08-python-data-types/9-dict
-      - file: chapters/08-python-data-types/10-range
-      - file: chapters/08-python-data-types/11-typing-in-python
+      - file: chapters/08-python-data-types/1-zahlenwerte/0-intro
+        sections:
+        - file: chapters/08-python-data-types/1-zahlenwerte/1-int
+        - file: chapters/08-python-data-types/1-zahlenwerte/2-bool
+        - file: chapters/08-python-data-types/1-zahlenwerte/3-float
+        - file: chapters/08-python-data-types/1-zahlenwerte/4-codierung
+      - file: chapters/08-python-data-types/2-sequenzen/0-intro
+        sections:
+        - file: chapters/08-python-data-types/2-sequenzen/1-list
+        - file: chapters/08-python-data-types/2-sequenzen/2-tuple
+        - file: chapters/08-python-data-types/2-sequenzen/3-range
+        - file: chapters/08-python-data-types/2-sequenzen/4-string
+      - file: chapters/08-python-data-types/3-mengen/0-intro
+        sections:
+        - file: chapters/08-python-data-types/3-mengen/1-set
+        - file: chapters/08-python-data-types/3-mengen/2-dict
     - file: chapters/09-functions/0-intro
       sections:
-      - file: chapters/09-functions/1-purity
       - file: chapters/09-functions/2-definition
       - file: chapters/09-functions/3-namespaces
+      - file: chapters/09-functions/3-zmutability
       - file: chapters/09-functions/4-lambdas
       - file: chapters/09-functions/5-nested-functions
-      - file: chapters/09-functions/x-recursion
       - file: chapters/09-functions/6-first-class-functions
+      - file: chapters/09-functions/x-recursion
     - file: chapters/10-control-flow/0-intro
       sections:
       - file: chapters/10-control-flow/1-cases
@@ -82,15 +91,26 @@ parts:
       sections:
       - file: chapters/11-object-oriented/1-class-and-objects
       - file: chapters/11-object-oriented/2-inheritance-poly-encap
+    - file: chapters/12-eingaben-und-ausgaben/0-intro
+      sections:
+      - file: chapters/12-eingaben-und-ausgaben/1-eingaben
+      - file: chapters/12-eingaben-und-ausgaben/2-gui-eingaben
+      - file: chapters/12-eingaben-und-ausgaben/3-ausgaben
   - caption: Fallbeispiel
     numbered: True
     chapters:
-    - file: chapters/12-fallbeispiel/0-intro
+    - file: chapters/13-fallbeispiel/0-intro
       sections:
-      - file: chapters/12-fallbeispiel/1-lib-solution
-      - file: chapters/12-fallbeispiel/2-eigenentwicklung
+      - file: chapters/13-fallbeispiel/1-lib-solution
+      - file: chapters/13-fallbeispiel/2-eigenentwicklung
   - caption: Appendix
     chapters:
     - file: chapters/misc/contributors
     - file: chapters/misc/downloads
     - file: chapters/misc/bibliography
+    - file: chapters/misc/Expertenwissen/0-intro
+      sections:
+      - file: chapters/misc/Expertenwissen/interpreter
+      - file: chapters/misc/Expertenwissen/compilation
+      - file: chapters/misc/Expertenwissen/euclid-algorithm
+      - file: chapters/misc/Expertenwissen/memory-layout

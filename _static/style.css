@@ -148,14 +148,14 @@ button.btn.btn-secondary {
 
 html[data-theme="light"] .bd-content div.cell_output .text_html,html[data-theme="light"] .bd-content div.cell_output img {
     background-color: var(--pst-color-background);
-    border-radius: .25rem;
+    border-radius: 0;
     color: var(--pst-color-text-base);
     padding: .5rem
 }
 
 html[data-theme="light"] .bd-content img:not(.only-dark):not(.dark-light) {
     background: var(--pst-color-background);
-    border-radius: 1.25rem;
+    border-radius: 0;
 }
 
 html[data-theme=dark] .bd-content div.cell_output .text_html, html[data-theme=dark] .bd-content div.cell_output img {
@@ -163,14 +163,21 @@ html[data-theme=dark] .bd-content div.cell_output .text_html, html[data-theme=da
 }
 
 html[data-theme="dark"] .bd-content div.cell_output .text_html,html[data-theme="dark"] .bd-content div.cell_output img {
-    border-radius: .25rem;
+    border-radius: 0;
     color: var(--pst-color-text-base);
     padding: .5rem
 }
 
 html[data-theme="dark"] .bd-content img:not(.only-dark):not(.dark-light) {
-    border-radius: 1.25rem;
+    border-radius: 0;
     background: none;
+}
+
+/* Alle Figuren sollen eckige Ecken haben */
+.bd-content figure img,
+.bd-content figure,
+.bd-content .figure img {
+    border-radius: 0 !important;
 }
 
 /*

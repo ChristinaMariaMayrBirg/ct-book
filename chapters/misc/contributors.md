@@ -1,8 +1,5 @@
 # Autoren
 
-```{toctree}
-:hidden:
-```
 
 Dieses Buch wurde durch Beiträge verschiedener Personen ermöglicht. 
 

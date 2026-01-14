@@ -196,3 +196,4 @@ Da wir im Bankwesen exakte Werte benötigen, eignen Fließkommazahlen nicht.
 Das Modul [decimal](https://docs.python.org/3/library/decimal.html) bietet die nötige Funktionalität.
 
 ```
+

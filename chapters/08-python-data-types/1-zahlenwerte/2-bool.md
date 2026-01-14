@@ -16,6 +16,12 @@ kernelspec:
 Ein Wahrheitswert ([Boolean](https://docs.python.org/3/library/stdtypes.html#truth-value-testing)) ``bool`` kann, genau wie ein [Bit](def-bit), einen von zwei Wahrheitswerten ``True`` (1) oder ``False`` (0) annehmen.
 ``True`` bedeutet wahr und ``False`` falsch.
 
+```{admonition} Hinweis
+:name: bool-subclass-int
+:class: tip
+Technisch ist ``bool`` eine Unterklasse von ``int`` in Python.
+```
+
 ``True`` oder ``False`` verwenden wir sehr selten explizit.
 Viel häufiger wird ein logischer Ausdruck, zu ``True`` oder ``False`` *ausgewertet*.
 
@@ -79,3 +85,11 @@ print(f'{x} is less than 10')
 x += 1
 print(f'{x} not is less than 10')
 ```
+
+```{admonition} Good to know
+:name: bool-arithmetic
+:class: tip
+Da ``bool`` eine Unterklasse von ``int`` ist, können Sie mit Wahrheitswerten rechnen: ``True`` entspricht ``1`` und ``False`` entspricht ``0``. Beispiel: ``True + True  # ergibt 2``. In der Praxis wird dies jedoch selten verwendet, da Booleans primär für logische Ausdrücke gedacht sind.
+```
+
+

@@ -175,3 +175,134 @@ print(text.replace('salat', 'spinat'))
 
 Es würde zu weit gehen alle Funktionen zu besprechen -- das wäre auch ziemlich langweilig.
 Schauen Sie sich einfach die [Dokumentation](https://docs.python.org/3/library/string.html) an oder verwenden Sie die eingebaute Hilfe ``help(str)``.
+
+## Formatierte Zeichenketten (f-Strings) - Vertiefung
+
+Wie bereits oben erwähnt, sind **f-Strings** (formatted string literals) eine elegante Möglichkeit, Variablen und Ausdrücke direkt in Zeichenketten einzubetten. Das ``f`` vor der Zeichenkette aktiviert diese Funktionalität.
+
+### Grundlegende Syntax
+
+Innerhalb von geschweiften Klammern ``{}`` können Sie beliebige Python-Ausdrücke schreiben:
+
+```{code-cell} python3
+name = 'Anna'
+alter = 25
+print(f'Mein Name ist {name} und ich bin {alter} Jahre alt.')
+```
+
+### Ausdrücke in f-Strings
+
+Sie können nicht nur Variablen, sondern auch komplexe Ausdrücke verwenden:
+
+```{code-cell} python3
+x = 10
+y = 5
+print(f'Das Ergebnis von {x} + {y} ist {x + y}')
+print(f'Das Quadrat von {x} ist {x ** 2}')
+```
+
+### Methodenaufrufe
+
+Auch Methodenaufrufe sind innerhalb von f-Strings möglich:
+
+```{code-cell} python3
+text = 'Python'
+print(f'Der Text "{text}" hat {len(text)} Zeichen.')
+print(f'In Großbuchstaben: {text.upper()}')
+```
+
+### Formatierung von Zahlen
+
+Für technische Anwendungen ist es oft wichtig, Zahlen in einem bestimmten Format darzustellen. f-Strings bieten hierfür mächtige Formatierungsoptionen:
+
+**Dezimalstellen begrenzen:**
+
+```{code-cell} python3
+pi = 3.14159265359
+print(f'Pi auf 2 Dezimalstellen: {pi:.2f}')
+print(f'Pi auf 4 Dezimalstellen: {pi:.4f}')
+```
+
+**Wissenschaftliche Notation:**
+
+```{code-cell} python3
+große_zahl = 1234567890
+print(f'Wissenschaftliche Notation: {große_zahl:e}')
+print(f'Wissenschaftliche Notation mit 2 Dezimalstellen: {große_zahl:.2e}')
+```
+
+**Ausrichtung und Breite:**
+
+```{code-cell} python3
+zahl = 42
+print(f'Rechtsbündig (10 Zeichen): {zahl:>10}')
+print(f'Linksbündig (10 Zeichen): {zahl:<10}')
+print(f'Zentriert (10 Zeichen): {zahl:^10}')
+```
+
+**Mit führenden Nullen:**
+
+```{code-cell} python3
+zahl = 42
+print(f'Mit führenden Nullen: {zahl:05d}')
+```
+
+**Tausender-Trennzeichen:**
+
+```{code-cell} python3
+große_zahl = 1234567
+print(f'Mit Tausender-Trennzeichen: {große_zahl:,}')
+```
+
+### Praktisches Beispiel für Maschinenbauer
+
+```{code-cell} python3
+# Berechnung einer Kraft
+masse = 10.5  # kg
+beschleunigung = 9.81  # m/s²
+kraft = masse * beschleunigung
+
+print(f'Berechnung der Gewichtskraft:')
+print(f'Masse: {masse} kg')
+print(f'Erdbeschleunigung: {beschleunigung} m/s²')
+print(f'Kraft: {kraft:.2f} N')
+print(f'Kraft (wissenschaftlich): {kraft:.2e} N')
+```
+
+### Verschachtelte Anführungszeichen
+
+Bei f-Strings können Sie einfache oder doppelte Anführungszeichen verwenden, was hilfreich ist, wenn Sie Anführungszeichen im Text benötigen:
+
+```{code-cell} python3
+name = 'Anna'
+print(f"Sie sagte: 'Hallo, {name}!'")
+print(f'Er antwortete: "Guten Tag, {name}!"')
+```
+
+### Mehrzeilige f-Strings
+
+f-Strings können auch über mehrere Zeilen gehen:
+
+```{code-cell} python3
+name = 'Anna'
+alter = 25
+beruf = 'Ingenieurin'
+
+text = f"""
+Name: {name}
+Alter: {alter}
+Beruf: {beruf}
+"""
+print(text)
+```
+
+```{admonition} Wichtig
+:class: important
+
+- f-Strings wurden in Python 3.6 eingeführt und sind die modernste und empfohlene Methode zur String-Formatierung.
+- Sie sind effizienter als die älteren Methoden (``.format()`` oder ``%``-Formatierung).
+- Die Ausdrücke in ``{}`` werden zur Laufzeit ausgewertet, was bedeutet, dass Sie auch Funktionen aufrufen können.
+- Für komplexe Formatierungen können Sie Format-Spezifikationen nach einem Doppelpunkt ``:`` verwenden (z.B. ``{zahl:.2f}``).
+```
+
+f-Strings machen die String-Formatierung in Python deutlich lesbarer und einfacher zu verwenden, besonders wenn Sie Variablen und berechnete Werte in Textausgaben einbetten möchten.

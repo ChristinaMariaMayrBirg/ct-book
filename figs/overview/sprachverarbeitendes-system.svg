@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="190mm"
+   height="130mm"
+   viewBox="0 0 190 130"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="sprachverarbeitendes-system.svg"
+   inkscape:export-filename="sprachverarbeitendes-system.png"
+   inkscape:export-xdpi="120"
+   inkscape:export-ydpi="120"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">SoftwareDevProcess</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:zoom="1.0482005"
+     inkscape:cx="351.07787"
+     inkscape:cy="111.61987"
+     inkscape:window-width="1710"
+     inkscape:window-height="1073"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#ffffffff">
+    <inkscape:grid
+       id="grid1"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999999"
+       spacingy="0.99999999"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true"
+       dotted="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7" />
+    </marker>
+    <rect
+       x="139.28633"
+       y="27.666464"
+       width="43.884735"
+       height="50.562847"
+       id="rect2" />
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-5-5"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-4-7" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-4"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="ConcaveTriangle-4-7"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Concave triangle arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="path7-0-5" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text2"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#000000" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.578058;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3"
+       width="38.472443"
+       height="18.501442"
+       x="6.4963679"
+       y="16.042435"
+       inkscape:highlight-color="#71b888" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-6"
+       transform="translate(34.890171,18.196809)" />
+    <rect
+       style="opacity:0.586207;fill:#0a0000;fill-opacity:1;stroke-width:1.365;stroke-dasharray:none"
+       id="rect4"
+       width="0"
+       height="22.717506"
+       x="133.52844"
+       y="9.0870028"
+       rx="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1"
+       transform="translate(1.4171677,13.691162)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan3"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan2">Anweisungen 
+</tspan></tspan><tspan
+         x="24.003963"
+         y="15.640748"
+         id="tspan7"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan5">der Quellsprache</tspan></tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.578058;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3-9"
+       width="38.472443"
+       height="18.501442"
+       x="7.5271964"
+       y="102.98034"
+       inkscape:highlight-color="#71b888" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-7"
+       transform="translate(2.2199083,103.15305)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan10"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan8">Daten</tspan></tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.578058;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3-9-8"
+       width="38.472443"
+       height="18.501442"
+       x="146.45073"
+       y="102.6341"
+       inkscape:highlight-color="#71b888" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-7-2"
+       transform="translate(142.15322,102.55443)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan40"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan11">Ergebnisse</tspan></tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.622605;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3-7"
+       width="44.738312"
+       height="18.456894"
+       x="72.806808"
+       y="57.473289"
+       inkscape:highlight-color="#71b888" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-5"
+       transform="translate(70.880338,54.570576)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan42"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan41">abstrakte Maschinen-
+</tspan></tspan><tspan
+         x="24.003963"
+         y="15.640748"
+         id="tspan44"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan43">anweisungen</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-2"
+       transform="translate(71.569598,0.63989043)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan46"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan45">
+</tspan></tspan><tspan
+         x="24.003963"
+         y="15.640748"
+         id="tspan48"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan47">Übersetzer</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-2-1"
+       transform="translate(103.0109,10.256444)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan50"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan49">
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="15.640748"
+         id="tspan52"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan51">Syntax prüfen
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="20.932411"
+         id="tspan54"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan53">Semantik prüfen
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="26.224073"
+         id="tspan56"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan55">erstellen</tspan></tspan></text>
+    <path
+       style="opacity:1;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.601;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle)"
+       d="M 44.955267,25.473422 H 68.443315"
+       id="path5" />
+    <path
+       style="fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.575428;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle-4)"
+       d="m 95.174431,41.671494 v 11.84017"
+       id="path5-3" />
+    <path
+       style="fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.575428;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle-4-7)"
+       d="M 95.038603,76.084001 V 87.924129"
+       id="path5-3-5" />
+    <path
+       style="fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.601;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle-5)"
+       d="M 46.07708,112.25352 H 69.565128"
+       id="path5-1" />
+    <path
+       style="fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.601;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ConcaveTriangle-5-5)"
+       d="m 118.76749,111.26883 h 23.48818"
+       id="path5-1-5" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.526186;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3-2"
+       width="45.292149"
+       height="32.010189"
+       x="72.291107"
+       y="9.6828308"
+       inkscape:highlight-color="#71b888" />
+    <path
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:0.579999;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       d="M 72.093847,19.268662 H 117.78126"
+       id="path1" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="24.003963"
+       y="10.349086"
+       id="text1-2-9"
+       transform="translate(72.612326,82.862799)"><tspan
+         x="24.003963"
+         y="10.349086"
+         id="tspan58"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan57">
+</tspan></tspan><tspan
+         x="24.003963"
+         y="15.640748"
+         id="tspan60"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan59">Interpreter</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;white-space:pre;inline-size:104.949;display:inline;fill:#000000;stroke-width:0.264583"
+       x="-28.470535"
+       y="10.349086"
+       id="text1-2-1-3"
+       transform="translate(104.05363,92.479305)"><tspan
+         x="-28.470535"
+         y="10.349086"
+         id="tspan62"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan61">
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="15.640748"
+         id="tspan64"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan63">abrufen
+</tspan></tspan><tspan
+         x="-28.470535"
+         y="20.932411"
+         id="tspan66"><tspan
+           style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:'Arial, Normal'"
+           id="tspan65">ausführen</tspan></tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.526186;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3-2-3"
+       width="45.292149"
+       height="32.010189"
+       x="73.333832"
+       y="91.905762"
+       inkscape:highlight-color="#71b888" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.579999;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+       d="M 73.136575,101.49148 H 118.82399"
+       id="path1-8" />
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>SoftwareDevProcess</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
