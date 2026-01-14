@@ -344,3 +344,4 @@ Dadurch sind die Elemente im Speicher breit verteilt, d.h., *gestreut*.
 Für ganze Zahlen in einem bestimmten Bereich ist das noch einfach, da die Hashfunktion für die Berechnung des Index simpel ist.
 Für beliebige Objekte wird dies deutlich schwieriger.
 Wir diskutieren dies im Kapitel [Namensregister](sec-name-register) im Detail.
+

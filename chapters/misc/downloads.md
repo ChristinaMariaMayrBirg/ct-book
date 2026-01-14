@@ -1,12 +1,10 @@
 # Downloads
 
-```{toctree}
-:hidden:
-```
+
 
 **Skript im PDF-Format**
 
-Das Skript im PDF-Format wird in Kürze verfügbar sein.
+Das Skript im PDF-Format finden Sie in Kürze hier.
 
 **Prüfungen aus vergangenen Semestern**
 

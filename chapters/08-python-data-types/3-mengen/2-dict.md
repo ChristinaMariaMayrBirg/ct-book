@@ -190,3 +190,4 @@ Dies ist ein sog. *erwünschter Seiteneffekt*.
 ## Wörterbücher und der Speicher
 
 Wie Wörterbücher im Speicher realisiert werden erläutern wir ansatzweise im Abschnitt [Mengen](sec-set) und tiefgreifender im Kapitel [Namensregister](sec-name-register) im Abschnitt [Hashing und das Dictionary](sec-hashing).
+

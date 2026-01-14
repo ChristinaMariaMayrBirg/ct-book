@@ -121,3 +121,6 @@ def prime_list(n):
 
 prime_list(20)
 ```
+
+Hinweis:
+wie wir in chapters/08-python-data-types/1-data-types.md gesehen haben sind funktionen auch ein datentyp. Im gegensatz zu den datentypen die in kapitel chapters/08-python-data-types vorgestellt worden sind, sind funktionen aufrufbar. sie sind callable. aufgrund dieser speziellen eigenschafte bekommen sie hier ein eigenens kapitel. 

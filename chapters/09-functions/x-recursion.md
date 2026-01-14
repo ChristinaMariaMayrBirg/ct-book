@@ -11,7 +11,7 @@ kernelspec:
 ---
 
 (sec-recursive-functions)=
-# Rekursive Funktionen
+# Rekursive Funktionen (Heimarbeit)
 
 Bevor Sie fortfahren sollten Sie sich den Abschnitt [Wiederholung](sec-repetition-and-recursion) durchgelesen haben.
 

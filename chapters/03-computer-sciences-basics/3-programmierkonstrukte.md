@@ -10,8 +10,13 @@ kernelspec:
   name: python3
 ---
 
-(sec-control-structures)=
-# Kontrollstrukturen
+(sec-programming-constructs)=
+# Programmierkonstrukte
+
+In diesem Kapitel lernen wir die fundamentalen Bausteine der Programmierung kennen: *Kontrollstrukturen* und *Datenstrukturen*.
+Diese beiden Konzepte bilden zusammen die Grundlage für alle Algorithmen und Programme.
+
+## Kontrollstrukturen
 
 Durch [Wiederholung](sec-repetition-and-recursion) in Form von *Schleifen* und *(rekursiven) Funktionen* vermeiden wir es Anweisungen, die wir mehrfach ausführen wollen, auch mehrfach niederzuschreiben.
 Erst durch diese fundamentale Eigenschaft, ist es überhaupt möglich, dass wir die Anzahl der ausgeführten Anweisungen von der Länge des Programmcodes entkoppeln.
@@ -42,35 +47,21 @@ Theoretisch ist es bereits ausreichend wenn eine Programmiersprache
 
 Die Fallunterscheidung, lässt sich (in hässlicher Form) durch eine Schleife ausdrücken.
 
+Für die konkrete Syntax und Anwendung dieser Kontrollstrukturen in ``Python`` verweisen wir auf das Kapitel [Kontrollstrukturen](sec-control-statements) im Teil **PYTHON**.
+
 (sec-if-else)=
-## Fallunterscheidungen
+### Fallunterscheidungen
 
 Die erste Kontrollstruktur realisiert die bedingte Ausführung, das bedeutet, eine bestimmte Sequenz von Anweisungen ``A1, ... ,An`` wird nur dann ausgeführt, wenn eine Bedingung ``B`` zutrifft.
 
-```
-if B:
-    A1
-    ...
-    An
-```
-
 Die Bedingung ``B`` kann nur zu wahr ``True`` oder falsch ``False`` ausgewertet werden.
 Gewöhnlich hängt der Wahrheitswert der Bedingung vom Programmablauf ab, d.h., er ist erst zur Laufzeit bekannt.
-Zum Beispiel gibt folgendes Programm ``'you win!'`` mit einer (pseudo) Wahrscheinlichkeit von 50% aus, da der *Variablen* ``x`` ein Zufallswert zwischen 0 und 1 (Gleichverteilung) zugewiesen wird.
-
-```{code-cell} python3
-import random as rnd
-
-x = rnd.random()
-if x > 0.5:
-    print('you win!')
-```
 
 Es gibt von diesen Fallunterscheidungen verschiedene Varianten, wobei diese lediglich syntaktischer Zucker sind.
-Für ``Python`` besprechen wir alle Möglichkeiten im Teil **PYTHON** in [Kontrollstrukturen](sec-cases).
+Für ``Python`` besprechen wir alle Möglichkeiten im Teil **PYTHON** in [Fallunterscheidungen](sec-cases).
 
 (sec-repetition-and-recursion)=
-## Wiederholung
+### Wiederholung
 
 Das fundamentale Prinzip der *Wiederholung* ist zentraler Bestandteil der Programmierung.
 Blicken wir in den Werkzeugkasten der Algorithmen so finden wir die Wiederholung überall.
@@ -113,8 +104,10 @@ Mit *unbestimmt* meinen wir, dass bevor die Iteration beginnt nicht bekannt ist,
 Manche Probleme lassen sich leichter rekursiv und andere leichter iterativ lösen bzw. durchdenken.
 In manchen Fällen ist es beispielsweise sinnvoll eine rekursive Lösung zu entwickeln und diese dann in eine iterative umzuwandeln.
 
+Für die konkrete Implementierung von Iterationen und Rekursionen in ``Python`` verweisen wir auf das Kapitel [Schleifen](sec-loops) und [Rekursion](sec-recursive-functions) im Teil **PYTHON**.
+
 (sec-iteration)=
-### Iteration
+#### Iteration
 
 Wenn Sie Erfahrung im entwickeln von iterativen Algorithmen gesammelt haben und iterative Algorithmen analysiert und verwendet haben, dann werden Sie beginnen in Iterationen zu denken.
 Sie werden beginnen in Iterationen von Iterationen von Iterationen zu denken.
@@ -123,78 +116,10 @@ Das wohl einfachste Beispiel für eine Iteration ist die Addition einer Menge vo
 Lassen Sie uns alle geraden Zahlen von ``2`` bis ``n`` addieren.
 Hierzu brauchen wir eine Variable ``acc``, welche wir mit dem Wert ``0`` initialisieren und dann iterativ 2 dann 4, und so weiter addieren.
 
-```{code-cell} python3
-acc = 0
-n = 100
-for k in range(2,n,2):
-    acc += k
-
-acc
-```
-
-```{code-cell} python3
-acc = 0
-n = 100
-k = 2
-while k < n:
-    acc += k
-    k += 2
-
-acc
-```
-
-Betrachten wir einen etwas komplizierteren Algorithmus: Den [Bubblesort Algorithmus](https://en.wikipedia.org/wiki/Bubble_sort).
-Dieser sortiert eine Liste von vergleichbaren Objekten.
-Wir gehen durch die Liste (1. *Iterationen*) und wann immer zwei nebeneinander liegende Zahlen falsch sortiert sind, vertauschen wir diese.
-Wir wiederholen dies (2. *Iterationen*) solange bis keine zwei benachbarte Zahlen falsch sortiert sind.
-
-```{code-cell} python3
-import random as rnd
-
-def bubble_sort(numbers):
-    finished = False
-    while(not finished):
-        finished = True
-        for i in range(1,len(numbers)):
-            if numbers[i] < numbers[i-1]:
-                numbers[i], numbers[i-1] = numbers[i-1], numbers[i]
-                finished = False
-    
-numbers = [1,2,3,4,5,6,7,8,9]
-rnd.shuffle(numbers)
-print(f'before sorting: {numbers}')
-bubble_sort(numbers)
-print(f'after sorting: {numbers}')
-```
-
-Die beiden Schleifen liefern uns auch einen Hinweis auf die Laufzeit dieses simplen Sortieralgorithmus.
-Nach jedem ausführen der inneren Schleife befindet sich ein neues Element an seiner korrekten Position.
-Damit brauchen wir maximal so viele Durchläufe (1. Iterationen) wie es Elemente sind.
-Jeder Durchlauf benötigt ebenfalls maximal so viel Schritte wie es Elemente sind.
-Damit hat der Algorithmus im schlechtesten Fall eine quadratische Laufzeit.
-Das bedeutet, wollen wir $n$ Zahlen sortieren ist die [Zeitkomplexität](sec-complexity) des Algorithmus gleich $\mathcal{O}(n^2)$.
-
-```{exercise} Fallunterscheidung durch Schleife
-:label: if-by-for-exercise
-Schreiben Sie ein Programm, welches den Algorithmus von oben (die zufällige Ausgabe von ``'you win!'``) realisiert, ohne eine Fallunterscheidung zu verwenden.
-```
-
-````{solution} if-by-for-exercise
-:label: if-by-for-solution
-:class: dropdown
-
-```python
-import random as rnd
-
-x = rnd.random()
-for i in range(int(0.5+x)):
-    print('you win!')
-```
-
-````
+Die konkrete Syntax für Iterationen in ``Python`` (``for``- und ``while``-Schleifen) wird im Kapitel [Schleifen](sec-loops) behandelt.
 
 (sec-recursion)=
-### Rekursion
+#### Rekursion
 
 Rekursion ist dieses scheinbar unverständliche Konzept, welches Mathematiker\*innen lieben und vor dem Programmierer\*innen anfänglich davonlaufen.
 Derweil würden wir behaupten, dass die *rekursive Denkweise* uns Menschen näher ist als das Denken in Iterationen.
@@ -205,28 +130,9 @@ Nehmen wir die Berechnung der Fakultät, einmal *iterativ*
 
 $$\text{fac}_\text{it}(n) = n \cdot (n-1) \cdot (n-2) \cdot \ldots \cdot 1 = \prod\limits_{i=1}^n i$$
 
-```{code-cell} python3
-def fac_it(n):
-    result = 1
-    for i in range(1,n+1):
-        result *= i
-    return result
-
-fac_it(5)
-```
-
 und einmal *rekursiv*
 
 $$\text{fac}_\text{rec}(n) = \begin{cases} 1 & \text{ falls } n = 0\\ n \cdot \text{fac}_\text{rec}(n-1) & \text{ sonst}\end{cases}$$
-
-```{code-cell} python3
-def fac_rec(n):
-    if n <= 1:
-        return 1
-    return n * fac_rec(n-1)
-
-fac_rec(5)
-```
 
 Die Rekursion beinhaltet einen Selbstbezug, wohingegen die iterative Lösung diesen ausbreitet bzw. auflöst.
 Betrachten wir die rekursive Lösung benötigen wir für die Berechnung lediglich die Multiplikation und den Selbstbezug - keine Schleife, und abgesehen von ``n``, nicht einmal eine Variable.
@@ -237,114 +143,103 @@ Betrachten wir die rekursive Lösung benötigen wir für die Berechnung lediglic
 Als *Rekursion* wird ein Vorgang bezeichnet, welcher sich selbst als Teil enthält oder mithilfe von sich selbst definierbar ist.
 ```
 
-(sec-hanoi)=
-### Die Türme von Hanoi
+Für die konkrete Implementierung rekursiver Funktionen in ``Python`` verweisen wir auf das Kapitel [Rekursion](sec-recursive-functions) im Teil **PYTHON**.
 
-Probleme lassen sich immer dann leichter rekursiv lösen, wenn der Selbstbezug offensichtlich oder einfach zu finden ist.
-Ein Beispiel sind die sog. [Türme von Hanoi](https://de.wikipedia.org/wiki/T%C3%BCrme_von_Hanoi).
+## Datenstrukturen
 
-Ein Turm bestehend aus $n$ unterschiedlich breiten Schichten soll von einem Ort 0 zu einem anderen Ort 2 gebracht werden.
-Der Turm wird nach oben immer schmaler, d.h., die Schicht die über einer anderen liegt ist schmaler.
-Wir können nur eine einzelne Schicht bewegen und wir dürfen keine Schicht auf eine schmälere legen.
-Es gibt nur einen zusätzlichen Ablegeort 1.
-Wie bringen wir den Turm nun von Ort 0 nach Ort 2?
+Da sich alle Daten (Programm und dessen Eingabe/Ausgabe) im [Arbeitsspeicher](def-main-memory) befinden, müssen wir begreifen welche Funktionalität diese *konkrete* Datenstruktur bietet.
+Alle weiteren *abstrakten* Datenstrukturen bauen auf diesen Möglichkeiten auf.
 
-**(1) Induktionsanfang:** Hat der Turm nur eine Schicht, ist das Problem schnell gelöst: Bewege Schicht von 0 nach 2.
+Es gibt zwei wesentliche Arten, wie Datenstrukturen im Arbeitsspeicher realisiert werden:
 
-Besteht der Turm aus zwei Schichten, ist das Problem auch noch einfach zu lösen: 
+(1) Statische Sammlungen
+: Die [Sammlung](def-collection) liegt als zusammenhängende Folge von [Bits](def-bit) im Arbeitsspeicher
 
-1. Bewege oberste Schickt von 0 nach 1.
-2. Bewege unterste Schicht von 0 nach 2 und
-3. Bewege dann die schmälere Schicht von 1 auf 2.
+(2) Dynamische Sammlungen 
+: Die [Sammlung](def-collection) besteht aus mehreren zusammenhängenden Folgen von [Bits](def-bit), die voneinander getrennt im Arbeitsspeicher liegen. - wird von Python genutzt.
 
-```{figure} ../../figs/art-of-programming/hanoi.png
----
-width: 800px
-name: fig-hanoi-3
----
-Die Türme von Hanoi mit drei Schichten.
+```{admonition} Statische Sammlungen
+:name: def-static-ds
+:class: definition
+*Statische Sammlungen* können zur Laufzeit des Programms ihre Größe nicht verändern, d.h. ihr Speicherverbrauch kann sich **nicht** verändern. 
+Stattdessen muss eine neue Datenstruktur angelegt werden.
 ```
 
-Wie gehen wir aber für einen allgemeinen Fall mit $n$ Schichten vor?
-
-**(2) Induktionsschritt:** Nun,
-
-1. wir bringen die obersten $n-1$ Schichten von 0 nach 1,
-2. die unterste Schicht von 0 nach 2 und dann 
-3. die $n-1$ Schichten von 1 nach 2.
-
-```{figure} ../../figs/art-of-programming/hanoi-abstract.png
----
-width: 800px
-name: fig-hanoi-abstract
----
-Die Türme von Hanoi mit $n$ Schichten.
+```{admonition} Dynamische Sammlungen
+:name: def-dynamic-ds
+:class: definition
+*Dynamische Sammlungen* können zur Laufzeit des Programms anwachsen und schrumpfen, d.h. ihr Speicherverbrauch kann sich verändern. Möglich wird dies durch die Verwendung von *[Zeigern](sec-pointer)*. Damit die fragmentierten Teile als ganzes repräsentiert werden können, müssen sie verbunden werden.
+Dies wird durch sog. *[Zeiger/Pointer](def-pointer)* realisiert.
+Oft spricht man auch von einer *Referenz*.
+Dabei ist wichtig, dass ein *Zeiger* wiederum auf einen weiteren *Zeiger* *zeigen/verweisen/referenzieren* kann.
 ```
 
-Diese $n-1$ Schichten sind ein Turm, der um eine Schicht kleiner ist.
-Auch die eine Schicht ist ein Turm, bestehend aus nur einer Schicht.
-Aus dem Problem einen Turm der Höhe $n$ zu verschieben wurde: Verschiebe Turm der Höhe $n-1$ (Selbstbezug) + Verschiebe eine Scheibe (Rest).
+```{admonition} Zeiger
+:name: def-pointer
+:class: definition
+Ein *Zeiger* ist ein Objekt welches eine Speicheradresse repräsentiert.
+Programmiersprachen bieten die Mittel um Zeiger *aufzulösen*, was den Zugriff auf das Objekt auf das sie verweisen ermöglicht.
+```
+Für detaillierte Informationen über die Speicherorganisation und wie Datenstrukturen im Speicher abgelegt werden, verweisen wir auf das [Expertenwissen: Speicherlayout von Datenstrukturen](sec-memory-layout).
 
-Rekursiv zu denken bedeutet oft, dass wir einfach mal davon ausgehen, wir hätten das Problem bereits gelöst.
-Wir schreiben in einem deklarativen Stil, d.h., wir schreiben hin was wir wollen und nicht was wir tun.
-Wir gehen also davon aus es gäbe eine Funktion ``move_tower(n, fr, to, tmp)``, welche die obersten ``n`` Schichten eines Turms von ``fr`` nach ``to`` bringt und dabei ``tmp`` als Zwischenablage verwendet.
+### Überblick über wichtige Datenstrukturen
 
-```python
-def move_tower(n, fr, to, tmp):
-    pass
+(sec-stack)=
+#### Der Stapel (Stack)
+
+Der *Stapel* (engl. *Stack*) oder auch *Stapelspeicher/Keller* ist einer der einfachsten [dynamischen Sammlungen](def-dynamic-ds), welche dem *Last-In-First-Out (LIFO)* Prinzip folgt.
+LIFO bedeutet soviel wie: *zuletzt hinein - zuerst heraus*.
+Das was zuletzt hinein gekommen ist, wird auch als erstes herausgenommen.
+
+Stellen Sie sich einen Stapel aus Büchern vor.
+Das Buch was Sie zuletzt auf den Bücherstapel gelegt haben liegt zugriffsbereit ganz oben.
+
+(sec-queue)=
+#### Die Warteschlange (Queue)
+
+Die *Warteschlange* (engl. *Queue*) ist eine [dynamische Sammlung](def-dynamic-ds) und folgt dem sog. *First-In-First-Out (FIFO)* Prinzip.
+FIFO bedeutet soviel wie: *zuerst hinein - zuerst hinaus*.
+Das was zuerst hinein gekommen ist, wird auch als erstes herausgenommen.
+
+Der Name rührt daher, dass die Datenstruktur wie eine Warteschlange an der Kasse funktioniert.
+Kunden die sich zuerst in die Schlange einreihen, werden auch zuerst bedient.
+
+(sec-array)=
+#### Arrays
+
+Ein *Array* ist eine [statische Sammlung](def-static-ds).
+Es wird durch einen zusammenhängenden Speicherbereich realisiert.
+Ein Array beinhaltet üblicherweise Elemente die alle vom gleichen [Datentyp](def-datatypes) sind.
+
+Arrays bieten effizienten Zugriff über einen Index, können aber ihre Größe nicht dynamisch ändern.
+
+```{admonition} Arrays in Python?
+:name: remark-arrays-python
+:class: remark
+Anders als in den meisten Sprachen, gibt es in ``Python`` keine nativen Arrays.
 ```
 
-unter dieser Annahme bewegen wir den Turm wie oben beschrieben:
+Es gibt sog. [Tupel](sec-tuple), die einem Array nahekommen, jedoch kann man die Elemente eines Tupels nicht verändern.
+``Python``-Listen sind hingegen [dynamische Arrays](sec-dynamic-array).
+Details zu Tupeln und Listen finden Sie im Kapitel [Tupel](sec-tuple) und [Listen](sec-list).
 
-```python
-def move_tower(n, fr, to, tmp):
-    if n == 1:
-        move(fr, to)             # real move from upper most stone
-    
-    move_tower(n-1, fr, tmp, to) # eg 0 -> 1
-    move_tower(1, fr, to, tmp)   # eg 0 -> 2
-    move_tower(n-1, tmp, to, fr) # eg 1 -> 2
-```
+(sec-dynamic-array)=
+#### Dynamische Arrays
 
-Um das ganze vorzuführen modellieren wir einen Turm als Liste von Zahlen und die drei Plätze als Liste der Länge 3.
+*Dynamische Arrays* kombinieren die Vorteile von Arrays (effizienter Indexzugriff) mit der Flexibilität dynamischer Sammlungen (Größenänderung zur Laufzeit).
+Sie basieren auf einem zusammenhängenden Speicherbereich, der jedoch bei Bedarf neu angelegt wird.
 
-```{code-cell} python3
-def move(hanoi, fr, to):
-    hanoi[to].insert(0, hanoi[fr][0])
-    del hanoi[fr][0]
+Die ``Python``-[Liste](sec-list) ist ein *dynamisches Array*.
+Details zur Arbeit mit Listen in ``Python`` finden Sie im Kapitel [Listen](sec-list).
 
-def move_tower(hanoi, n, fr, to, spare):
-    if n == 1:
-        move(hanoi, fr, to)
-    else:    
-        move_tower(hanoi, n-1, fr, spare, to)
-        move_tower(hanoi, 1, fr, to, spare)
-        move_tower(hanoi, n-1, spare, to, fr)
+(sec-linked-list)=
+#### Verkettete Listen
 
-n = 6
-tower = list(range(n))
-hanoi = [tower, [], []]
-print(hanoi)
+Eine *verkettete Liste* (engl. *Linked List*) besteht aus Knoten, die durch [Zeiger](def-pointer) verbunden sind.
+Jeder Knoten enthält Daten und einen Zeiger auf den nächsten Knoten.
+Sie ist eine [dynamische Sammlung](def-dynamic-ds), d.h. sie kann zur Laufzeit vergrößert und verkleinert werden.
 
-move_tower(hanoi, n, 0, 2, 1)
-print(hanoi)
-```
+Haben wir direkten Zugriff auf einen Knoten so können wir in die *verkettete Liste* ein neues Element effizient einfügen ohne dabei die anderen Elemente der Liste zu verschieben -- ein wesentlicher Vorteil dieser Datenstruktur.
 
-Erstaunlich, wie kurz die Lösung am Ende ausfällt.
-Es fühlt sich fast so an als hätten wir an irgendeiner Stelle betrogen.
 
-Aber Vorsicht! 
-Zu beweisen, dass der Algorithmus korrekt funktioniert ist nicht trivial.
-In anderen Worten, es ist nicht offensichtlich, dass der Algorithmus korrekt ist dennoch ist es intuitiv plausibel.
-Wir die Korrektheit mit einem [Induktionsbeweis](sec-induction-proof) zeigen.
-Dazu müssen wir zeigen:
-
-1. **Induktionsschritt:** Zeige $A(n_0)$, d.h., ``move_tower`` liefert das korrekte Ergebnis für einen Turm der aus nur einer Scheibe besteht ($n_0 = 1$)
-2. **Induktionsschritt:** Zeige $A(n) \Rightarrow A(n+1)$, d.h. falls ``move_tower`` das richtige Ergebnis für Turm mit $n$ Schreiben liefert, dann liefert die Funktion auch das richtige Ergebnis für $n+1$ Scheiben.
-
-Um eine gute iterative Lösung zu finden braucht es Gehirnschmalz, doch denken Sie daran: Es gibt sie immer!
-
-```{exercise} Türme von Hanoi
-:label: hanoi-exercise
-Zeigen Sie, dass der oben beschriebene Algorithmus das korrekte Ergebnis liefer.
-```
+Für detaillierte Informationen über die Speicherorganisation von Datenstrukturen verweisen wir auf das [Expertenwissen: Speicherlayout von Datenstrukturen](sec-memory-layout).

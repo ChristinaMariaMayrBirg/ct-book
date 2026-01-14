@@ -81,27 +81,23 @@ Wir haben jetzt 4 Wege gesehen, wie man in Python eine Funktionalität implement
 Python wird oft als objektorientierte Sprache bezeichnet. Das ist nicht ganz korrekt: Python ermöglicht objektorientierte Programmierung, aber auch funktionale und strukturierte Programmierung, wie wir im Beispiel gesehen haben. Python wurde so entwickelt, dass objektorientierte Strukturen besonders effizient ausgeführt werden können.
 ```
 
-# Architectural and Design Patterns
-
+```{admonition} Profitipp: Architectural and Design Patterns
+:class: tip
+:name: tip-design-patterns
 Am obigen Beispiel haben wir gesehen, dass es viele Wege gibt, eine Funktionalität zu implementieren. Dort gab es nur eine Funktionalität (eine Zahl quadrieren), die nur einmal genutzt wurde.
 
-## Das Problem bei größeren Softwareprojekten
+**Das Problem bei größeren Softwareprojekten:**
 
 In einer Software gibt es üblicherweise 1000 oder 100.000 Funktionalitäten, von denen vielleicht nur ein Bruchteil aufgerufen wird. Stellen Sie sich Word vor: Dort können Sie die Schriftgröße und die Farbe ändern. Sie können aber auch das Dokument drucken. Nicht immer wird der Nutzer alle Funktionalitäten nutzen. Damit er überhaupt einen Überblick behalten kann, sind die Funktionalitäten in unterschiedlichen Kacheln (Menüs) organisiert.
 
 Ähnlich ist es mit Software: Damit sich Programmierer\*innen darin zurechtfinden, verwendet man bestimmte Strategien. Bestimmte Software-Funktionalitäten werden auf eine bestimmte Art und Weise an einem bestimmten Ort, also nach einem bestimmten **Muster**, in der Software abgelegt - man spricht daher auch von **Design Patterns**.
 
-## Vorteile von Design Patterns
-
-Das Nutzen von Design Patterns sorgt dafür:
+**Vorteile von Design Patterns:**
 
 - **Korrekte Verwendung:** Funktionalitäten werden nur dafür eingesetzt, wofür sie gedacht sind
 - **Arbeitsteilung:** Die Entwicklung von Funktionalitäten kann aufgeteilt werden. Jeder übernimmt eine Funktionalität. Das Zusammenspiel ist über das Design Pattern festgelegt. Jeder weiß, wie er "mitmachen darf"
 - **Stabilität:** Instabile Programme werden vermieden. Design Patterns sind die Umsetzung von Strategien, bei denen sich herausgestellt hat, dass die Software weniger häufig abstürzt und schneller erweitert werden kann
 
-```{admonition} Profi-Tipp
-:class: tip
-:name: tip-design-patterns
 Wenn Sie Software entwickeln wollen, die skalierbar ist, die erweitert werden kann, also nachhaltig ist: Lernen Sie Design Patterns und lernen Sie, wie die Design Patterns in Ihrer Programmiersprache umgesetzt werden!
 
 Wissen über Software-Architektur und die richtige Anwendung von Design Patterns ist Grundlage des Sustainable Software Engineering.

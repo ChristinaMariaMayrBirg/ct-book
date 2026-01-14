@@ -44,7 +44,7 @@ Dabei lernen Sie, wie man einen Algorithmus entwickelt, in einem Computerprogram
 ```{admonition} Hinweis
 :name: algorithmus
 :class: remark
-Ein Algorithmus ist ein Konzeptrezept, das beschreibt wie ein konkretes Problem gelöst werden soll. Ein Algorithmus ist grundsätzlich also erst einmal unabhängig von einer Programmiersprache. Die Implementierung einer Algorithmus ist allerdings immer programmiersprachen-spezifisch. 
+Im Rahmen dieser Vorlesung entwickeln wir Programme, bei denen alles nacheinander ausgeführt wird (Single-Thread-Anwendungen). Programme, bei denen mehrere Schritte nebenläufig ausgeführt werden (z.B. Multithreading oder parallele Programmierung), sind nicht Teil der Veranstaltung.
 ```
 
 
