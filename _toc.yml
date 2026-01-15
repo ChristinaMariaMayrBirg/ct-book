@@ -17,6 +17,7 @@ parts:
       - file: chapters/02-course-concept/5-success-criteria
       - file: chapters/02-course-concept/6-fallbeispiel
       - file: chapters/02-course-concept/7-gliederung
+      - file: chapters/02-course-concept/8-vorlesung-praktikum
     - file: chapters/03-computer-sciences-basics/0-intro
       sections:
       - file: chapters/03-computer-sciences-basics/1-basics
@@ -73,29 +74,29 @@ parts:
         sections:
         - file: chapters/08-python-data-types/3-mengen/1-set
         - file: chapters/08-python-data-types/3-mengen/2-dict
-    - file: chapters/09-functions/0-intro
+    - file: chapters/09-eingaben-und-ausgaben/0-intro
       sections:
-      - file: chapters/09-functions/2-definition
-      - file: chapters/09-functions/3-namespaces
-      - file: chapters/09-functions/3-zmutability
-      - file: chapters/09-functions/4-lambdas
-      - file: chapters/09-functions/5-nested-functions
-      - file: chapters/09-functions/6-first-class-functions
-      - file: chapters/09-functions/x-recursion
+      - file: chapters/09-eingaben-und-ausgaben/1-eingaben
+      - file: chapters/09-eingaben-und-ausgaben/2-gui-eingaben
+      - file: chapters/09-eingaben-und-ausgaben/3-ausgaben
     - file: chapters/10-control-flow/0-intro
       sections:
       - file: chapters/10-control-flow/1-cases
       - file: chapters/10-control-flow/2-loops
       - file: chapters/10-control-flow/3-comprehensions
-    - file: chapters/11-object-oriented/0-intro
+    - file: chapters/11-functions/0-intro
       sections:
-      - file: chapters/11-object-oriented/1-class-and-objects
-      - file: chapters/11-object-oriented/2-inheritance-poly-encap
-    - file: chapters/12-eingaben-und-ausgaben/0-intro
+      - file: chapters/11-functions/2-definition
+      - file: chapters/11-functions/3-namespaces
+      - file: chapters/11-functions/3-zmutability
+      - file: chapters/11-functions/4-lambdas
+      - file: chapters/11-functions/5-nested-functions
+      - file: chapters/11-functions/6-first-class-functions
+      - file: chapters/11-functions/x-recursion
+    - file: chapters/12-object-oriented/0-intro
       sections:
-      - file: chapters/12-eingaben-und-ausgaben/1-eingaben
-      - file: chapters/12-eingaben-und-ausgaben/2-gui-eingaben
-      - file: chapters/12-eingaben-und-ausgaben/3-ausgaben
+      - file: chapters/12-object-oriented/1-class-and-objects
+      - file: chapters/12-object-oriented/2-inheritance-poly-encap
   - caption: Fallbeispiel
     numbered: True
     chapters:

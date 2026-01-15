@@ -10,8 +10,10 @@ Um sicherzustellen, dass die Software am Ende das tut was sie soll wird übliche
 width: 600px
 name: fig-development-phases
 ---
-Entwicklungsphasen der Softwareentwicklung nach dem Wasserfallmodell {cite}`sommerville`
+Entwicklungsphasen der Softwareentwicklung nach dem Wasserfallmodell
 ```
+
+Quelle: {cite}`sommerville`
 
 Bei der **Analyse und Definition der Anforderungen** werden die Ziele des Systems bzw. der Software in Zusammenarbeit mit den Nutzern definiert. Beim **System- und Softwareentwurf** wird eine übergeordnete Systemarchitektur erstellt, wobei festgelegt wird welche Funktionalitäten von welchen Hardware- und Softwarekomponenten übernommen wird. Es geht darum ein abstraktes Modell des Systems zu entwerfen. Bei Der **Implementierung und Modultests** wird der Softwarentwurf durch eine Menge von Programmen oder Programmeinheiten umgesetzt. Das Testen der Einzelmodule stellt sicher, dass jede Einheit ihre Spezifikation erfüllt. Beim der **Integration und Systemtest** werden die Einzelprogramme integriert und als Ganzes - wenn mölich auf der Zielinfrastruktur -- getestet. Nach einem erfolgreichen Test wird das System ausgeliefert. **Betrieb und Wartung**: das System wird auf der Kundeninfrastruktur installiert und zum Gebrauch freigegeben. Frühe Fehler, die nicht erkannt wurden, werden behoben. Kommen neue Anforderungen auf, werden diese ggf. umgesetzt.
 
