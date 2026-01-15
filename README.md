@@ -75,5 +75,53 @@ export LATEXMKOPTS='-interaction=nonstopmode'
 jupyter-book build . --builder pdflatex --path-output _book_as_pdf
 ```
 
+### Manuelles Bauen nach Build-Fehlern
+
+Falls der automatische PDF-Build fehlschlägt, können Sie das PDF manuell aus den bereits generierten LaTeX-Dateien bauen:
+
+**Voraussetzung:** Der jupyter-book Build muss mindestens bis zur LaTeX-Generierung erfolgreich gewesen sein (auch wenn der PDF-Build danach fehlschlägt).
+
+**Vorgehen:**
+
+1. **In das LaTeX-Build-Verzeichnis wechseln:**
+   ```bash
+   cd _book_as_pdf/_build/latex
+   ```
+
+2. **PDF manuell mit latexmk bauen:**
+   
+   Die Dateien `latexmkrc` oder `latexmkjarc` im Build-Verzeichnis werden automatisch von latexmk verwendet. Sie können das PDF mit einem der folgenden Befehle bauen:
+
+   **Option 1: Mit latexmk direkt:**
+   ```bash
+   export LATEXMKOPTS='-interaction=nonstopmode'
+   latexmk -pdf -xelatex book.tex
+   ```
+
+   **Option 2: Mit der Makefile (falls vorhanden):**
+   ```bash
+   export LATEXMKOPTS='-interaction=nonstopmode'
+   make latexpdf
+   ```
+
+   **Option 3: Mit xelatex direkt (mehrere Durchläufe nötig):**
+   ```bash
+   xelatex -interaction=nonstopmode book.tex
+   makeindex book.idx  # Für Inhaltsverzeichnis
+   xelatex -interaction=nonstopmode book.tex
+   xelatex -interaction=nonstopmode book.tex  # Für Referenzen
+   ```
+
+**Hinweise:**
+- `latexmk` führt automatisch mehrere Durchläufe durch, bis alle Referenzen aufgelöst sind
+- Das Inhaltsverzeichnis wird normalerweise im zweiten oder dritten Durchlauf erstellt
+- Die `latexmkrc`/`latexmkjarc` Dateien konfigurieren latexmk für die Verwendung von xelatex und makeindex
+- Bei Fehlern können Sie mit `latexmk -f` einen erzwungenen Build versuchen
+
+**Häufige Probleme:**
+- **Kein Inhaltsverzeichnis:** Normalerweise wird es im zweiten Durchlauf erstellt. Stellen Sie sicher, dass `makeindex` ausgeführt wird.
+- **Undefined references:** Normal beim ersten Durchlauf. latexmk sollte automatisch weitere Durchläufe durchführen.
+- **Unicode-Zeichen fehlen:** Die Konfiguration in `_config.yml` sollte Unicode-Unterstützung aktivieren. Prüfen Sie die Font-Konfiguration.
+
 
 

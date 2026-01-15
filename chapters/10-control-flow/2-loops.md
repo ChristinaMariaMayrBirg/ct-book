@@ -39,6 +39,8 @@ Eine genauere Beschreibung des Roboters und seiner Welt finden Sie in der Übung
 Die folgende Welt enthält unseren Roboter (türkis), das Ziel (gelb), begehbare Zellen (lila) und unbegehbare Hindernisse (blau).
 
 ```{code-cell} python3
+:tags: [skip-execution]
+
 import roboworld as rw
 
 world = rw.complex_maze(nrows=5, ncols=7)
@@ -74,6 +76,8 @@ def random_move(robo):
 Dann nutzten wir die Wiederholung und bewegen den Roboter immer weiter auf zufällige Nachbargitterpunkte bis er am Ziel angekommen ist:
 
 ```{code-cell} python3
+:tags: [skip-execution]
+
 robo = world.get_robo()
 robo.disable_print()
 while not robo.is_at_goal():
@@ -83,19 +87,25 @@ while not robo.is_at_goal():
 Lassen Sie uns die sog. *Zufallsfahrt* des Roboters ansehen:
 
 ```{code-cell} python3
+:tags: [skip-execution]
+
 rw.animate(world)
 ```
+
 
 Ist dieser Algorithmus besonders klever?
 Nein!
 Der Algorithmus ist sehr einfach und benötigt unter Umständen sehr viel Rechenzeit.
 Dennoch zeigt dieses Beispiel, dass die Wiederholung von einfachen Befehlen zu komplexen Lösungen führen können!
 
-```{admonition} Wiederholung und Codekomplexität
-:class: remark
-:name: remark-complexity-of-repetition
-*Wiederholung* trennt den Aufwand zum Lösen einer Aufgabe von der Komplexität des Codes.
-Eine Berechnung kann enorm aufwendig sein und dennoch benötigen wir wenig Denkarbeit (wenig Code) um einen Algorithmus für die Lösung zu entwerfen!
+```{only} latex
+
+```{figure} ../../figs/roboworld/loops-screenshot.png
+---
+width: 600px
+name: fig-loops-screenshot
+---
+Screenshot der Roboterwelt-Visualisierung
 ```
 
 (sec-for)=
@@ -173,9 +183,9 @@ def is_prime(n):
     return prime
 
 print(is_prime(2))
-print(is_prime(13))
-print(is_prime(25))
-print(is_prime(83))
+#print(is_prime(13))
+#print(is_prime(25))
+#print(is_prime(83))
 ```
 
 Um die ``for``-Schleife frühzeitig zu beenden verwenden wir ``break``.
@@ -190,9 +200,9 @@ def is_prime(n):
     return True
 
 print(is_prime(2))
-print(is_prime(13))
-print(is_prime(25))
-print(is_prime(83))
+#print(is_prime(13))
+#print(is_prime(25))
+#print(is_prime(83))
 ```
 
 Eine weitere Steuermöglichkeit bietet ``continue``.
@@ -343,34 +353,4 @@ for i in range(1,10,2):
 :class: remark
 :name: remark-avoid-endless-loop
 Prüfen Sie immer ob Ihre Bedingung ``P`` durch den Schleifenrumpf garantiert irgendwann ``False`` ergibt!
-```
-
-## Beispiel (ggT)
-
-Lassen Sie uns [Euklid's Algorithmus](sec-euclid-alg) ``gcd(m,n)`` zum finden des Größter gemeinsamer Teiler (ggT) zweier ganzer Zahlen von $m$ und $n$ erneut implementieren.
-
-Euklid's Algorithmus geht wie folgt vor:
-
-1. Berechne den Restwert der Division $m / n$ (Modulodivision). Sei dieser gleich $r$.
-2. Setze $m \leftarrow n$, $n \leftarrow r$ und gehe zurück zu Schritt 1.
-3. Falls $r = 0$ (und somit $n = 0$), so ist der Algorithmus beendet. Das Ergebnis (ggT) ist $m$. Ansonsten fahre fort.
-
-```{code-cell} python3
-def gcd(m, n):
-    while n != 0:
-        r = m % n
-        m = n
-        n = r
-    return m
-gcd(36, 24)
-```
-
-Durch das packing bzw. unpacking (siehe [Tupel](sec-tuple)) können wir den Code noch verkürzen:
-
-```{code-cell} python3
-def gcd(m, n):
-    while n != 0:
-        m, n = n, m % n
-    return m
-gcd(36, 24)
 ```
