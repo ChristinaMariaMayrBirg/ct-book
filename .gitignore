@@ -132,3 +132,6 @@ dmypy.json
 # Operating system files
 **/.DS_Store
 **/.directory
+
+# Cursor (Editor) settings
+.cursorignore
