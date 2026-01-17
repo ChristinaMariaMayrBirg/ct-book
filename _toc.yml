@@ -15,7 +15,6 @@ parts:
       - file: chapters/02-course-concept/3-prozesssicht
       - file: chapters/02-course-concept/4-sprachen
       - file: chapters/02-course-concept/5-success-criteria
-      - file: chapters/02-course-concept/6-fallbeispiel
       - file: chapters/02-course-concept/7-gliederung
       - file: chapters/02-course-concept/8-vorlesung-praktikum
     - file: chapters/03-computer-sciences-basics/0-intro

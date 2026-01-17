@@ -10,7 +10,11 @@ kernelspec:
   name: python3
 ---
 
-## Zeitplanung (aus Vorlesungsplan)
+# Zeitplan
+
+## Vorlesung
+
+<!-- Hinweis: Der Zeitplan ist eine Orientierung und wird bei Bedarf im Semester aktualisiert. -->
 
 | Vorlesung | KW | Kapitelinhalte (Vorlesung) | Praktikum (ganzer Termin, inkl. Voraussetzungen) |
 |-----------|----|----------------------------|--------------------------------------------------|
@@ -26,15 +30,26 @@ kernelspec:
 
 
 
-## Voraussetzungen für Praktika
+## Praktika
 
-Basierend auf der Analyse können die Voraussetzungen wie folgt definiert werden:
+Wir haben viele Praktikumsgruppen, die wir über das Semester verteilen müssen. Damit wir mit allen Terminen gut durchkommen, starten die Praktika früh.
 
-| Praktikum | Voraussetzungen (Kapitel) | Begründung |
+```{admonition} Hinweis
+Das Konzept ist wie folgt: Im Praktikum „fahren“ wir schon einmal los (wir wenden Python praktisch an). In der Vorlesung lernen wir parallel dazu die Hintergründe und ordnen ein, was wir dabei gerade tun.
+```
+
+Es kann deshalb vorkommen, dass Inhalte, die im Praktikum benötigt werden, in der Vorlesung noch nicht vollständig behandelt wurden. Die Praktikumsinhalte stammen aus **Teil 3 („Python anwenden“)** – Sie bekommen zu Beginn jedes Praktikums eine kurze Einweisung (in der Metapher: „Heute schalten wir vom 2. in den 3. Gang“).
+
+Trotzdem empfehlen wir: Bereiten Sie sich auf das Praktikum vor, indem Sie die passenden Kapitel kurz überfliegen – auch wenn wir in der Vorlesung an dieser Stelle noch nicht so weit sind.
+
+Übersicht zu Inhalt und empfohlener Vorbereitung:
+
+| Praktikum | Inhalt | Vorbereitung (Kapitel) |
 |-----------|---------------------------|------------|
-| **P1** | Kapitel 06, 07, 08 (Grundlagen: int, float, bool, str), 09 | Python Ökosystem für Installation/Module, Basics für Variablen, Datentypen für Grundlagen, Eingaben/Ausgaben für input/print |
-| **P2** | Kapitel 08 (Wiederholung), 10 (Fallunterscheidungen), 09 (Wiederholung) | Datentypen für bool, Kontrollstrukturen für if/elif/else, Eingaben/Ausgaben für formatierte Ausgabe |
-| **P3** | Kapitel 08 (Listen vertiefen), 10 (Schleifen), 09 (Wiederholung) | Listen aus Kapitel 08, Schleifen aus Kapitel 10, Ausgabe für tabellarische Darstellung |
-| **P4/P4a** | Kapitel 11 | Funktionen komplett |
-| **P5** | Kapitel 08 (Listen), 10 (verschachtelte Schleifen), 11 (Funktionen) | Kombination aller drei Konzepte |
-| **P6** | Alle Kapitel 05-12 | Wiederholung aller Inhalte |
+| **P1** | Python Ökosystem für Installation/Module, Basics für Variablen, Datentypen für Grundlagen, Eingaben/Ausgaben für input/print | Kapitel 06, 07, 08 (Grundlagen: int, float, bool, str), 09 |
+| **P2** | Datentypen für bool, Kontrollstrukturen für if/elif/else, Eingaben/Ausgaben für formatierte Ausgabe | Kapitel 08 (Wiederholung), 10 (Fallunterscheidungen), 09 (Wiederholung) |
+| **P3** | Listen aus Kapitel 08, Schleifen aus Kapitel 10, Ausgabe für tabellarische Darstellung | Kapitel 08 (Listen vertiefen), 10 (Schleifen), 09 (Wiederholung) |
+| **P4/P4a** | Funktionen komplett | Kapitel 11 |
+| **P5** | Kombination aller drei Konzepte | Kapitel 08 (Listen), 10 (verschachtelte Schleifen), 11 (Funktionen) |
+| **P6** | Wiederholung aller Inhalte | Kapitel 05-12 |
+
