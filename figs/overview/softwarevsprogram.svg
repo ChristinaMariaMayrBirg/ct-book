@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1100"
+   height="1150"
+   viewBox="0 0 1100 1150"
+   version="1.1"
+   id="svg28"
+   sodipodi:docname="softwarevsprogram.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:export-filename="softwarevsprogram.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview28"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.42022346"
+     inkscape:cx="730.56369"
+     inkscape:cy="773.39804"
+     inkscape:window-width="1710"
+     inkscape:window-height="1045"
+     inkscape:window-x="0"
+     inkscape:window-y="62"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg28" />
+  <defs
+     id="defs2">
+    <style
+       id="style1">
+      .container { fill: #ffffff; stroke: #111111; stroke-width: 2.5; }
+      .box { fill: #ffffff; stroke: #111111; stroke-width: 2; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #111; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #111; }
+      .text { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #111; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 14px; fill: #111; }
+      .arrow { stroke: #111111; stroke-width: 2.2; fill: none; marker-end: url(#arrowHead); }
+      .arrowThin { stroke: #111111; stroke-width: 1.8; fill: none; marker-end: url(#arrowHeadThin); }
+      .pill { fill: #ffffff; stroke: #111111; stroke-width: 1.8; }
+    </style>
+    <marker
+       id="arrowHead"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrowHeadThin"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2" />
+    </marker>
+    <marker
+       id="arrowHeadThin-9"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-7" />
+    </marker>
+    <marker
+       id="arrowHeadThin-3"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-8" />
+    </marker>
+    <marker
+       id="arrowHeadThin-94"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-2" />
+    </marker>
+    <marker
+       id="arrowHeadThin-3-4"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-8-0" />
+    </marker>
+    <marker
+       id="arrowHeadThin-9-2"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-7-9" />
+    </marker>
+    <marker
+       id="arrowHeadThin-3-40"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-8-1" />
+    </marker>
+    <marker
+       id="arrowHeadThin-9-9"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-7-5" />
+    </marker>
+    <marker
+       id="arrowHeadThin-9-9-1"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-7-5-5" />
+    </marker>
+    <marker
+       id="arrowHeadThin-9-3"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-7-0" />
+    </marker>
+    <marker
+       id="arrowHeadThin-3-44"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-8-12" />
+    </marker>
+    <marker
+       id="arrowHeadThin-30"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-87" />
+    </marker>
+    <marker
+       id="arrowHeadThin-3-44-0"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-8-12-4" />
+    </marker>
+    <marker
+       id="arrowHeadThin-30-8"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-87-8" />
+    </marker>
+    <marker
+       id="arrowHeadThin-30-8-3"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-87-8-8" />
+    </marker>
+    <symbol
+       id="AigaSymbols.svg:ToiletsMen">
+      <title
+         id="title78">Toilets - Men</title>
+      <g
+         style="stroke:none"
+         id="g78">
+        <circle
+           cx="36"
+           cy="9"
+           r="5"
+           id="circle78" />
+        <path
+           d="m 24,22 v 15.5 a 2.25,2.25 0 0 0 4.5,0 V 23 h 1 v 39.5 a 3,3 0 0 0 6,0 V 40 h 1 v 22.5 a 3,3 0 0 0 6,0 V 23 h 1 v 14.5 a 2.25,2.25 0 0 0 4.5,0 V 22 A 7,7 0 0 0 41,15 H 31 a 7,7 0 0 0 -7,7 z"
+           id="path78" />
+      </g>
+    </symbol>
+    <marker
+       id="arrowHeadThin-8"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-5" />
+    </marker>
+    <marker
+       id="arrowHeadThin-30-7"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-87-3" />
+    </marker>
+    <marker
+       id="arrowHeadThin-30-7-3"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-87-3-4" />
+    </marker>
+    <marker
+       id="arrowHeadThin-9-9-5"
+       markerWidth="10"
+       markerHeight="10"
+       refX="9"
+       refY="3"
+       orient="auto">
+      <path
+         d="M 0,0 9,3 0,6 Z"
+         fill="#111111"
+         id="path2-7-5-9" />
+    </marker>
+  </defs>
+  <!-- SOFTWARE container -->
+  <rect
+     class="container"
+     x="12.075855"
+     y="291.28738"
+     width="1079.8483"
+     height="608.4541"
+     rx="17.997471"
+     ry="18.883057"
+     id="rect2" />
+  <rect
+     class="container"
+     x="13.547169"
+     y="927.19141"
+     width="1080.7137"
+     height="183.59846"
+     rx="18.011896"
+     ry="5.6978827"
+     id="rect2-2"
+     style="fill:#ffffff;stroke:#111111;stroke-width:3.356;stroke-dasharray:none" />
+  <text
+     class="title"
+     x="501.37494"
+     y="337.89423"
+     id="text2">Software</text>
+  <text
+     class="title"
+     x="479.26538"
+     y="1007.571"
+     id="text2-0"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:24px;font-family:Arial, Helvetica, sans-serif;-inkscape-font-specification:'Arial, Helvetica, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan52"
+       x="479.26538"
+       y="1007.571">Fremde Software</tspan><tspan
+       sodipodi:role="line"
+       id="tspan53"
+       x="479.26538"
+       y="1037.571">&quot;Dependencies&quot;</tspan></text>
+  <!-- PROGRAM A -->
+  <rect
+     class="box"
+     x="51.9049"
+     y="362.56836"
+     width="320.19019"
+     height="315.95944"
+     rx="14.008321"
+     ry="10.788858"
+     id="rect3" />
+  <text
+     class="label"
+     x="166.18269"
+     y="400.98074"
+     id="text4">Programm A</text>
+  <rect
+     class="pill"
+     x="68.197006"
+     y="267.42776"
+     width="145.95216"
+     height="60.471397"
+     rx="6.486763"
+     ry="12.094279"
+     id="rect4" />
+  <text
+     class="text"
+     x="88.480766"
+     y="294.25"
+     id="text5">Entrypoint 1</text>
+  <text
+     class="small"
+     x="91.846161"
+     y="314.25"
+     id="text6">&quot;starte A.exe&quot;</text>
+  <rect
+     class="pill"
+     x="225.68362"
+     y="267.80862"
+     width="137.57698"
+     height="60.50967"
+     rx="6.1145325"
+     ry="12.101934"
+     id="rect14-9"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.29033" />
+  <text
+     class="text"
+     x="241.60577"
+     y="290.30768"
+     id="text7">Konfiguration</text>
+  <text
+     class="small"
+     x="236.55768"
+     y="315.13461"
+     id="text8">&quot;config-exeA.conf&quot;</text>
+  <rect
+     class="pill"
+     x="73.461433"
+     y="435.90372"
+     width="270.34641"
+     height="71.64447"
+     rx="12.015395"
+     ry="7.8157606"
+     id="rect8" />
+  <rect
+     class="pill"
+     x="75.592194"
+     y="565.84216"
+     width="270.34641"
+     height="71.64447"
+     rx="12.015395"
+     ry="7.8157606"
+     id="rect8-0"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.4536" />
+  <rect
+     class="pill"
+     x="53.855927"
+     y="718.6059"
+     width="828.59149"
+     height="160.0016"
+     rx="36.82629"
+     ry="17.454721"
+     id="rect8-0-4"
+     style="fill:#ffffff;stroke:#111111;stroke-width:2.06188;stroke-dasharray:none" />
+  <text
+     class="text"
+     x="135.75"
+     y="476.125"
+     id="text9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan28"
+       x="135.75"
+       y="476.125">Geschäftslogik A</tspan></text>
+  <rect
+     class="pill"
+     x="88.114304"
+     y="765.40277"
+     width="265.31183"
+     height="71.657928"
+     rx="11.791636"
+     ry="7.8172293"
+     id="rect8-0-9"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.44014" />
+  <rect
+     class="pill"
+     x="73.450829"
+     y="977.81628"
+     width="265.31183"
+     height="71.657928"
+     rx="11.791636"
+     ry="7.8172293"
+     id="rect8-0-9-8"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.44014" />
+  <rect
+     class="pill"
+     x="818.40082"
+     y="978.90973"
+     width="203.61693"
+     height="71.834877"
+     rx="9.0496416"
+     ry="7.8365331"
+     id="rect8-0-9-8-6"
+     style="fill:#949494;fill-opacity:1;stroke:#111111;stroke-width:1.26319" />
+  <rect
+     class="pill"
+     x="376.41696"
+     y="765.03235"
+     width="149.56224"
+     height="72.014107"
+     rx="6.6472101"
+     ry="7.8560848"
+     id="rect8-0-9-2"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.08396" />
+  <rect
+     class="pill"
+     x="547.37854"
+     y="764.4939"
+     width="149.56224"
+     height="72.014107"
+     rx="6.6472101"
+     ry="7.8560848"
+     id="rect8-0-9-2-7"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.08396" />
+  <rect
+     class="pill"
+     x="719.94812"
+     y="764.84235"
+     width="97.605812"
+     height="72.221138"
+     rx="4.3380356"
+     ry="7.8786702"
+     id="rect8-0-9-2-7-0"
+     style="fill:#ffffff;stroke:#111111;stroke-width:0.876927" />
+  <text
+     class="text"
+     x="137.78426"
+     y="594.41711"
+     id="text9-2"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan30"
+       x="137.78426"
+       y="594.41711">A-spezifische</tspan><tspan
+       sodipodi:role="line"
+       id="tspan31"
+       x="137.78426"
+       y="614.41711">Funktionalitäten</tspan></text>
+  <text
+     class="text"
+     x="115.34494"
+     y="805.93634"
+     id="text9-2-7"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan33"
+       x="115.34494"
+       y="805.93634">Grafische Nutzeroberfläche</tspan></text>
+  <text
+     class="text"
+     x="104.39003"
+     y="1019.0805"
+     id="text9-2-7-4"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan38"
+       x="104.39003"
+       y="1019.0805">GUI Framework</tspan></text>
+  <text
+     class="text"
+     x="847.27704"
+     y="1018.0813"
+     id="text9-2-7-4-1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan38-0"
+       x="847.27704"
+       y="1018.0813">Plotting-Bibiliothek</tspan></text>
+  <text
+     class="text"
+     x="417.23618"
+     y="803.18628"
+     id="text9-2-7-9"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan34"
+       x="417.23618"
+       y="803.18628">Solver</tspan></text>
+  <text
+     class="text"
+     x="575.22235"
+     y="801.37738"
+     id="text9-2-7-9-3"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan35"
+       x="575.22235"
+       y="801.37738">Datenbank</tspan></text>
+  <text
+     class="text"
+     x="440.95071"
+     y="748.04205"
+     id="text9-2-6"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan36"
+       x="440.95071"
+       y="748.04205">Generische Funktionalitäten (Beispiele)</tspan></text>
+  <rect
+     class="box"
+     x="675.31354"
+     y="362.03568"
+     width="320.19019"
+     height="315.95944"
+     rx="14.008321"
+     ry="10.788858"
+     id="rect3-9"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.18485" />
+  <!-- arrows within A -->
+  <path
+     class="arrowThin"
+     d="M 292.76923,328.07692 V 436.10577"
+     id="path12" />
+  <path
+     class="arrowThin"
+     d="M 142.62812,328.40385 V 436.4327"
+     id="path12-2"
+     style="fill:none;stroke:#111111;stroke-width:1.58117;marker-end:url(#arrowHeadThin-30)" />
+  <path
+     class="arrowThin"
+     d="M 448.05555,132.81196 289.10893,219.4678"
+     id="path12-2-6"
+     style="fill:none;stroke:#111111;stroke-width:3.03001;marker-end:url(#arrowHeadThin-30-7)" />
+  <path
+     class="arrowThin"
+     d="m 610.74923,129.43114 158.94662,86.65584"
+     id="path12-2-6-4"
+     style="opacity:0.193669;fill:#b3b3b3;stroke:#111111;stroke-width:3.03001;marker-end:url(#arrowHeadThin-30-7-3)" />
+  <path
+     class="arrowThin"
+     d="M 762.9262,325.02885 V 433.0577"
+     id="path12-2-7"
+     style="fill:none;stroke:#111111;stroke-width:1.58117;marker-end:url(#arrowHeadThin-30-8)" />
+  <path
+     class="arrowThin"
+     d="M 916.45505,323.31731 V 431.34616"
+     id="path12-2-7-9"
+     style="fill:none;stroke:#111111;stroke-width:1.58117;marker-end:url(#arrowHeadThin-30-8-3)" />
+  <path
+     class="arrowThin"
+     d="m 205.42404,636.15385 v 82.78846"
+     id="path12-0"
+     style="fill:none;stroke:#111111;stroke-width:2.084;stroke-dasharray:none;marker-end:url(#arrowHeadThin-3)" />
+  <path
+     class="arrowThin"
+     d="m 204.35777,509.10577 v 57.54807"
+     id="path12-0-4"
+     style="fill:none;stroke:#111111;stroke-width:1.73751;stroke-dasharray:none;marker-end:url(#arrowHeadThin-3-44)" />
+  <text
+     class="label"
+     x="785.19806"
+     y="397.49054"
+     id="text4-6"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:18px;font-family:Arial, Helvetica, sans-serif;-inkscape-font-specification:'Arial, Helvetica, sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan57"
+       x="785.19806"
+       y="397.49054">Programm B</tspan></text>
+  <rect
+     class="pill"
+     x="692.47681"
+     y="432.41351"
+     width="270.34641"
+     height="71.64447"
+     rx="12.015395"
+     ry="7.8157606"
+     id="rect8-7"
+     style="fill:#9a9a9a;fill-opacity:1;stroke:#111111;stroke-width:1.4536" />
+  <rect
+     class="pill"
+     x="694.6076"
+     y="562.35199"
+     width="270.34641"
+     height="71.64447"
+     rx="12.015395"
+     ry="7.8157606"
+     id="rect8-0-6"
+     style="fill:#9d9d9d;fill-opacity:1;stroke:#111111;stroke-width:1.4536" />
+  <text
+     class="text"
+     x="754.76538"
+     y="472.63477"
+     id="text9-3"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan56"
+       x="754.76538"
+       y="472.63477">Geschäftslogik B</tspan></text>
+  <text
+     class="text"
+     x="756.79962"
+     y="590.92688"
+     id="text9-2-1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan54"
+       x="756.79962"
+       y="590.92688">B-spezifische</tspan><tspan
+       sodipodi:role="line"
+       id="tspan55"
+       x="756.79962"
+       y="610.92688">Funktionalitäten</tspan></text>
+  <path
+     class="arrowThin"
+     d="m 823.37314,505.61556 v 57.54807"
+     id="path12-0-4-9"
+     style="fill:none;stroke:#111111;stroke-width:1.73751;stroke-dasharray:none;marker-end:url(#arrowHeadThin-3-44-0)" />
+  <path
+     class="arrowThin"
+     d="m 206.30385,837.09615 v 140"
+     id="path12-9-02"
+     style="fill:none;stroke:#111111;stroke-width:1.8;marker-end:url(#arrowHeadThin-9-9)" />
+  <path
+     class="arrowThin"
+     d="M 928.68557,633.57431 V 979.41718"
+     id="path12-9-02-1"
+     style="fill:none;stroke:#111111;stroke-width:2.12202;stroke-dasharray:none;marker-end:url(#arrowHeadThin-9-9-5)" />
+  <rect
+     class="pill"
+     x="691.60565"
+     y="266.89508"
+     width="145.95216"
+     height="60.471397"
+     rx="6.486763"
+     ry="12.094279"
+     id="rect4-2"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.3286" />
+  <text
+     class="text"
+     x="711.88947"
+     y="293.71732"
+     id="text5-3"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Arial, Helvetica, sans-serif;-inkscape-font-specification:'Arial, Helvetica, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan44"
+       x="711.88947"
+       y="293.71732">Entrypoint 2</tspan><tspan
+       sodipodi:role="line"
+       id="tspan45"
+       x="711.88947"
+       y="313.71732"></tspan></text>
+  <text
+     class="small"
+     x="715.25482"
+     y="313.71732"
+     id="text6-1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:Arial, Helvetica, sans-serif;-inkscape-font-specification:'Arial, Helvetica, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan46"
+       x="715.25482"
+       y="313.71732">&quot;starte B.exe&quot;</tspan></text>
+  <rect
+     class="pill"
+     x="849.09229"
+     y="267.27594"
+     width="137.57698"
+     height="60.50967"
+     rx="6.1145325"
+     ry="12.101934"
+     id="rect14-9-3"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.29033" />
+  <text
+     class="text"
+     x="865.01447"
+     y="289.77499"
+     id="text7-2"
+     style="font-size:16px;font-family:Arial, Helvetica, sans-serif;fill:#111111">Konfiguration</text>
+  <text
+     class="small"
+     x="859.96637"
+     y="314.60193"
+     id="text8-1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:Arial, Helvetica, sans-serif;-inkscape-font-specification:'Arial, Helvetica, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan47"
+       x="859.96637"
+       y="314.60193">&quot;config-exeB.conf&quot;</tspan></text>
+  <path
+     class="arrowThin"
+     d="m 758.83271,635.62116 v 82.78846"
+     id="path12-0-5"
+     style="fill:none;stroke:#111111;stroke-width:2.084;stroke-dasharray:none;marker-end:url(#arrowHeadThin-3-4)" />
+  <!-- PROGRAM B -->
+  <!-- PROGRAM C -->
+  <use
+     xlink:href="#AigaSymbols.svg:ToiletsMen"
+     style="fill:#000000;stroke:#000000"
+     id="use1"
+     transform="matrix(2.2889967,0,0,2.1608226,451.42942,19.358239)" />
+</svg>

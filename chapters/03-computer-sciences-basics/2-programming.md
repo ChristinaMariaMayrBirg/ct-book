@@ -118,10 +118,32 @@ Ein *Programm* ist in einer Programmiersprache wie ``Python`` geschrieben und ka
 
 Eine *Software* besteht in der Regel aus einem oder mehreren Programmen sowie deren Konfigurationsdateien und der Dokumentation. Aus der Systemdokumentation können Entwickler den Aufbau der Software verstehen, insbesondere welche Strukturen vorhanden sind, damit verschiedene Programme ausführbar sind. Die Benutzerdokumentation dient dem Anwender, um zu verstehen, wie er von außen das Programm bedient {cite}`sommerville`.
 
-#TODO: add a picture here
+Damit eine Software ihren Nutzerinnen und Nutzern verschiedene Programme bzw. Funktionen anbieten kann, muss sie sogenannte *Entrypoints* (Startpunkte) bereitstellen. Für jedes Programm gibt es mindestens einen Entrypoint (z. B. ein auszuführendes Skript, ein Kommando in der Konsole oder ein Menüpunkt in einer grafischen Oberfläche). Häufig wird das Verhalten eines Programms zusätzlich durch *Konfigurationsdateien* beeinflusst (z. B. „Welche Daten sollen geladen werden?“ oder „Welche Einstellungen gelten für dieses Projekt?“).
+
+Bei Programmen mit *grafischer Benutzeroberfläche (GUI)* werden solche Konfigurationen oft im Hintergrund verwaltet: Der Nutzer speichert dann eine „Projektdatei“, in der die gewählten Einstellungen und Verweise auf Daten abgelegt sind.
+
+```{figure} ../../figs/overview/softwarevsprogram.png
+---
+width: 700px
+name: fig-software-vs-program
+---
+Software besteht meist aus mehreren Programmen, die sowohl programmspezifischen Code enthalten als auch gemeinsamen Code nutzen. Häufig greifen Programme dabei auf extern entwickelte Bibliotheken oder Frameworks zurück.
+```
+
+Im Rahmen dieser Vorlesung beschäftigen wir uns vor allem damit, *Geschäftslogik* zu entwickeln, die sich aus verschiedenen Funktionalitäten zusammensetzt. Eine Funktionalität kann zum Beispiel ein Algorithmus sein, eine andere die Auswahl eines passenden Algorithmus auf Basis einer Nutzereingabe. Da wir nicht alles selbst programmieren können, besprechen wir außerdem, wie wir auf bereits implementierte Funktionalitäten (z. B. *Bibliotheken*) zurückgreifen können – vergleichbar mit einem fertigen „Zukaufteil“. 
+
+
+```{admonition} Hinweis
+Ein *proprietäres Format* ist ein Dateiformat, das nicht offen standardisiert ist und meist an ein bestimmtes Tool gebunden ist.
+
+Beispiel: Wenn Sie ein Bauteil in CATIA als `.CATPart` speichern, können Sie die Geometrie in anderen CAD-Tools oft nicht direkt öffnen oder weiterbearbeiten. Häufig müssen Sie das Bauteil dafür erst in ein Austauschformat exportieren, z. B. als STEP-Datei (`.step`/`.stp`). STEP ist ein *offener Standard* für den Datenaustausch.
+```
+
 
 *Programmiercode* auch genannt *Quellcode*, *Source Code* oder kurz *Code*, ist das Resultat der *Programmierung* und Teil eines *Programms*.
 Das heißt zur Ausführung des *Quellcodes* fehlt möglicherweise ein Teil des gesamten Codes.
+
+
 
 ## Berechenbarkeit und Turing-Complete
 

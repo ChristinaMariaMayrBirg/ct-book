@@ -1,17 +1,20 @@
 # Kurskonzept
 
+In diesem Kapitel bekommen Sie einen Überblick darüber, was in den nächsten Wochen auf Sie zukommt und warum wir die Inhalte genau so aufgebaut haben.
 
-Im Folgenden wird beschrieben, wie die Inhalte des Modulhandbuchs im Rahmen dieser Vorlesung umgesetzt werden. Hierbei wird insbesondere auch darauf eingegangen, welche Kompetenzen im Rahmen dieser Vorlesung erworben werden und welche Aufgabenfelder mit diesen Kompetenzen im Rahmen einer Softwareentwicklung abgedeckt werden können.
+Im Fokus stehen dabei folgende Fragen:
 
-```{admonition} Ziele 
-:class: learngoals
+- **In welchem Kontext entwickeln Ingenieurinnen und Ingenieure Software?**  
+  Damit Sie Beispiele und Anforderungen aus dem Ingenieuralltag wiedererkennen und einordnen können.
 
-Studierende sollen:
+- **Wie läuft Softwareentwicklung typischerweise ab – und welchen Ausschnitt behandeln wir in dieser Vorlesung bewusst?**  
+  Damit klar ist, welche Aufgaben zur „Softwareentwicklung“ gehören und worauf wir uns im Teilmodul Programmierung fokussieren.
 
-- **Softwaretypen verstehen:** Welche Softwaretypen es gibt und auf welche Art von Softwaretypen im Rahmen dieser Vorlesung entwickelt wird.
-- **Stellenwert der Programmierung erkennen:** Den Stellenwert der Programmierung neben dem Requirements Engineering, dem Architekturentwurf, dem Deployment und der Wartung im Rahmen der Softwareentwicklung verstehen.
-```
+- **Was bedeutet es eigentlich, eine Programmiersprache zu lernen (über Syntax hinaus)?**  
+  Damit Sie Konzepte übertragen können und nicht nur einzelne Schreibweisen auswendig lernen.
 
-## Gliederung
+- **Woran erkennen wir „gutes“ Programmieren in dieser Veranstaltung?**  
+  Damit Sie wissen, welche Qualitätsmerkmale in Übung, Praktikum und Prüfung zählen.
 
-Zum Schluss wird eine Übersicht vorgestellt, welche Inhalte wann in der Vorlesung durchgenommen werden. 
+- **Wie ist die Veranstaltung konkret organisiert (Roadmap, Vorlesung/Praktikum)?**  
+  Damit Sie wissen, wie die Teile zusammenhängen und wie Sie den roten Faden behalten.
