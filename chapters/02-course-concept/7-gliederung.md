@@ -9,7 +9,7 @@ Zur Erinnerung an die Metapher aus der Einleitung (siehe {ref}`sec-intro`): Die 
 
 Konkret bedeutet das:
 
-- **Teil 1: Einführung („Verkehrsinfrastruktur“)**  
+- **Teil 1: Basiswissen („Verkehrsinfrastruktur“)**  
   Wir klären, was ein Computer grundsätzlich macht, wie Informationsverarbeitung funktioniert und welches Vokabular wir brauchen, um über Programme präzise zu sprechen.
 
 - **Teil 2: Python verstehen („konkretes Auto“)**  

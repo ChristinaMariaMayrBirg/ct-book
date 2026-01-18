@@ -222,35 +222,17 @@ Begründen Sie Ihre Antwort.
 (sec-built-in-data-types)=
 ## Built-in Datentypen
 
-*Built-in* Datentypen sind jene Datentypen, welche die Programmiersprache (ohne weitere Bibliotheken) mitliefert.
-Zur Vollständigkeit listen wir hier alle *built-in Datentypen* von ``Python`` auf.
-Einige davon werden Sie jedoch in diesem Kurs nicht verwenden.
-Die wichtigsten *built-in Datentypen* sind hervorgehobenen:
+*Built-in* Datentypen sind jene Datentypen, welche die Programmiersprache (ohne weitere Bibliotheken) mitliefert:
 
-1. **Das Nichts** ``None``
-2. Zahlen (Numbers)
-   + **Ganze Zahlen** ``int``
-   + **Wahrheitswerte** ``bool`` (technisch eine Unterklasse von ``int``)
-   + **Fließkommazahl (rationale Zahlen)** ``float``
-   + Komplexe Zahlen ``complex``
-3. Sequenzen (Sequences)
-    1. Unveränderlich
-       + **Zeichenketten** ``str``
-       + **Tupels** ``tuple``
-       + Bytes ``bytes``
-    2. Veränderlich
-       + **Listen** ``list``
-       + Byte Arrays ``bytearray``
-4. Mengen (Set types)
-   + **(normale) Mengen** ``set``
-   + (gefrorene Mengen) ``frozenset``
-5. Abbildungen (Mappings)
-   + **Wörterbuch** ``dict``
-6. Aufrufbare Typen (Callable)
-   + **Funktionen**
-   + Methoden
-   + Klassen
-7. Module
+
+
+```{figure} ../../figs/python-tutorial/datatypes/datatypes-hierachy.png
+---
+width: 100%
+name: fig-python-datatypes-hierarchy
+---
+Die Standard-Typ-Hierarchie von Python (Quelle: Wikimedia Commons, basierend auf „Python 3. The standard type hierarchy“, CC BY-SA 4.0, Urheber: Максим Пе).
+```
 
 Diese Datentypen stehen Ihnen zur Verfügung sobald Sie ``Python`` auf Ihrem System oder Ihrer Umgebung installiert haben.
 

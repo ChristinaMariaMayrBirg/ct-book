@@ -17,13 +17,16 @@ parts:
       - file: chapters/02-course-concept/5-success-criteria
       - file: chapters/02-course-concept/7-gliederung
       - file: chapters/02-course-concept/8-vorlesung-praktikum
+  - caption: Basiswissen 
+    numbered: True
+    chapters:
     - file: chapters/03-computer-sciences-basics/0-intro
       sections:
+      - file: chapters/03-computer-sciences-basics/1-aInformatik
       - file: chapters/03-computer-sciences-basics/1-basics
       - file: chapters/03-computer-sciences-basics/1-codierung
       - file: chapters/03-computer-sciences-basics/1-zahlensysteme
       - file: chapters/03-computer-sciences-basics/2-programming
-      - file: chapters/03-computer-sciences-basics/2-repetition-is-the-key
       - file: chapters/03-computer-sciences-basics/3-programmierkonstrukte
       - file: chapters/03-computer-sciences-basics/6-visualization
   - caption: Python verstehen
@@ -48,7 +51,7 @@ parts:
       sections:
       - file: chapters/06-python-ecosystem-and-setup/1-installation
       - file: chapters/06-python-ecosystem-and-setup/2-run
-      - file: chapters/06-python-ecosystem-and-setup/3-notebooks
+      - file: chapters/06-python-ecosystem-and-setup/3-files
       - file: chapters/06-python-ecosystem-and-setup/4-modules
     - file: chapters/07-python-basics/0-intro
       sections:
@@ -113,4 +116,6 @@ parts:
       - file: chapters/misc/Expertenwissen/interpreter
       - file: chapters/misc/Expertenwissen/compilation
       - file: chapters/misc/Expertenwissen/euclid-algorithm
+      - file: chapters/misc/Expertenwissen/jupyter-notebooks
+      - file: chapters/misc/Expertenwissen/berechenbarkeit
       - file: chapters/misc/Expertenwissen/memory-layout

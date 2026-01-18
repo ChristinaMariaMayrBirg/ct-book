@@ -1,47 +1,36 @@
 # Basiswissen Informatik
 
-*Informatik* ist die Wissenschaft der Algorithmen, Rechenmaschinen und der Darstellung, Speicherung, Verarbeitung und Übertragung von Informationen.
-In Deutschland nahm sie erst Mitte der 50er Jahre an Fahrt auf, doch ihre Grundlagen gehen Jahrhunderte zurück. 
-Trotz ihrer immensen Präsenz kann sie noch immer als junge Wissenschaft bezeichnet werden.
-Ihre Erfolgsgeschichte lässt sich vor allem durch ihre ökonomische Nützlichkeit erklären.
 
-In der Vergangenheit trugen derartige ökonomische Leitmotive in der Entwicklung akademischer Disziplinen oft eine entscheidende Rolle.
-So hat unser Hunger nach der *Energie als Wirtschaftsgut* wesentlich die Entwicklung neuer Maschinen, Endgeräte aber auch die Forschung angetrieben.
-Heute ist *Information als Wirtschaftsgut* eine der großen Antriebe für Innovation, Weiterentwicklungen und Forschung im Bereich der Informatik.
-
-Jedoch ist die Informatik nicht nur eine Ingenieursdisziplin (Entwicklung, Konstruktion, Betrieb von Maschinen) sondern auch Grundlagen- (Was sind überhaupt Berechnungen und was können wir in welcher Zeit berechnen?) und Formalwissenschaft (Was können wir wie ausdrücken?).
-
-
-
-
-Die *Informatik als Strukturwissenschaft* bezieht sich hauptsächlich auf die theoretische Informatik (formale Methoden, Komplexitätstheorie, Berechenbarkeit, Automaten, usw.).
-Dort beschäftigen wir uns mit Fragen wie:
-
-+ Was ist überhaupt eine Berechnung?
-+ Was bedeutet [Berechenbarkeit](def-turing-computable)?
-+ Wie *komplex* ist ein Algorithmus oder wie *schwer* ist das zu lösende Problem?
-+ Welche *Komplexitätsklassen* gibt es überhaupt?
-+ Mit welchen Strukturen kann ich was ausdrücken?
-+ Ist meine Theorie konsistent und/oder vollständig?
-+ ...
-  
-
-Die *Informatik als Ingenieurswissenschaft* bezieht sich auf die Konstruktion und Analyse von Informationsverarbeitungssystemen.
-Und genau hier finden wir das was wir als *die Kunst des Programmierens* bezeichnen.
-Von Außen betrachtet wirkt das Programmieren wie die vielleicht langweiligste Tätigkeit auf diesem Planeten.
-Diese Einschätzung ist nach unserer Auffassung natürlich vollkommen falsch.
-
-
-In diesem Kapitel lernen wir Basiswissen.
-
-
-```{admonition} Lernziel
-:class: learngoals
-
-Was genau ist ein *Algorithmus*, *Programmcode*, *Pseudocode* und ein *Programm*?
-Welche wesentlichen [Programmierkonstrukte](sec-control-structures) und [Datenstrukturen](sec-data-structures) verwenden wir beim Einsatz von (imperativen) Programmiersprachen?
-Und weshalb reichen diese Kenntnisse nicht aus? 
-Weshalb braucht es Übung um meisterhaft zu Programmieren?
-
+```{figure} ../../figs/overview/infrastructer-metaphor.png
+---
+height: 320px
+name: infrastructer-metaphor
+---
 ```
+In diesem Teil schauen wir uns die „Infrastruktur“ an, auf der unsere Programme ausgeführt werden. Ein Programm läuft immer auf *irgendeiner* Rechenplattform – zum Beispiel auf einem Computer (Laptop/PC/Server) oder auf einem Mikrocontroller in einem eingebetteten System.
+Diese Plattformen unterscheiden sich u. a. in Rechenleistung, Speicher, Betriebssystem und Schnittstellen. 
+
+Im Rahmen dieser Vorlesung konzentrieren wir uns auf den **Computer** als Referenzmodell, weil er ein gut verständliches Grundmodell liefert, das sich später auf andere Systeme (z. B. Mikrocontroller) übertragen lässt.
+
+Konkret sehen wir uns an: Was macht ein Computer eigentlich, wie werden Informationen verarbeitet, und welches Vokabular brauchen wir, um über Programme sauber zu sprechen.
+
+
+Dieses Kapitel gibt Ihnen das gemeinsame **Grundvokabular** für die restliche Veranstaltung. Wir verbinden dabei drei Blickwinkel:
+
+- **Computer & Informationsverarbeitung**: Was passiert grob, wenn ein Programm läuft?
+- **Darstellung & Codierung**: Wie werden Zahlen, Text und andere Informationen als Bits repräsentiert?
+- **Software Engineering (Praxisbezug)**: Wie ist Anwendungssoftware typischerweise aufgebaut – und warum sieht ein GitHub-Projekt anders aus als eine einzelne Python-Datei?
+
+
+Nach diesem Kapitel können Sie …
+
+- zentrale Begriffe **Algorithmus**, **Programmcode/Quellcode**, **Programm** und **Software** definieren und voneinander abgrenzen.
+- den groben Ablauf der Programmausführung mit dem Vokabular **Eingabe – Verarbeitung – Ausgabe** (EVA) plus **Speicher/Zustand** beschreiben und die Rollen von **CPU**, **RAM** und **Betriebssystem** einordnen.
+- erklären, warum Bitfolgen ohne Kontext keine Bedeutung haben und wie **Codierung** Bedeutung festlegt (z. B. Zahl vs. Zeichen).
+- zwischen **Bedeutung** und **Darstellung** unterscheiden und typische Darstellungen (binär/dezimal/hex) in technischen Ausgaben wiedererkennen.
+- den typischen Aufbau eines Softwareprojekts (z. B. auf GitHub) erklären und die Rollen von **Entrypoint**, **Workflow/Geschäftslogik** und **wiederverwendbaren Bausteinen/Modulen** zuordnen.
+- den Zweck von `if __name__ == "__main__":` als **Guard** erklären und den Unterschied **direkt ausführen** vs. **importieren** beschreiben.
+- die Konzepte **Kontrollstrukturen** und **Datenstrukturen** als Bausteine von Programmen benennen (ohne Python-Syntax zu wiederholen).
+- Softwareideen zielgruppengerecht kommunizieren, z. B. durch **Pseudocode** oder **Struktogramme**, und das passende Medium auswählen.
+
 

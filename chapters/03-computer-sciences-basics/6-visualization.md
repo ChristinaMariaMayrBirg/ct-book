@@ -15,6 +15,15 @@ kernelspec:
 
 Wie kann ich anderen Personen verständlich machen, was mein Programm macht? Wie kann ich anderen Menschen beschreiben, was eine Software tut? Diese Frage steht im Zentrum der Softwareentwicklung, denn Programmieren ist immer auch Kommunikation. Sie wollen einem anderen Menschen Ihre Idee, Ihr Konzept begreiflich machen.
 
+## Lernziele
+
+Nach diesem Abschnitt können Sie …
+
+- erklären, warum Programmieren auch **Kommunikation** ist (Zielgruppe, Zweck, Abstraktionsgrad).
+- einen einfachen Algorithmus in **Pseudocode** ausdrücken.
+- die Grundideen von **Struktogrammen** (Sequenz, Fallunterscheidung, Schleife) erkennen und einsetzen.
+- das passende Kommunikationsmedium (Code, Skizze, Diagramm) für eine Situation begründet auswählen.
+
 Es gibt viele verschiedene Wege, Software und Algorithmen zu kommunizieren.
 Jede Methode hat ihre Stärken und ist für bestimmte Aspekte und Zielgruppen geeignet:
 
@@ -92,6 +101,13 @@ Struktogramme sind Entwurfswerkzeuge für strukturierte Algorithmen (wenige, nac
 
 Struktogramme sind weniger geeignet für:
 - Sehr komplexe, tief verschachtelte Algorithmen (werden schnell unübersichtlich)!!
+```
+
+```{admonition} Achtung
+:name: warning-struktogramme-pruefung
+:class: warning
+
+Struktogramme sind prüfungsrelevant!
 ```
 
 
@@ -173,4 +189,30 @@ Ein wichtiger Grundsatz der Dokumentation lautet: **Dokumentiert und visualisier
 Ist ein Algorithmus einmal implementiert, benötigen Sie sein Struktogramm in der Regel nicht mehr in der Dokumentation — die Implementierung im Quellcode reicht aus (sofern der Algorithmus korrekt implementiert wurde).
 Das bedeutet jedoch nicht, dass der Entwickler beim Entwurf des Algorithmus kein Struktogramm verwendet hat.
 Struktogramme und Pseudocode sind wichtige Werkzeuge während der Entwicklung, auch wenn sie später nicht in der finalen Dokumentation erscheinen.
+```
+
+## Mini-Übung (mit Lösung)
+
+```{exercise} Medium wählen und Algorithmus kurz ausdrücken
+:label: ex-visualization-medium
+
+Sie möchten einer Kommilitonin erklären, was diese Funktion macht, **ohne** Python-Syntax im Detail zu besprechen:
+
+> „Gegeben ist eine Liste von Zahlen. Gib die größte Zahl zurück. Falls die Liste leer ist, gib einen Fehler aus.“
+
+1. Welches Kommunikationsmedium wählen Sie (Pseudocode, Struktogramm oder Python-Code) – und warum?
+2. Schreiben Sie den Algorithmus in 5–10 Zeilen **Pseudocode**.
+```
+
+```{solution} ex-visualization-medium
+:class: dropdown
+
+1. **Pseudocode** ist hier gut geeignet, weil er sprachenübergreifend ist und die Logik klar zeigt, ohne syntaktische Details.
+2. Beispiel-Pseudocode:
+
+   - Wenn die Liste leer ist: Fehler zurückgeben
+   - maximum = erstes Element
+   - Für jedes Element in der Liste:
+     - Wenn Element > maximum: maximum = Element
+   - maximum zurückgeben
 ```
