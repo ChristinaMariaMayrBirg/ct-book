@@ -1,12 +1,21 @@
 (sec-programming)=
 # Programmieren
-Programmieren ist eine Tätigkeit bei der wir unsere Ideen und Konzepte in Text überführen.
-Ob das Programmieren nun wirklich mit dem Schreiben des Codes beginnt oder wir den ganzen Prozess der Softwareentwicklung als das Programmieren betrachten sei dahingestellt.
-Wenn wir vom Programmieren sprechen, meinen wir oft beides:
+Programmieren ist eine Tätigkeit, bei der wir Ideen und Konzepte in eine **präzise, ausführbare Beschreibung** überführen – meist als Quellcode.
+Oft meinen wir damit zwei Dinge:
 
-1. Das Entwerfen eines Algorithmus und
-2. dessen Realisierung (*Implementierung*) durch eine Programmiersprache.
+- das Entwerfen eines **Algorithmus** (die Idee / Vorgehensweise) und
+- die **Implementierung** in einer Programmiersprache (z. B. Python).
 
+Dabei ist Programmieren immer auch **Kommunikation**: Sie müssen sich selbst (in zwei Wochen) und anderen (im Team) erklären können, *was* der Code tut und *wie* er strukturiert ist.
+
+## Lernziele
+
+Nach diesem Abschnitt können Sie …
+
+- die Begriffe **Algorithmus**, **Programm**, **Quellcode** und **Software** unterscheiden.
+- erklären, wie Anwendungssoftware typischerweise strukturiert ist (**Entrypoint**, **Workflow/Geschäftslogik**, **wiederverwendbare Bausteine**).
+- erklären, warum ein GitHub-Repository oft nach „mehr“ aussieht als eine einzelne Python-Datei (Tests, Konfiguration, Doku, Abhängigkeiten, CI).
+- den Zweck von `if __name__ == "__main__":` als **Guard** erklären (direkt ausführen vs. importieren).
 
 Als gute Programmierer\*innen müssen wir 
 
@@ -22,7 +31,7 @@ Im Folgenden wollen wir eine gemeinsame Sprache schaffen und festlegen, was unte
 
 ## Algorithmus
 
-Ein *Algorithmus* ist eine wohldefinierte Sequenz von Anweisungen, welche eine Lösung für ein bestimmtes Problem berechnet. oder auch: Ein *Algorithmus* ist eine endliche Folge von unmissverständlich beschriebenen ausführbaren Anweisung (z.B. Text/Programmcode), um für eine bestimmte endliche Eingabe in endlich vielen Schritten eine endliche Ausgabe zu erzeugen, wobei zu jeder Zeit der Ausführung nur endlich viel Speicherplatz verwendet wird. #todo: cite donald e. knuth.
+Ein *Algorithmus* ist eine wohldefinierte Sequenz von Anweisungen, die zu einer (endlichen) Eingabe in endlich vielen Schritten eine (endliche) Ausgabe berechnet – und dabei nur endlich viel Speicher verwendet {cite}`knuth:1997`.
 
 
 ```{exercise} Beispiel: Euklidischer Algorithmus
@@ -127,10 +136,35 @@ Bei Programmen mit *grafischer Benutzeroberfläche (GUI)* werden solche Konfigur
 width: 700px
 name: fig-software-vs-program
 ---
-Software besteht meist aus mehreren Programmen, die sowohl programmspezifischen Code enthalten als auch gemeinsamen Code nutzen. Häufig greifen Programme dabei auf extern entwickelte Bibliotheken oder Frameworks zurück.
+Anwendungs-Software besteht meist aus mehreren Programmen, die sowohl programmspezifischen Code enthalten als auch gemeinsamen Code nutzen. Häufig greifen Programme dabei auf extern entwickelte Bibliotheken oder Frameworks zurück.
 ```
 
-Im Rahmen dieser Vorlesung beschäftigen wir uns vor allem damit, *Geschäftslogik* zu entwickeln, die sich aus verschiedenen Funktionalitäten zusammensetzt. Eine Funktionalität kann zum Beispiel ein Algorithmus sein, eine andere die Auswahl eines passenden Algorithmus auf Basis einer Nutzereingabe. Da wir nicht alles selbst programmieren können, besprechen wir außerdem, wie wir auf bereits implementierte Funktionalitäten (z. B. *Bibliotheken*) zurückgreifen können – vergleichbar mit einem fertigen „Zukaufteil“. 
+**Geschäftslogik (Anwendungslogik)** bezeichnet den Teil eines Programms, der die fachlichen Regeln und Abläufe beschreibt: *Was* soll passieren – und *in welcher Reihenfolge*? 
+
+
+Geschäftslogik setzt sich in der Regel aus mehreren Funktionalitäten zusammen, z. B. einem Algorithmus, der eigentlichen Datenverarbeitung und der Auswahl eines passenden Algorithmus auf Basis einer Eingabe.
+
+Ein *Entrypoint* ist dabei **nicht** die Geschäftslogik selbst, sondern ein Startpunkt, der die Geschäftslogik aufruft (z. B. über eine GUI oder „headless“ ohne Oberfläche).
+
+#TODO add picture 
+
+
+Beim *Skripten* schreiben wir oft vor allem den **Workflow** (A → B → C) und verwenden vorhandene Bibliotheken als Bausteine.
+
+Beim *Programmieren* entwickeln wir zusätzlich (oder vor allem) die Bausteine selbst (A/B/C), sodass sie sauber strukturiert und wiederverwendbar sind.
+
+
+
+## Was ist ein Repository?
+
+Ein repository ist ein ablage für software in form von dateien und ordnern. der inhalt ist üblicherweise mit einem versionskontroll versehen.
+
+Um repositories zu teilen werden sie in einem hub abgelegt. github als beispiel. wir an der hoschhule münchen nutzen gitlab lrz:
+schauen sie mal rein.
+
+
+
+
 
 
 ```{admonition} Hinweis
@@ -144,39 +178,10 @@ Beispiel: Wenn Sie ein Bauteil in CATIA als `.CATPart` speichern, können Sie di
 Das heißt zur Ausführung des *Quellcodes* fehlt möglicherweise ein Teil des gesamten Codes.
 
 
+## Teaser: Was kann man (nicht) berechnen?
 
-## Berechenbarkeit und Turing-Complete
+Die Frage „Was kann man überhaupt berechnen?“ ist ein wichtiges Fundament der theoretischen Informatik (z. B. Halteproblem, Turingmaschine, Turing-Vollständigkeit). Für das praktische Programmieren in dieser Vorlesung ist das spannend – aber **nicht Kernstoff** dieses Kapitels.
 
-Eine Teildisziplin der Informatik, die theoretische Informatik, beschäftigt sich unter anderem mit der Berechenbarkeit von Problemen.
-Die Frage "Was können wir überhaupt mit einem Computer berechnen?" mag zunächst theoretisch klingen, hat aber für die Praxis ganz erhebliche Auswirkungen.
+Wenn Sie tiefer einsteigen möchten, finden Sie den Hintergrund im Expertenwissen: [Berechenbarkeit & Turing-Vollständigkeit](sec-expert-berechenbarkeit).
 
-```{admonition} Berechenbarkeit
-:name: def-turing-computable
-:class: definition
-
-Ein Problem ist *allgemein berechenbar*, wenn es einen Algorithmus gibt, der für jede gültige Eingabe eine Lösung berechnen kann.
-```
-
-Das *Halteproblem* ist das bekannteste Beispiel für ein nicht berechenbares Problem: Es gibt keinen Algorithmus, der für ein beliebiges Programm und eine beliebige Eingabe entscheiden kann, ob das Programm mit dieser Eingabe jemals terminiert (anhält) oder in einer Endlosschleife läuft.
-
-**Wann können wir ein Problem auf einem Computer lösen?**
-
-Nehmen Sie Ihren Taschenrechner: Wie unterscheidet sich dieser von Ihrem Computer?
-Ein Taschenrechner kann nur eine begrenzte Menge von Operationen ausführen, wie Addition, Subtraktion, Multiplikation, Division oder das Berechnen von Wurzeln und trigonometrischen Funktionen.
-Er ist jedoch nicht in der Lage, beliebige Algorithmen (wie den euklidischen Algorithmus oben) zu implementieren—beispielsweise können Sie auf einem Taschenrechner keine Schleifen programmieren, keine bedingten Verzweigungen definieren oder komplexe Datenstrukturen verwalten.
-Ein Computer hingegen kann prinzipiell alle berechenbaren Probleme lösen, da er über die notwendigen Operationen verfügt, um beliebige Algorithmen auszuführen.
-
-```{admonition} Turing-Vollständigkeit
-:name: def-turing-complete
-:class: definition
-
-Ein System oder eine Programmiersprache ist *Turing-vollständig* (engl. *Turing-complete*), wenn sie all das berechnen kann, was eine [Turingmaschine](info-universal-turing-machine) berechnen kann.
-Einfach gesprochen bedeutet dies, dass sie sämtliche Operationen zulässt, sodass prinzipiell jedes berechenbare Problem gelöst werden kann.
-Die genaue mathematische Definition ist etwas komplexer und basiert auf dem Konzept der Turingmaschine, einem theoretischen Modell der Berechnung.
-```
-
-Moderne Computer und die meisten Programmiersprachen sind Turing-vollständig.
-Beispiele für Turing-vollständige Programmiersprachen sind ``Python``, ``Java``, ``C``, ``C++``, ``JavaScript``, ``Ruby`` und viele weitere.
-Das bedeutet, dass alle diese Sprachen prinzipiell dieselben Probleme lösen können—der Unterschied liegt lediglich in der Art und Weise, wie wir die Lösung formulieren, und in praktischen Aspekten wie Ausführungsgeschwindigkeit oder Speicherverbrauch.
-Im Gegensatz dazu sind einfache Taschenrechner oder sehr eingeschränkte Sprachen wie HTML (ohne JavaScript) oder CSS nicht Turing-vollständig.
 

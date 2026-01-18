@@ -2,6 +2,9 @@
 
 # Computer
 
+Ein *Computer* ist die konkrete technische Realisierung eines **Informationsverarbeitungssystems** (Hardware + Software). Um Programme zu verstehen (und später selbst zu schreiben), hilft es, ein klares Modell davon zu haben, **wie** ein Computer Informationen einliest, speichert, verarbeitet und ausgibt.
+
+
 Alle Computer basieren auf diesen vier grundlegenden Aufgaben:
 
 1. Informationen **einlesen**
@@ -154,5 +157,16 @@ Die *Kontrolleinheit* liest Befehle aus dem Hauptspeicher, lädt die benötigten
 Der *Befehlszeiger* zeigt dabei auf die nächste auszuführende Anweisung.
 Register sind deutlich schneller als der Hauptspeicher und befinden sich näher an den Recheneinheiten, weshalb häufig verwendete Werte dort zwischengespeichert werden.
 
-Wenn das Betriebssystem entscheidet, dass ein anderes Programm an der Reihe ist, wird der aktuelle Zustand des laufenden Programms gesichert (z.B. der Befehlszeiger).
+Wenn das Betriebssystem entscheidet, dass ein anderes Programm an der Reihe ist, wird der aktuelle Zustand des laufenden Programms gesichert (z. B. der Befehlszeiger).
 Sobald das Programm wieder aktiv wird, werden alle notwendigen Daten wieder geladen.
+
+```{admonition} Exkurs: Mikrocontroller vs. Computer
+Ein **Mikrocontroller** ist ebenfalls ein Computer im weiteren Sinne – aber typischerweise für eine *spezielle Aufgabe* optimiert: Er integriert CPU, Speicher und Ein-/Ausgabe (GPIO, Timer, ADC, Kommunikationsschnittstellen) auf einem Chip und arbeitet oft mit deutlich weniger Ressourcen.
+
+Wichtige Konsequenzen fürs Programmieren:
+
+- **Wenig Unterstützung durch ein Betriebssystem**: Auf einem Mikrocontroller müssen Sie sich im Programm oft um Aufgaben kümmern, die auf einem „normalen“ Computer das Betriebssystem für Sie übernimmt (z. B. zeitgesteuerte Abläufe, Zugriff auf Hardware oder das gleichzeitige Abarbeiten mehrerer Aufgaben).
+- **Knappere Ressourcen**: RAM/Flash sind begrenzt. Speicher- und Laufzeitkosten werden wichtiger (z. B. keine großen Datenstrukturen, vorsichtiger Umgang mit Speicher).
+- **Echtzeit/Timing**: Reaktionen müssen oft innerhalb fester Zeiten erfolgen (z. B. Regelung, Kommunikation). Das beeinflusst Programmstruktur und Tests.
+- **Ein-/Ausgabe ist hardware-nah**: Statt Dateien/Fenstern arbeiten Sie mit Pins, Registern und Peripherie.
+```

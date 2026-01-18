@@ -4,6 +4,14 @@ Ein Computer arbeitet mit elektrischen Signalen, also physikalischen Zuständen.
 Diese Zustände werden durch Milliarden von Transistoren gespeichert und über Bussysteme übertragen.
 Ein Transistor kann dabei vereinfacht betrachtet zwei Zustände annehmen: *an* oder *aus*.
 
+## Lernziele
+
+Nach diesem Abschnitt können Sie …
+
+- erklären, warum Bitfolgen ohne Kontext **keine Bedeutung** haben.
+- erläutern, wie **Codierung** Bitfolgen Bedeutung zuweist (Zahl, Zeichen, Farbe, Maschinenbefehl).
+- den Unterschied zwischen **Codierung** (Bedeutung) und **Zahlensystem** (Darstellung) erklären.
+
 ```{figure} ../../figs/digital-computer/representation/lamps.png
 ---
 width: 200px
@@ -129,6 +137,12 @@ Die jeweilige **Codierung** bestimmt, wie diese Bitfolgen interpretiert werden.
 (z. B. zur Basis 2, 10 oder 16).
 
 ```
+
+## Selbstcheck
+
+- Nennen Sie zwei verschiedene Bedeutungen, die dieselbe Bitfolge haben kann (je nach Codierung).
+- Warum ist Hexadezimal in Debug-Ausgaben oft praktischer als Binär?
+- Was ist der Unterschied zwischen „Zahlensystem wechseln“ und „numerische Codierung festlegen“?
 
 
 

@@ -16,6 +16,15 @@ kernelspec:
 In diesem Kapitel lernen wir die fundamentalen Bausteine der Programmierung kennen: *Kontrollstrukturen* und *Datenstrukturen*.
 Diese beiden Konzepte bilden zusammen die Grundlage für alle Algorithmen und Programme.
 
+## Lernziele
+
+Nach diesem Kapitel können Sie …
+
+- erklären, was **Kontrollstrukturen** sind und wozu man **Fallunterscheidungen** und **Wiederholungen** braucht.
+- den Unterschied zwischen **Iteration** und **Rekursion** beschreiben und typische Einsatzideen nennen.
+- zentrale **Datenstrukturen** (z. B. Stack, Queue, Array, dynamisches Array, verkettete Liste) einordnen und Grundoperationen benennen.
+- unterscheiden zwischen **Abstraktem Datentyp (ADT)** und **Implementierung im Speicher**.
+
 ## Kontrollstrukturen
 
 Durch [Wiederholung](sec-repetition-and-recursion) in Form von *Schleifen* und *(rekursiven) Funktionen* vermeiden wir es Anweisungen, die wir mehrfach ausführen wollen, auch mehrfach niederzuschreiben.
@@ -39,7 +48,7 @@ Zusammenfassend konzentrieren wir uns auf:
 2. Schleifen (Wiederholung)
 3. Funktionen (Wiederholung)
 
-Wie bereits erwähnt, muss eine Programmiersprache nur sehr wenige und auch nur sehr primitive Kontrollstrukturen anbieten damit diese als [Turing-vollständig](def-turing-complete) gilt.
+Hinweis: Schon wenige Kontrollstrukturen reichen aus, um sehr viele Programme auszudrücken. Die formale Einordnung (Berechenbarkeit, Turing-Vollständigkeit) ist spannend, aber **nicht Kernstoff** dieses Kapitels.
 Theoretisch ist es bereits ausreichend wenn eine Programmiersprache 
 
 1. Variablen unterstützt, auf die wir einen konstanten Wert addieren oder subtrahieren können und
@@ -67,14 +76,11 @@ Das fundamentale Prinzip der *Wiederholung* ist zentraler Bestandteil der Progra
 Blicken wir in den Werkzeugkasten der Algorithmen so finden wir die Wiederholung überall.
 Sortieralgorithmen, die Berechnung eines Gleichungssystems, das Verarbeiten eines Bildes, die Schaltflächen einer App, überall finden wir Schleifen, die unsere Informationen *iterativ* verarbeiten.
 
-Nach der Definition eines Algorithmus, muss dieser aus endlich vielen Anweisungen bestehen.
-Will man jedoch eine variable Menge an Information verarbeiten, so muss ein Algorithmus, abhängig von der Eingabegröße, unterschiedlich viele Anweisungen ausführen.
-Das bedeutet, dass die Länge des Algorithmus (Textlänge) unabhängig von der Anzahl der auszuführenden Anweisungen (für eine gegebenen Eingabe) sein muss!
-Nach dem Schubfachprinzip bedeutet dies wiederum, dass in diesem Fall Teile des Algorithmus öfters durchlaufen werden - Wiederholung muss also in irgendeiner Form stattfinden.
+Nach der Definition eines Algorithmus muss dieser aus endlich vielen Anweisungen bestehen.
+Wenn wir jedoch eine variable Menge an Information verarbeiten wollen, muss ein Algorithmus – abhängig von der Eingabe – unterschiedlich viele Schritte ausführen.
+Das erreichen wir durch **Wiederholung**: Wir formulieren einen Teilablauf einmal und lassen ihn (konzeptionell) mehrfach laufen.
 
-Überraschenderweise hat sich herausgestellt, dass *Wiederholung* in Kombination mit der *Fallunterscheidung* ausreicht, um alles berechnen zu können was wir bisher als natürlich [berechenbar](def-turing-computable) ansehen.
-Nach der unbeweisbaren [Church-Turing-These](def-church-these) werden wir kein Problem finden, welches natürlich berechenbar aber nicht durch einen Computer berechnet werden kann.
-Die Fallunterscheidung in Kombination mit der Wiederholung ist scheinbar ausreichend.
+In der Praxis ist die Kombination aus **Fallunterscheidung** (Bedingung) und **Wiederholung** der Kern vieler Programme. Die theoretischen Hintergründe dazu sind optional und werden hier nicht weiter vertieft.
 
 Nun haben Sie vielleicht die Hoffnung, Sie müssten nur die [Wiederholung](sec-repetition-and-recursion) und die [Fallunterscheidungen](sec-if-else) beherrschen und können dann jedes Problem lösen.
 Leider sind diese beiden Techniken derart grundlegend, dass sie eine notwendige nicht aber ausreichende Bedingung für die Entwicklung von Algorithmen darstellen.
@@ -147,6 +153,7 @@ Für die konkrete Implementierung rekursiver Funktionen in ``Python`` verweisen 
 
 ## Datenstrukturen
 
+
 Da sich alle Daten (Programm und dessen Eingabe/Ausgabe) im [Arbeitsspeicher](def-main-memory) befinden, müssen wir begreifen welche Funktionalität diese *konkrete* Datenstruktur bietet.
 Alle weiteren *abstrakten* Datenstrukturen bauen auf diesen Möglichkeiten auf.
 
@@ -184,8 +191,14 @@ Programmiersprachen bieten die Mittel um Zeiger *aufzulösen*, was den Zugriff a
 
 ### Überblick über wichtige Datenstrukturen
 
-Das folgende Bild gibt einen Überblick über die Klassifikation von Datenstrukturen.
-Datenstrukturen werden zunächst in **lineare** und **nicht-lineare** Strukturen unterteilt:
+In diesem Abschnitt unterscheiden wir zwei Perspektiven:
+
+- **Abstrakte Datentypen (ADT)** beschreiben *das Verhalten* einer Sammlung: welche Operationen erlaubt sind und in welcher Reihenfolge (z. B. FIFO/LIFO).
+- **Implementierungen** beschreiben *die Realisierung im Speicher*: liegen Elemente zusammenhängend oder verkettet, statisch oder dynamisch?
+
+Wichtig: **Ein ADT kann durch verschiedene Implementierungen realisiert werden** (z. B. eine Queue als verkettete Liste *oder* auf Basis eines Arrays).
+
+Das folgende Bild gibt einen Überblick über eine **strukturelle** Klassifikation (z. B. linear vs. nicht-linear). Diese Einordnung ist **unabhängig** von der Unterscheidung ADT vs. Implementierung.
 
 - **Lineare Datenstrukturen**: Die Elemente sind in einer bestimmten Reihenfolge angeordnet.
   - **Statische lineare Strukturen**: Die Größe ist fest und kann sich nicht ändern.
@@ -200,6 +213,8 @@ Datenstrukturen werden zunächst in **lineare** und **nicht-lineare** Strukturen
 Überblick über wichtige Datenstrukturen
 ```
 
+#### Abstrakte Datentypen (ADT)
+
 (sec-stack)=
 Der *Stapel* (engl. *Stack*) oder auch *Stapelspeicher/Keller* ist einer der einfachsten [dynamischen Sammlungen](def-dynamic-ds), welche dem *Last-In-First-Out (LIFO)* Prinzip folgt.
 LIFO bedeutet soviel wie: *zuletzt hinein - zuerst heraus*.
@@ -207,12 +222,20 @@ Das was zuletzt hinein gekommen ist, wird auch als erstes herausgenommen.
 Stellen Sie sich einen Stapel aus Büchern vor.
 Das Buch was Sie zuletzt auf den Bücherstapel gelegt haben liegt zugriffsbereit ganz oben.
 
+Typische Operationen sind: **push** (ablegen), **pop** (entnehmen) und **top/peek** (oberstes Element ansehen).
+Ein Stack kann z. B. als Array/dynamisches Array oder als verkettete Liste implementiert werden.
+
 (sec-queue)=
 Die *Warteschlange* (engl. *Queue*) ist eine [dynamische Sammlung](def-dynamic-ds) und folgt dem sog. *First-In-First-Out (FIFO)* Prinzip.
 FIFO bedeutet soviel wie: *zuerst hinein - zuerst hinaus*.
 Das was zuerst hinein gekommen ist, wird auch als erstes herausgenommen.
 Der Name rührt daher, dass die Datenstruktur wie eine Warteschlange an der Kasse funktioniert.
 Kunden die sich zuerst in die Schlange einreihen, werden auch zuerst bedient.
+
+Typische Operationen sind: **enqueue** (hinten anstellen), **dequeue** (vorne entnehmen) und **front/peek** (vorderstes Element ansehen).
+Auch eine Queue kann auf unterschiedliche Weise implementiert werden (z. B. verkettet oder als Ringpuffer auf Basis eines Arrays).
+
+#### Implementierungen (Speicherrepräsentationen)
 
 (sec-array)=
 Ein *Array* ist eine [statische Sammlung](def-static-ds) mit direktem Indexzugriff.
@@ -248,3 +271,9 @@ Haben wir direkten Zugriff auf einen Knoten so können wir in die *verkettete Li
 :class: note
 Mehr Hintergrund zum Thema Speichern von Datenstrukturen finden Sie im [Expertenwissen: Speicherlayout von Datenstrukturen](sec-memory-layout).
 ```
+
+## Selbstcheck
+
+- Nennen Sie je ein Beispiel für eine **Fallunterscheidung** und eine **Wiederholung** (konzeptionell, ohne Python-Syntax).
+- Welche Operationen sind typisch für **Stack** und **Queue**?
+- Was bedeutet **ADT** – und warum kann derselbe ADT unterschiedlich implementiert sein?

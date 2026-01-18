@@ -19,7 +19,7 @@ name: journey
 
 Das Modul ist in vier Teile gegliedert. Zur Orientierung: Wir lernen zuerst die „Verkehrsinfrastruktur“ kennen (Teil 1), schauen uns dann das konkrete „Auto“ an (Teil 2), üben die Bedienung in der Praxis (Teil 3) und führen zum Abschluss eine längere „Fahrt“ komplett durch (Teil 4).
 
-- **Part 1: Einführung (ca. 10% der Modulinhalte)**  
+- **Part 1: Basiswissen (ca. 10% der Modulinhalte)**  
   Wenn wir Auto fahren, bewegen wir uns in einer Verkehrsinfrastruktur: Straßen, Regeln, Schilder und Begriffe, die allen Orientierung geben. Genauso klären wir hier, was ein Computer grundsätzlich macht, wie Informationsverarbeitung funktioniert und welches Vokabular wir brauchen, um über Programme präzise zu sprechen.
 
 - **Part 2: Python verstehen (ca. 10% der Modulinhalte)**  

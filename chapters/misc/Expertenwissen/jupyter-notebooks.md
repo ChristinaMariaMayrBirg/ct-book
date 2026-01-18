@@ -56,7 +56,7 @@ ein bestimmtes die Jupyter-Note starten und mit
 jupyter lab
 ```
 
-```{figure} ../../figs/python-tutorial/environment/jupyter-lab-start.png
+```{figure} ../../../figs/python-tutorial/environment/jupyter-lab-start.png
 ---
 width: 800px
 name: fig-jupyter-lab-start-2
@@ -71,7 +71,7 @@ Starten Sie ein ``Python``-Notebook, müssen Sie möglicherweise einen sog. *Ker
 Jede mögliche Auswahl bezieht sich auf eine ``Python``-Umgebung, welche sich im Wesentlichen durch eine ``Python``-Version und bestimmten, von Ihnen installierten Paketen, auszeichnet.
 Wählen Sie die Umgebung, welche Sie verwenden wollen.
 
-```{figure} ../../figs/python-tutorial/environment/jupyter-lab-select-kernel.png
+```{figure} ../../../figs/python-tutorial/environment/jupyter-lab-select-kernel.png
 ---
 width: 200px
 name: fig-jupyter-lab-select-kernel
@@ -178,7 +178,7 @@ Hierfür bietet die Jupyter-Umgebung auch einen Knopf: ``Run -> Run All Cells`` 
 Dabei wird die i-te Zelle erst ausgewertet, wenn die i-1-te Zelle erfolgreich ausgewertet werden konnte.
 In anderen Worten, der Code wird so ausgewertet als hätten Sie alles in eine einzige Zelle in der gleichen Reihenfolge hineingeschrieben!
 
-```{figure} ../../figs/python-tutorial/environment/jn-all-cell-evaluation-lab.png
+```{figure} ../../../figs/python-tutorial/environment/jn-all-cell-evaluation-lab.png
 ---
 height: 300px
 name: fig-jn-all-cell-evaluation-lab
@@ -274,7 +274,7 @@ while True:
 Sie sehen an dem kleinen Sternchen ``*``, dass die Zelle ausgewertet wird.
 Erst wenn dieses verschwindet ist die Auswertung abgeschlossen.
 
-```{figure} ../../figs/python-tutorial/environment/endless-loop-kernel-lab.png
+```{figure} ../../../figs/python-tutorial/environment/endless-loop-kernel-lab.png
 ---
 width: 200px
 name: fig-endless-loop-kernel-lab
@@ -287,7 +287,7 @@ Stellen Sie sich den *Kernel* vorerst als einen Vermittler zwischen Notebook (bz
 Beachten Sie, dass eine Unterbrechung des Kernels nicht bedeutet, dass alles so ist wie als hätten wir die Zelle gar nicht ausgeführt.
 Die Zelle wurde solange ausgeführt, bis wir den Vorgang unterbrochen haben.
 
-```{figure} ../../figs/python-tutorial/environment/interrupt-kernel-lab.png
+```{figure} ../../../figs/python-tutorial/environment/interrupt-kernel-lab.png
 ---
 height: 300px
 name: fig-interrupt-kernel-lab
@@ -313,3 +313,4 @@ while True:
 ```python
 print(k)
 ```
+
