@@ -10,6 +10,16 @@ Die Website wird automatisch über **GitLab LRZ Pages** bereitgestellt:
 
 Die Website basiert auf Jupyter Notebooks und ermöglicht es Studierenden, interaktiv mit den Lehrinhalten zu arbeiten und Python-Code direkt im Browser auszuführen.
 
+## Binder / Thebe (interaktive Ausführung)
+
+Wenn im Buch **Thebe** aktiviert ist (`_config.yml`: `thebe: true`), wird im Hintergrund standardmäßig ein Kernel über **mybinder.org** gestartet. Bei Repositories auf **self-hosted GitLab** (z.B. `gitlab.lrz.de`) kann das fehlschlagen, weil die “GitLab”-Quelle von mybinder.org primär auf `gitlab.com` ausgelegt ist.
+
+- **Wichtig (Dependencies)**: Binder erkennt Konfig-Dateien nur mit festen Namen. Daher liegt die Binder-Umgebung unter `binder/environment.yml` (wird von repo2docker automatisch gefunden).
+- **Wichtig (self-hosted GitLab)**: Starte Binder über den generischen `git`-Provider (nicht “GitLab”).
+
+Beispiel-Link (Branch `master`, JupyterLab):
+`https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.lrz.de%2Ffk03ingenieurinformatik%2FIngenieurinformatik-buch.git/master?urlpath=lab`
+
 ## 📄 PDF-Version
 
 Zusätzlich zur Website kann aus den Inhalten ein **PDF-Buch** generiert werden. Dies wird über die GitLab CI/CD Pipeline erstellt.
