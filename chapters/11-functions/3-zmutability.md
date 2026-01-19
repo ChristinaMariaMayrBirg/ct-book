@@ -17,7 +17,7 @@ Im vorherigen Kapitel haben wir gelernt, wie Namensräume funktionieren und wie 
 
 Ein wichtiger Aspekt, der eng mit Namensräumen zusammenhängt, sind **Seiteneffekte**: Wenn eine Funktion ein Objekt aus einem anderen Namensraum (z.B. dem globalen Namensraum) erhält und dieses Objekt verändert, kann dies Auswirkungen auf andere Teile des Programms haben, die dasselbe Objekt verwenden. Das Verständnis von Namensräumen hilft uns zu verstehen, warum Seiteneffekte auftreten können - nämlich dann, wenn mehrere Namen aus verschiedenen Namensräumen auf dasselbe Objekt im Speicher verweisen.
 
-Wie wir bereits in Kapitel chapters/04-language-properties/21-seiteneffekte.md gelernt haben, können Funktionen den Zustand auch außerhalb ihres Gültigkeitsbereichs verändern. 
+Wie wir bereits in Kapitel chapters/04-language-properties/4-seiteneffekte.md gelernt haben, können Funktionen den Zustand auch außerhalb ihres Gültigkeitsbereichs verändern. 
 
 ```{code-cell} python3
 y = []

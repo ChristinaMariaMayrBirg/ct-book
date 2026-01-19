@@ -32,4 +32,4 @@ Das Modul ist in vier Teile gegliedert. Zur Orientierung: Wir lernen zuerst die 
   Zum Abschluss machen wir eine komplette „Fahrt“: Wir planen die Route, packen den Kofferraum und fahren los. Dabei sehen Sie den gesamten Prozess am Stück und lernen, wie man in der Praxis strukturiert vorgeht.
 
 
-
+*Hinweis: Abbildungen wurden teilweise mithilfe generativer KI erstellt und dienen der Illustration.*

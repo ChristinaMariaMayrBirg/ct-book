@@ -15,12 +15,19 @@ name: motorhaube
 
 Unabhängig davon können eine Programmiersprache nur dann effizient anwenden, wenn Sie ihre Eigenschaften kennen. Kennen Sie diese nicht, suchen Sie entweder nach Lösungen, die keiner braucht (ich suche im E-Auto verzweifelt nach den Gängen am Schalthebel) oder Sie machen eventuell Fehler (Sie fahren im Gangschalter nur im ersten Gang, weil Sie nicht wissen, dass man schalten kann). Das wollen wir vermeiden.
 
-In diesem Teil der Vorlesung werden wir daher Eigenschaften von Python kennenlernen, die direkte Auswirkung auf die Anwendung von Python haben. 
+In diesem Teil der Vorlesung werden wir daher Eigenschaften von Python kennenlernen, die direkte Auswirkung auf die Anwendung von Python haben. Wir ordnen Python als Programmiersprache ein: Welche Eigenschaften prägen das Programmieren in Python und welche allgemeinen Konzepte stecken dahinter? Das hilft Ihnen, Wissen später auf andere Sprachen zu übertragen (z. B. in Richtung MATLAB).
 
-```{admonition} Lernziel
+
+```{admonition} Lernziele
 :class: learngoals
 
-Verstehen, welche Eigenschaften die Programmiersprache Python besitzt und erkennen, welche Auswirkungen dies auf die Programmierung in Python hat.
+- Zentrale Eigenschaften von Python kennenlernen und einordnen
+- Wichtige Programmierkonzepte verstehen, die in der Praxis ständig auftauchen
+- Typische „Warum passiert das?“‑Fragen in Python mit Grundlagenwissen erklären können
 ```
+
+
+
+
 
 
