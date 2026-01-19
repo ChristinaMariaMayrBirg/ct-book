@@ -1,49 +1,75 @@
-title: Ingenieurinformatik 1 
+# --------------------------------------------------
+# Basis-Metadaten
+# --------------------------------------------------
+title: Ingenieurinformatik 1
 logo: figs/logo-HM-small.png
-author: "" 
+author: ""
 email: christina_maria.mayr@hm.edu
-exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "de_computational-thinking.md", "Planung-Computational-Thinking-ALLGEMEIN.md", "README.md"]
+
+exclude_patterns:
+  - _build
+  - Thumbs.db
+  - .DS_Store
+  - "**.ipynb_checkpoints"
+  - de_computational-thinking.md
+  - Planung-Computational-Thinking-ALLGEMEIN.md
+  - README.md
+
 only_build_toc_files: true
 
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
+# --------------------------------------------------
+# Notebook-Ausführung
+# --------------------------------------------------
 execute:
-  execute_notebooks: auto #  off
-  allow_errors: true # due to CI setup in Gitlab
+  execute_notebooks: auto  # off
+  allow_errors: true       # due to CI setup in Gitlab
   timeout: 2000
 
-bibtex_bibfiles: 
- - references.bib
+# --------------------------------------------------
+# Literatur
+# --------------------------------------------------
+bibtex_bibfiles:
+  - references.bib
 
-# Define the name of the latex output file for PDF builds
+# --------------------------------------------------
+# PDF: behalte den funktionierenden Jupyter-Book-Wrapper
+# --------------------------------------------------
 latex:
   latex_documents:
     targetname: book.tex
 
-
-
+# --------------------------------------------------
+# Sphinx / Jupyter Book
+# --------------------------------------------------
 sphinx:
   language: de
   extra_extensions:
-  - sphinx_exercise
-  - sphinx_inline_tabs
-  - sphinx_proof
+    - sphinx_exercise
+    - sphinx_inline_tabs
+    - sphinx_proof
+
   config:
-    version: "1.4"  # The short X.Y version
-    release: "1.4.0"  # The full version, including alpha/beta/rc tags
-    myst_enable_extensions: ["dollarmath", "amsmath", "colon_fence", "deflist"]
-    myst_heading_anchors : 3
+    version: "1.5"   # The short X.Y version
+    release: "1.5.0" # The full version, including alpha/beta/rc tags
+
+    myst_enable_extensions:
+      - dollarmath
+      - amsmath
+      - colon_fence
+      - deflist
+
+    myst_heading_anchors: 3
+
     html_show_copyright: false
     language: de
     html_baseurl: https://ingenieurinformatik-buch-fcbc5c.pages.gitlab.lrz.de/
     html_favicon: figs/favicon/favicon.ico
     html_search_language: de
+
     bibtex_reference_style: author_year
+
     latex_engine: xelatex
-    # Überspringe Zellen mit Tag "skip-pdf" bei PDF-Builds
-    # Hinweis: nb_execution_skip_patterns funktioniert nur mit Dateinamen-Patterns,
-    # nicht direkt mit Tags. Tags werden über execute.exclude_patterns behandelt.
-    # Für builder-spezifische Ausführung verwenden wir stattdessen execute.exclude_patterns
+
     latex_elements:
       fontpkg: |
         \usepackage{fontspec}
@@ -59,6 +85,7 @@ sphinx:
         % Inhaltsverzeichnis aktivieren
         \usepackage{makeidx}
         \makeindex
+
       preamble: |
         % Hyperref-Konfiguration für bessere Bibliographie-Kompatibilität
         % (wird nach dem Laden von hyperref durch Sphinx ausgeführt)
@@ -71,39 +98,56 @@ sphinx:
           unicode=true
         }
 
+        % --------------------------------------------------
+        % PDF-only: Autor für die Titelseite setzen
+        % (HTML bleibt sauber, da author: "" gesetzt ist)
+        % --------------------------------------------------
+        \AtBeginDocument{
+          \author{Dr.\ rer.\ nat.\ Christina Maria Mayr}
+          \date{}
+        }
 
-# Information about where the book exists on the web
+# --------------------------------------------------
+# Repository / Edit-Buttons
+# --------------------------------------------------
 repository:
-  url: https://gitlab.lrz.de/fk03ingenieurinformatik/Ingenieurinformatik-buch.git # Online location of your book
+  url: https://gitlab.lrz.de/fk03ingenieurinformatik/Ingenieurinformatik-buch.git
   path_to_book: ""
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  branch: master
 
+# --------------------------------------------------
+# Launch-Buttons
+# --------------------------------------------------
 launch_buttons:
-  notebook_interface: "jupyterlab" # The interface interactive links will activate ["classic", "jupyterlab"]
-  #binderhub_url: "https://mybinder.org"
-  #colab_url: "https://colab.research.google.com"
-  jupyterhub_url: "https://datahub.cs.hm.edu/"
-  thebe: true # enables live code execution in the browser
+  notebook_interface: jupyterlab
+  jupyterhub_url: https://datahub.cs.hm.edu/
+  thebe: true
 
+# --------------------------------------------------
+# HTML Darstellung
+# --------------------------------------------------
 html:
-  navbar_number_sections    : True  # Add a number to each section in your left navbar
-  use_edit_page_button      : True  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-  use_repository_button     : True  # Whether to add a link to your repository button
-  use_issues_button         : True  # Whether to add an "open an issue" button
-  home_page_in_navbar       : True  # Whether to include your home page in the left Navigation Bar
+  navbar_number_sections: true
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+  home_page_in_navbar: true
+
   analytics:
     google_analytics_id: G-JTQKVRRRDB
-  extra_navbar: Unterstützt durch <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+
+  extra_navbar: Unterstützt durch <a href="https://jupyterbook.org">Jupyter Book</a>
+
   extra_footer: |
     <div class="container">
-    <div class="col1">
-      <a href="https://hm.edu/">
-      <img style="width:50px;float:right;"" src="/ct-book/_static/img/hm-logo.png" alt="Logo">
-      </a>
-    <div>
-    <div class="col1">
-      Autoren: <a href="/chapters/misc/contributors.html">alle anzeigen</a>. 
-      Lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>.
-      Version 1.4.0
-    </div>
+      <div class="col1">
+        <a href="https://hm.edu/">
+          <img style="width:50px;float:right;" src="/ct-book/_static/img/hm-logo.png" alt="Logo">
+        </a>
+      </div>
+      <div class="col1">
+        Autoren: <a href="/chapters/misc/contributors.html">alle anzeigen</a>.
+        Lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>.
+        Version 1.5.0
+      </div>
     </div>
