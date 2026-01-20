@@ -25,7 +25,7 @@ build_website_html:
     - gosu jovyan bash -c "jupyter-book build . --path-output $HTML_BUILD_DIR"
   artifacts:
     paths:
-      - $HTML_BUILD_DIR/_build/html
+      - $HTML_BUILD_DIR/_build
     when: always
 
 build_book_pdf:
@@ -57,6 +57,21 @@ build_book_pdf:
 # ============================================================================
 # DEPLOYMENT JOBS
 # ============================================================================
+
+
+# deploy_notebooks_in_github:
+#   stage: deploy
+#   when: manual
+#   needs:
+#     - job: build_website_html
+#       artifacts: true
+#   dependencies:
+#     - build_website_html
+#   script:
+#     - #  copy the files in _website_html/_build/jupyter_execute from the artifacts of the job build_website_html to 
+#      # the directory notebooks in the github repository https://github.com/fk03ingenieursinformatik/ingenieurinformatik-buch-deploy.git 
+#   pages:
+#     publish: "_website_html/_build/html"
 
 update_website:
   stage: deploy
