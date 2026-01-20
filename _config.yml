@@ -113,7 +113,7 @@ sphinx:
 repository:
   url: https://github.com/fk03ingenieursinformatik/ingenieurinformatik-buch-deploy.git
   path_to_book: ""
-  branch: master
+  branch: main
 
 # --------------------------------------------------
 # Launch-Buttons
