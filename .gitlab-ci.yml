@@ -69,7 +69,7 @@ deploy_notebooks_in_github:
   dependencies:
     - build_website_html
   script:
-    - SOURCE_DIR="_website_html/_build/jupyter_execute"
+    - SOURCE_DIR="_website_html/_build/jupyter_execute/chapters"
     - GITHUB_DEPLOY_REPO="fk03ingenieursinformatik/ingenieurinformatik-buch-deploy"
     - GITHUB_DEPLOY_BRANCH="main"
     - TARGET_DIR="deployed_notebooks"
