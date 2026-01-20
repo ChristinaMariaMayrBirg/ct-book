@@ -112,8 +112,8 @@ sphinx:
 # --------------------------------------------------
 repository:
   url: https://github.com/fk03ingenieursinformatik/ingenieurinformatik-buch-deploy.git
-  path_to_book: ""
-  branch: main
+  path_to_book: "deployed_notebooks"
+  branch: master
 
 # --------------------------------------------------
 # Launch-Buttons
@@ -128,7 +128,7 @@ launch_buttons:
 # --------------------------------------------------
 html:
   navbar_number_sections: true
-  use_edit_page_button: true
+  #use_edit_page_button: true
   use_repository_button: true
   use_issues_button: true
   home_page_in_navbar: true

@@ -71,7 +71,7 @@ deploy_notebooks_in_github:
   script:
     - SOURCE_DIR="_website_html/_build/jupyter_execute/chapters"
     - GITHUB_DEPLOY_REPO="fk03ingenieursinformatik/ingenieurinformatik-buch-deploy"
-    - GITHUB_DEPLOY_BRANCH="main"
+    - GITHUB_DEPLOY_BRANCH="master"
     - TARGET_DIR="deployed_notebooks"
     - GITHUB_REMOTE_PUBLIC="https://github.com/${GITHUB_DEPLOY_REPO}.git"
     - GITHUB_REMOTE_PUSH="https://x-access-token:${GITHUB_DEPLOY_TOKEN}@github.com/${GITHUB_DEPLOY_REPO}.git"
