@@ -84,3 +84,12 @@ done
 export LATEXMKOPTS='-interaction=nonstopmode'
 jupyter-book build . --builder pdflatex --path-output _book_as_pdf
 ```
+
+## Deployment
+
+Das Deployment erfolgt über **GitLab LRZ** und **GitHub**:
+
+- In **GitLab LRZ** wird die interaktive Website in der **CI/CD-Pipeline** gebaut und über **Pages** veröffentlicht.
+- Für die Ausführung der Code-Zellen (Thebe) wird eine **Binder-Konfiguration** benötigt.
+  - Die Binder-Umgebung (Dependencies) liegt in `binder/` (z.B. `binder/environment.yml`). Mehr Infos im [deployment-repo auf GitHub](https://github.com/fk03ingenieursinformatik/ingenieurinformatik-buch-deploy)
+- Notebooks, die in der GitLab-LRZ-Pipeline gebaut werden, werden ebenfalls nach [GitHub](https://github.com/fk03ingenieursinformatik/ingenieurinformatik-buch-deploy/tree/master/deployed_notebooks) deployed. Diese dienen als **Fallback**, falls die Live-Code-Ausführung nicht klappt.
