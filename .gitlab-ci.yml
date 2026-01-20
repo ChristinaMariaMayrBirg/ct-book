@@ -59,19 +59,34 @@ build_book_pdf:
 # ============================================================================
 
 
-# deploy_notebooks_in_github:
-#   stage: deploy
-#   when: manual
-#   needs:
-#     - job: build_website_html
-#       artifacts: true
-#   dependencies:
-#     - build_website_html
-#   script:
-#     - #  copy the files in _website_html/_build/jupyter_execute from the artifacts of the job build_website_html to 
-#      # the directory notebooks in the github repository https://github.com/fk03ingenieursinformatik/ingenieurinformatik-buch-deploy.git 
-#   pages:
-#     publish: "_website_html/_build/html"
+deploy_notebooks_in_github:
+  image: alpine/git:latest
+  stage: deploy
+  when: manual
+  needs:
+    - job: build_website_html
+      artifacts: true
+  dependencies:
+    - build_website_html
+  script:
+    - SOURCE_DIR="_website_html/_build/jupyter_execute"
+    - GITHUB_DEPLOY_REPO="fk03ingenieursinformatik/ingenieurinformatik-buch-deploy"
+    - GITHUB_DEPLOY_BRANCH="master"
+    - TARGET_DIR="deployed_notebooks"
+    - GITHUB_REMOTE_PUBLIC="https://github.com/${GITHUB_DEPLOY_REPO}.git"
+    - GITHUB_REMOTE_PUSH="https://x-access-token:${GITHUB_DEPLOY_TOKEN}@github.com/${GITHUB_DEPLOY_REPO}.git"
+    - rm -rf _github_deploy_repo
+    - git clone --depth 1 --branch "$GITHUB_DEPLOY_BRANCH" "$GITHUB_REMOTE_PUBLIC" _github_deploy_repo
+    - cd _github_deploy_repo
+    - git remote set-url origin "$GITHUB_REMOTE_PUSH"
+    - echo "Syncing notebooks into ${TARGET_DIR}/ ..."
+    - rm -rf "$TARGET_DIR"
+    - mkdir -p "$TARGET_DIR"
+    - cp -a "../${SOURCE_DIR}/." "$TARGET_DIR/"
+    - git add -A
+    - git -c user.name="gitlab-ci" -c user.email="gitlab-ci@localhost" commit -m "Update executed notebooks from ${CI_PROJECT_PATH}@${CI_COMMIT_SHA}"
+    - echo "Pushing to GitHub..."
+    - git push origin "$GITHUB_DEPLOY_BRANCH"
 
 update_website:
   stage: deploy
