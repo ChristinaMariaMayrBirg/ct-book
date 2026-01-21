@@ -60,6 +60,10 @@ sphinx:
 
     myst_heading_anchors: 3
 
+    html_static_path: ["_static"]
+    html_js_files:
+      - js/hub-link-rewrite.js
+
     html_show_copyright: false
     language: de
     html_baseurl: https://ingenieurinformatik-buch-fcbc5c.pages.gitlab.lrz.de/
