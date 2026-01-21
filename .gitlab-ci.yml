@@ -84,7 +84,9 @@ deploy_notebooks_in_github:
     - mkdir -p "$TARGET_DIR"
     - cp -a "../${SOURCE_DIR}/." "$TARGET_DIR/"
     - |
-      printf "%s\n" "Diese notebooks wurden automatisiert erzeugt. Der dazugehörige commit ist: https://gitlab.lrz.de/fk03ingenieurinformatik/Ingenieurinformatik-buch/-/commit/${CI_COMMIT_SHA}" > "$TARGET_DIR/Version.md"
+      VERSION="$(awk -F: '/^[[:space:]]*release:[[:space:]]*/{gsub(/"/,"",$2); gsub(/^[[:space:]]+|[[:space:]]+$/,"",$2); print $2; exit}' ../_config.yml)" && [ -n "$VERSION" ] || VERSION="unknown"
+    - |
+      printf "%s\n" "Diese notebooks wurden automatisiert erzeugt. Der dazugehörige commit ist: https://gitlab.lrz.de/fk03ingenieurinformatik/Ingenieurinformatik-buch/-/commit/${CI_COMMIT_SHA} (Release: ${VERSION})" > "$TARGET_DIR/Version.md"
     - git add -A
     - git -c user.name="gitlab-ci" -c user.email="gitlab-ci@localhost" commit -m "Update executed notebooks from ${CI_PROJECT_PATH}@${CI_COMMIT_SHA}"
     - echo "Pushing to GitHub..."
