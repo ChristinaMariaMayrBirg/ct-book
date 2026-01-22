@@ -131,7 +131,7 @@ Damit eine Software ihren Nutzerinnen und Nutzern verschiedene Programme bzw. Fu
 
 Bei Programmen mit *grafischer Benutzeroberfläche (GUI)* werden solche Konfigurationen oft im Hintergrund verwaltet: Der Nutzer speichert dann eine „Projektdatei“, in der die gewählten Einstellungen und Verweise auf Daten abgelegt sind.
 
-```{figure} ../../figs/overview/softwarevsprogram.png
+```{figure} ../../figs/03-computer-sciences-basics/overview/softwarevsprogram.png
 ---
 width: 700px
 name: fig-software-vs-program

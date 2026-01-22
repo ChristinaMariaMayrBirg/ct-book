@@ -41,7 +41,7 @@ def add(x, y):
 add(9, 5)
 ```
 
-```{figure} ../../figs/python-tutorial/environment/repl.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/repl.png
 ---
 width: 800px
 name: fig-repl
@@ -62,7 +62,7 @@ ipython
 
 Wir können den selben Code ausführen:
 
-```{figure} ../../figs/python-tutorial/environment/ipython.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/ipython.png
 ---
 width: 800px
 name: fig-ipython

@@ -17,7 +17,7 @@ Sie können sich den Speicher als eine lange lange Liste von Bits vorstellen.
 Diese Bits können nur einen von zwei Zuständen (0 und 1) annehmen.
 Dennoch verarbeiten Computer Zahlen, Text, Bilder und mehr.
 
-```{figure} ../../figs/python-tutorial/variables/ram.png
+```{figure} ../../figs/04-language-properties/python-tutorial/variables/ram.png
 ---
 width: 400px
 name: fig-ram-2
@@ -225,7 +225,7 @@ Begründen Sie Ihre Antwort.
 
 
 
-```{figure} ../../figs/python-tutorial/datatypes/datatypes-hierachy.png
+```{figure} ../../figs/08-python-data-types/python-tutorial/datatypes/datatypes-hierachy.png
 ---
 width: 100%
 name: fig-python-datatypes-hierarchy
@@ -322,7 +322,7 @@ verstanden werden.
 Die **Speicheradresse** der Variable zeigt in den Arbeitsspeicher an eine bestimmte Stelle.
 Dort steht jedoch nicht nur der **Wert** sondern auch der **Datentyp**, d.h. die *Information* wie dieser **Wert** zu interpretieren ist.
 
-```{figure} ../../figs/python-tutorial/datatypes/data-type-key-pair.png
+```{figure} ../../figs/08-python-data-types/python-tutorial/datatypes/data-type-key-pair.png
 ---
 width: 800px
 name: fig-data-type-key-pair-2

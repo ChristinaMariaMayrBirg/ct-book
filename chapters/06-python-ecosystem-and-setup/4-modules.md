@@ -88,7 +88,7 @@ Wir importieren ``squaresum``, denn der Name unseres eben geschriebenen Moduls i
 
 Diese Befehle erzeugen folgende Ausgabe
 
-```{figure} ../../figs/python-tutorial/environment/square-sum.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/square-sum.png
 ---
 width: 800px
 name: fig-square-sum

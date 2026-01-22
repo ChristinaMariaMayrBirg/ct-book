@@ -1,7 +1,7 @@
 # Basiswissen Informatik
 
 
-```{figure} ../../figs/overview/infrastructer-metaphor.png
+```{figure} ../../figs/02-course-concept/overview/infrastructer-metaphor.png
 ---
 height: 320px
 name: infrastructer-metaphor

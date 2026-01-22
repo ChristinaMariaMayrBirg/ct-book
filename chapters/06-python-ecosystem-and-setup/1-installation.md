@@ -51,7 +51,7 @@ Die Installationen ähneln sich jedoch auf allen Betriebssystemen.
 Sie gehen auf [Miniconda](https://docs.conda.io/en/latest/miniconda.html) und suchen unter Ihrem Betriebssystem die gewünschte (im Normalfall neueste) ``Python``-Version.
 In unserem Fall ist das Mac OS und Version 3.9.
 
-```{figure} ../../figs/python-tutorial/environment/miniconda-download.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/miniconda-download.png
 ---
 width: 600px
 name: fig-miniconda-download
@@ -63,7 +63,7 @@ Sie starten den Miniconda-Installationsassistenten, welchen Sie soeben herunterg
 Sie klicken sich durch die Installationsanweisungen. 
 Sie können dabei den Installationsort ändern.
 
-```{figure} ../../figs/python-tutorial/environment/miniconda-installation-gui.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/miniconda-installation-gui.png
 ---
 width: 600px
 name: fig-miniconda-installation-gui
@@ -72,7 +72,7 @@ name: fig-miniconda-installation-gui
 
 Ändern Sie den Installationsort nicht, so befindet sich Miniconda in Ihrem Benutzerverzeichnis unter ``opt/miniconda3``, d.h. der absolute Pfad wäre ``/Users/[username]/opt/miniconda3``.
 
-```{figure} ../../figs/python-tutorial/environment/miniconda-location.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/miniconda-location.png
 ---
 width: 600px
 name: fig-miniconda-location
@@ -89,7 +89,7 @@ which conda
 pip list
 ```
 
-```{figure} ../../figs/python-tutorial/environment/miniconda-which.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/miniconda-which.png
 ---
 width: 600px
 name: fig-miniconda-which
@@ -113,7 +113,7 @@ Um zu prüfen ob ``conda`` auf Ihrem System gefunden wird können Sie folgenden 
 conda --version
 ```
 
-```{figure} ../../figs/python-tutorial/environment/conda-version.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/conda-version.png
 ---
 width: 600px
 name: fig-conda-version
@@ -163,7 +163,7 @@ conda install jupyterlab
 
 Bevor Sie die Installation akzeptieren, wird Ihnen angezeigt welche Pakte (inkl. Abhängigkeiten) installiert werden.
 
-```{figure} ../../figs/python-tutorial/environment/jupyter-install-conda.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/jupyter-install-conda.png
 ---
 width: 600px
 name: fig-jupyter-install-conda
@@ -173,7 +173,7 @@ name: fig-jupyter-install-conda
 Und Sie werden gefragt ob Sie fortfahren wollen.
 Mit ``y`` akzeptieren Sie den Vorgang und die Installation wird durchgeführt.
 
-```{figure} ../../figs/python-tutorial/environment/jupyter-install-conda-accept.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/jupyter-install-conda-accept.png
 ---
 width: 600px
 name: fig-jupyter-install-conda-accept
@@ -189,7 +189,7 @@ jupyter notebook
 starten.
 Es würde folgendes Fenster im Browser Ihres Systems erscheinen.
 
-```{figure} ../../figs/python-tutorial/environment/jupyter-start.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/jupyter-start.png
 ---
 width: 800px
 name: fig-jupyter-start-2
@@ -205,7 +205,7 @@ jupyter lab
 
 starten können.
 
-```{figure} ../../figs/python-tutorial/environment/jupyter-lab-start.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/jupyter-lab-start.png
 ---
 width: 800px
 name: fig-jupyter-lab-start
@@ -232,7 +232,7 @@ Nach abgeschlossener Installation, testen Sie ob ``Python`` und ``pip`` von Ihre
 python --version
 ```
 
-```{figure} ../../figs/python-tutorial/environment/python-version.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/python-version.png
 ---
 width: 350px
 name: fig-python-version
@@ -244,7 +244,7 @@ pip --version
 ```
 
 
-```{figure} ../../figs/python-tutorial/environment/pip-version.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/pip-version.png
 ---
 width: 600px
 name: fig-pip-version
@@ -269,7 +269,7 @@ Um zu prüfen ob ``pip`` auf Ihrem System gefunden wird können Sie folgenden Be
 pip --version
 ```
 
-```{figure} ../../figs/python-tutorial/environment/pip-version.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/pip-version.png
 ---
 width: 600px
 name: fig-pip-version-2
@@ -305,7 +305,7 @@ Lassen Sie uns das nachholen.
 pip install jupyterlab --user
 ```
 
-```{figure} ../../figs/python-tutorial/environment/jupyter-installation.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/jupyter-installation.png
 ---
 width: 600px
 name: fig-jupyter-installation
@@ -330,7 +330,7 @@ jupyter lab
 
 starten und es erscheint ein neues Fenster im Browser Ihres Systems.
 
-```{figure} ../../figs/python-tutorial/environment/jupyter-lab-start.png
+```{figure} ../../figs/06-python-ecosystem-and-setup/python-tutorial/environment/jupyter-lab-start.png
 ---
 width: 800px
 name: fig-jupyter-lab-start-3

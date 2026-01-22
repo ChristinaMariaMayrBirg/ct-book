@@ -81,7 +81,7 @@ Eine *Variable* können wir als Paar von **Wert** und **Arbeitsspeicheradresse**
 Der Wert der Variablen steht im [Arbeitsspeicher](def-main-memory) an einer bestimmten Arbeitsspeicheradresse.
 Den Arbeitsspeicher können wir uns als lange Liste von Bits vorstellen:
 
-```{figure} ../../figs/python-tutorial/variables/ram.png
+```{figure} ../../figs/04-language-properties/python-tutorial/variables/ram.png
 ---
 width: 400px
 name: fig-ram
@@ -112,7 +112,7 @@ Wird der **Wert** ``25`` in den Arbeitsspeicher an eine freie **Speicheradresse*
 Diese **Adresse** erhält die *Variable* ``x``. ``x`` *zeigt* auf den Speicherbereich in dem der **Wert** ``25`` steht!
 Folgende Abbildung verdeutlicht die Situation:
 
-```{figure} ../../figs/python-tutorial/variables/variable.png
+```{figure} ../../figs/04-language-properties/python-tutorial/variables/variable.png
 ---
 width: 800px
 name: fig-variable
@@ -133,7 +133,7 @@ Sie sehen dass die ``id`` der Variablen ``x`` und ``z`` identisch sind.
 Ebenso ist ihr Wert identisch.
 Diese Situation sieht demnach wie folgt aus:
 
-```{figure} ../../figs/python-tutorial/variables/variable-equal-id.png
+```{figure} ../../figs/07-python-basics/python-tutorial/variables/variable-equal-id.png
 ---
 width: 800px
 name: fig-variable-equal-id
@@ -165,7 +165,7 @@ print(id(z))
 
 Die Situation könnte in etwa wie folgt aussehen:
 
-```{figure} ../../figs/python-tutorial/variables/variable-unequal-id.png
+```{figure} ../../figs/07-python-basics/python-tutorial/variables/variable-unequal-id.png
 ---
 width: 800px
 name: fig-variable-unequal-id

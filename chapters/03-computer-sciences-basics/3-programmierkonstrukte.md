@@ -204,7 +204,7 @@ Das folgende Bild gibt einen Überblick über eine **strukturelle** Klassifikati
   - **Dynamische lineare Strukturen**: Die Größe kann zur Laufzeit verändert werden.
 - **Nicht-lineare Datenstrukturen**: Die Elemente sind nicht in einer einfachen Reihenfolge angeordnet.
 
-```{figure} ../../figs/overview/datenstrukturen.png
+```{figure} ../../figs/03-computer-sciences-basics/overview/datenstrukturen.png
 :name: fig-data-structures-overview
 :width: 100%
 :align: center

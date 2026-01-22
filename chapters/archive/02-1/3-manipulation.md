@@ -47,7 +47,7 @@ print(lnot(0))
 print(lnot(1))
 ```
 
-```{figure} ../../figs/digital-computer/manipulation/gatter-not.png
+```{figure} ../../figs/archive/digital-computer/manipulation/gatter-not.png
 ---
 width: 300px
 name: fig-not
@@ -68,7 +68,7 @@ print(land(1,0))
 print(land(1,1))
 ```
 
-```{figure} ../../figs/digital-computer/manipulation/gatter-and.png
+```{figure} ../../figs/archive/digital-computer/manipulation/gatter-and.png
 ---
 width: 340px
 name: fig-and
@@ -89,7 +89,7 @@ print(lor(1,0))
 print(lor(1,1))
 ```
 
-```{figure} ../../figs/digital-computer/manipulation/gatter-or.png
+```{figure} ../../figs/archive/digital-computer/manipulation/gatter-or.png
 ---
 width: 340px
 name: fig-or
@@ -238,7 +238,7 @@ ladd(1,1)
 
 Als Gatter-Bauplan sieht das ganze wie folgt aus.
 
-```{figure} ../../figs/digital-computer/manipulation/adder.png
+```{figure} ../../figs/archive/digital-computer/manipulation/adder.png
 ---
 width: 600px
 name: fig-adder
@@ -371,7 +371,7 @@ Für einen $n$-Bit-Addierer brauchen wir $n$ hintereinander geschaltene 1-Bit-Ad
 Wie oben erwähnt addiert der $i$-te 1-Bit-Addierer das $i$-te Bit der beiden Eingabezahlen und den Übertrag des $(i-1)$-ten 1-Bit-Addierers.
 Für den ersten Addierer ist der Übertrag $u$ gleich $0$.
 
-```{figure} ../../figs/digital-computer/manipulation/4-bit-adder.png
+```{figure} ../../figs/archive/digital-computer/manipulation/4-bit-adder.png
 ---
 width: 400px
 name: fig-4-bit-adder

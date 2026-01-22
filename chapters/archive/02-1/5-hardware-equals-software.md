@@ -123,7 +123,7 @@ Diese abstrakte Maschine, d.h. die Turingmaschine, stelle genau diese *effektive
 Turing wollte so den zunächst nur intuitiv gegebenen Begriff der Berechenbarkeit exakt beschreiben.
 Man kann bis heute sagen, dass ihm dies geglückt ist.
 
-```{figure} ../../figs/digital-computer/computability/tm.png
+```{figure} ../../figs/archive/digital-computer/computability/tm.png
 ---
 height: 200px
 name: fig-tm
@@ -268,7 +268,7 @@ Pfiffige Bastler\*innen können diese Maschine als Heimwerkerprojekt im Keller b
 Es steht ihnen zwar kein unendliches Band zur Verfügung, doch falls ein Algorithmus terminiert, kann der Schreib-/Lesekopf nur eine endliche Distanz fahren und somit ist ein endliches Band ausreichend.
 Wie lange dies jedoch sein muss ist im Vornhinein unklar.
 
-```{figure} ../../figs/history/model-of-a-tm.jpeg
+```{figure} ../../figs/archive/history/model-of-a-tm.jpeg
 ---
 height: 200px
 name: model-of-a-tm-2
@@ -415,7 +415,7 @@ Als Alternative zum Gefängnis akzeptierte er eine Hormonbehandlung mit DES, ein
 Turing starb am 7. Juni 1954, 16 Tage vor seinem 42. Geburtstag, an einer Zyankali-Vergiftung.
 Eine Untersuchung stellte seinen Tod als Selbstmord fest, aber es wurde angemerkt, dass die bekannten Beweise auch mit einer versehentlichen Vergiftung übereinstimmen könnten.
 
-```{figure} ../../figs/history/alan-turing.jpeg
+```{figure} ../../figs/archive/history/alan-turing.jpeg
 ---
 height: 200px
 name: fig-alan-turing-computability

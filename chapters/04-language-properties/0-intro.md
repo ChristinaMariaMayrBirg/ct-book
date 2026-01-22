@@ -6,7 +6,7 @@ In diesem Teil der Vorlesung geht es darum, Python zu verstehen. Was ist damit g
 
 Zurück zu unserem Autobeispiel: Sowohl ein Elektroauto als auch ein Gangschaltauto haben einen Schalthebel. Die Bedienung ist aber sehr unterschiedlich: Einmal benutzen Sie den Schalthebel nur, um einen Modus (vorwärts, rückwärts, parken) einzustellen, und beim anderen schalten Sie Gänge, die unterschiedliche Geschwindigkeiten erlauben. Ähnlich ist es mit Programmiersprachen. Python bietet Ihnen sehr viel Komfort! Im Autobeispiel wäre Python vielleicht das E-Auto, bei dem Sie nicht mehr manuell schalten müssen. Allerdings werden Sie in Ihrem Berufsalltag nie mit nur einer Sprache in Berührung kommen. Vielleicht müssen Sie plötzlich doch schalten lernen? Deshalb: ein Blick unter die Motorhaube lohnt sich.
 
-```{figure} ../../figs/overview/motorhaube.png
+```{figure} ../../figs/02-course-concept/overview/motorhaube.png
 ---
 height: 320px
 name: motorhaube

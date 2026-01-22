@@ -72,7 +72,7 @@ Immer wenn wir ``fac`` aufrufen, wird ein neuer lokaler Namensraum auf den Stack
 Dieser enthält die Variable ``n``.
 Da die Funktionen rekursiv aufgerufen werden, füllt sich der Stack bis wir uns im Aufruf von ``fac(1)`` befinden.
 
-```{figure} ../../figs/python-tutorial/functions/stack_fill.png
+```{figure} ../../figs/11-functions/python-tutorial/functions/stack_fill.png
 ---
 width: 500px
 name: fig-stack_fill
@@ -87,7 +87,7 @@ In diesem hat ``n`` den Wert ``2`` und wir befinden uns bereits an der Stelle ``
 
 Sukzessive leert sich der Stack.
 
-```{figure} ../../figs/python-tutorial/functions/stack_clear.png
+```{figure} ../../figs/11-functions/python-tutorial/functions/stack_clear.png
 ---
 width: 500px
 name: fig-stack_clear

@@ -18,7 +18,7 @@ kernelspec:
 In diesem Abschnitt werden wir das was wir im Abschnitt [Interpretation](sec-interpretation) und [Repräsentation](sec-representation) besprochen hatten konkretisieren.
 Wir werden eine bestimmte Interpretation nutzten um aus einer Folge von 0 und 1 Bilder 
 
-```{figure} ../../figs/image-representation/zero-and-one-to-bw-picture.png
+```{figure} ../../figs/archive/image-representation/zero-and-one-to-bw-picture.png
 ---
 width: 200px
 name: fig-zero-and-one-to-bw-picture
@@ -28,7 +28,7 @@ name: fig-zero-and-one-to-bw-picture
 und Animationen zu generieren.
 
 ```{only} html
-```{figure} ../../figs/image-representation/flower.gif
+```{figure} ../../figs/archive/image-representation/flower.gif
 ---
 width: 200px
 name: fig-flower
@@ -37,7 +37,7 @@ name: fig-flower
 ```
 
 ```{only} latex
-```{figure} ../../figs/image-representation/flower.png
+```{figure} ../../figs/archive/image-representation/flower.png
 ---
 width: 200px
 name: fig-flower
@@ -481,7 +481,7 @@ Diese soll uns in eine **abstraktere** Welt ka­ta­pul­tie­ren.
 In anderen Worten: Wir konstruieren eine Interpretation die geometrische (mathematische) Objekten wie den Kreis, ein Rechteck oder Dreieck (Repräsentanten) in eine zweidimensionale Liste aus 0 und 1 (Bedeutung) übersetzt.
 Diese Übersetzung bezeichnet man auch als **Rasterisierung** (siehe Abschnitt [Vektorgrafiken](svg-image)).
 
-```{figure} ../../figs/image-representation/point-to-pixel.png
+```{figure} ../../figs/archive/image-representation/point-to-pixel.png
 ---
 height: 350px
 name: fig-point-to-pixel
@@ -525,7 +525,7 @@ Wir könnten aus den Punkten die Geradengleichung $f(x) = mx + t$ berechnen und 
 Hier würden wir jedoch auf unangenehme Sonderfälle stoßen.
 Zum Beispiel, lässt sich ein Segment was parallel zur $y$-Achse verläuft nicht durch eine Funktion beschreiben.
 
-```{figure} ../../figs/image-representation/midpoint.png
+```{figure} ../../figs/archive/image-representation/midpoint.png
 ---
 width: 300px
 name: fig-midpoint
@@ -819,7 +819,7 @@ def animate(pictures, interval = 100, save = False, title = '', dpi = 80):
 Generieren Sie folgendes GIF/Daumenkino bzw. Animation:
 
 ```{only} html
-```{figure} ../../figs/image-representation/daumenkino.gif
+```{figure} ../../figs/archive/image-representation/daumenkino.gif
 ---
 height: 150px
 name: fig-daumenkino
@@ -828,7 +828,7 @@ name: fig-daumenkino
 ```
 
 ```{only} latex
-```{figure} ../../figs/image-representation/daumenkino.png
+```{figure} ../../figs/archive/image-representation/daumenkino.png
 ---
 height: 150px
 name: fig-daumenkino
@@ -865,7 +865,7 @@ Wir haben jetzt die Möglichkeit eine unbegrenzte Menge an Animationen zu erzeug
 Generieren Sie eine Animation eines Balls, welcher sich in einer Box bewegt, d.h. der Ball bewegt sich mit konstanter Geschwindigkeit und prallt von der Wand ab.
 
 ```{only} html
-```{figure} ../../figs/image-representation/daumenkino_ball.gif
+```{figure} ../../figs/archive/image-representation/daumenkino_ball.gif
 ---
 height: 150px
 name: fig-daumenkino-ball
@@ -874,7 +874,7 @@ name: fig-daumenkino-ball
 ```
 
 ```{only} latex
-```{figure} ../../figs/image-representation/daumenkino_ball.png
+```{figure} ../../figs/archive/image-representation/daumenkino_ball.png
 ---
 height: 150px
 name: fig-daumenkino-ball
@@ -975,7 +975,7 @@ plot_picture(picture)
 
 ergibt
 
-```{figure} ../../figs/image-representation/fourier-drawing.png
+```{figure} ../../figs/archive/image-representation/fourier-drawing.png
 ---
 height: 150px
 name: fig-fourier-drawing

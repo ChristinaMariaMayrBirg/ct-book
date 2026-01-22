@@ -1,8 +1,8 @@
 # --------------------------------------------------
 # Basis-Metadaten
 # --------------------------------------------------
-title: Ingenieurinformatik 1
-logo: figs/logo-HM-small.png
+title: Ingenieurinformatik 1 - Programmieren (Python)
+logo: figs/00-general/logo-cardrive.png
 author: ""
 email: christina_maria.mayr@hm.edu
 
@@ -49,8 +49,8 @@ sphinx:
     - sphinx_proof
 
   config:
-    version: "1.6"
-    release: "1.6.0"
+    version: "1.7"
+    release: "1.7.0"
 
     myst_enable_extensions:
       - dollarmath
@@ -146,12 +146,12 @@ html:
     <div class="container">
       <div class="col1">
         <a href="https://hm.edu/">
-          <img style="width:50px;float:right;" src="/ct-book/_static/img/hm-logo.png" alt="Logo">
+          <img style="width:50px;float:right;" src="/_static/img/hm-logo.png" alt="Logo">
         </a>
       </div>
       <div class="col1">
         Autoren: <a href="/chapters/misc/contributors.html">alle anzeigen</a>.
         Lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>.
-        Version 1.6.0
+        Version 1.7.0
       </div>
     </div>

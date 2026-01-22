@@ -34,7 +34,7 @@ Gewöhnlich adressiert die CPU keine einzelnen Bits, sondern ein ganzes [Byte](d
 {numref}`Abbildung {number} <fig-ram-banks>` zeigt ein Beispiel eines Arbeitsspeichers der uns erlaubt jeweils ein Byte zu adressieren.
 Zugleich werden Adressen, in diesem Beispiel, durch ein Byte dargestellt.
 
-```{figure} ../../../figs/art-of-programming/ram.png
+```{figure} ../../../figs/misc/art-of-programming/ram.png
 ---
 width: 400px
 name: fig-ram-banks
@@ -121,7 +121,7 @@ Die folgende Abbildung veranschaulicht die Indexierung.
 Dabei ist in blau der von der Datenstruktur belegte Speicher hervorgehoben.
 Die grauen Bereiche sind ebenfalls belegt jedoch nicht von unserer Datenstruktur.
 
-```{figure} ../../../figs/art-of-programming/list-indexing.png
+```{figure} ../../../figs/misc/art-of-programming/list-indexing.png
 ---
 width: 800px
 name: list-list-indexing
@@ -132,7 +132,7 @@ Was aber wenn Sie einen weiteren Gegenstand in den Zusammenschluss aus Schließf
 Dann müssen Sie viele Gegenstände aus Schließfach $k$ in das Schließfach $k+1$ bewegen.
 Folgende Abbildung skizziert diesen aufwendigen Vorgang:
 
-```{figure} ../../../figs/art-of-programming/list-insert.png
+```{figure} ../../../figs/misc/art-of-programming/list-insert.png
 ---
 width: 800px
 name: list-insert
@@ -144,7 +144,7 @@ Dann müssten Sie **alle** Gegenstände in eine neue Folge aus zusammenhängende
 Sie müssen dafür natürlich eine Stelle finden, die genug Platz bietet!
 Die folgende Abbildung skizziert diesen Vorgang:
 
-```{figure} ../../../figs/art-of-programming/list-insert-fail.png
+```{figure} ../../../figs/misc/art-of-programming/list-insert-fail.png
 ---
 width: 800px
 name: list-insert-fail
@@ -154,7 +154,7 @@ name: list-insert-fail
 Wenn Sie einen Gegenstand inmitten der Schließfächer löschen, müssen Sie ebenfalls viele Gegenstände bewegen.
 Dieser Vorgang ähnelt dem Einfügen inmitten der Datenstruktur.
 
-```{figure} ../../../figs/art-of-programming/list-delete.png
+```{figure} ../../../figs/misc/art-of-programming/list-delete.png
 ---
 width: 800px
 name: list-delete
@@ -214,7 +214,7 @@ Sie halten eine Schnur in den Händen, die auf das Schließfach mit Ihrem absolu
 Das darauffolgende Schließfach verweist auf ihr zweitliebstes Gericht usw.
 Die so verketteten Schließfächer bilden eine sog. *verkettete Liste* (engl. *Linked List*).
 
-```{figure} ../../../figs/art-of-programming/linked-list-ram.png
+```{figure} ../../../figs/misc/art-of-programming/linked-list-ram.png
 ---
 width: 800px
 name: fig-linked-list-ram
@@ -236,7 +236,7 @@ Daten
 Zeiger
 : Verweist auf den nächsten Knoten. Das ist die Schnur, die zum nächsten Schließfach führt.
 
-```{figure} ../../../figs/art-of-programming/linked-list-node.png
+```{figure} ../../../figs/misc/art-of-programming/linked-list-node.png
 ---
 width: 200px
 name: fig-linked-list-node
@@ -246,7 +246,7 @@ Knoten einer *verketteten Liste*.
 
 Den Anfangsknoten der Liste bezeichnet man als *Kopf/Head*.
 
-```{figure} ../../../figs/art-of-programming/linked-list.png
+```{figure} ../../../figs/misc/art-of-programming/linked-list.png
 ---
 width: 800px
 name: fig-linked-list

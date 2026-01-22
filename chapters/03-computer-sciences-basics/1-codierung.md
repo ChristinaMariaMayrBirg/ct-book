@@ -12,7 +12,7 @@ Nach diesem Abschnitt können Sie …
 - erläutern, wie **Codierung** Bitfolgen Bedeutung zuweist (Zahl, Zeichen, Farbe, Maschinenbefehl).
 - den Unterschied zwischen **Codierung** (Bedeutung) und **Zahlensystem** (Darstellung) erklären.
 
-```{figure} ../../figs/digital-computer/representation/lamps.png
+```{figure} ../../figs/03-computer-sciences-basics/digital-computer/representation/lamps.png
 ---
 width: 200px
 name: fig-lamps

@@ -176,7 +176,7 @@ Dieser Ausdruck besteht aus mehreren Ausdrücken.
 Die Auswertung des gesamten Ausdrucks erfolgt von links nach rechts, wobei die notwendigen Argumente, welche durch einen Ausdruck berechnet werden, ausgewertet werden.
 Deshalb springen wir von außen nach innen und werten dann von innen nach außen aus.
 
-```{figure} ../../figs/python-tutorial/variables/eval.png
+```{figure} ../../figs/07-python-basics/python-tutorial/variables/eval.png
 ---
 width: 400px
 name: fig-eval

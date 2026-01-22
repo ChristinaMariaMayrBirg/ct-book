@@ -32,7 +32,7 @@ Der wichtige Unterschied ist dabei:
 - bei Skript-/Interpreter-Setups steckt ein großer Teil der Ausführung in `python3` (dem Interpreter), während Ihr `.py`-File als Quelltext bestehen bleibt.
 
 
-```{figure} ../../figs/overview/interpretationcompilation.png
+```{figure} ../../figs/04-language-properties/overview/interpretationcompilation.png
 ---
 width: 600px
 name: fig-interpretationcompilation
@@ -47,7 +47,7 @@ Die Aussage „Python wird interpretiert“ ist als Vereinfachung weit verbreite
 - Der **Python-Interpreter** (z.B. CPython) enthält eine Compiler-Komponente, die Quelltext in **Bytecode** übersetzt (Zwischenform).
 - Eine Ausführungs-Komponente (oft als **Python Virtual Machine / PVM** beschrieben) führt diesen Bytecode aus.
 
-```{figure} ../../figs/overview/python-einfach.png
+```{figure} ../../figs/04-language-properties/overview/python-einfach.png
 ---
 width: 600px
 name: fig-python-einfach
