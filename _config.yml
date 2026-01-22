@@ -138,7 +138,7 @@ html:
   home_page_in_navbar: true
 
   analytics:
-    google_analytics_id: G-JTQKVRRRDB
+    google_analytics_id: G-NP7MM9Y8VG
 
   extra_navbar: Unterstützt durch <a href="https://jupyterbook.org">Jupyter Book</a>
 
