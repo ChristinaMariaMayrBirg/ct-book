@@ -34,7 +34,7 @@ Er konnte nur noch mit seinem linken Augenlid blinzeln.
 Der Körper versagte ihm nahezu alle Möglichkeiten der Verständigung und doch gelang es Dominique, über seine Erlebnisse in der geistigen Isolation, ein ganzes Buch zu schreiben.
 Wie war dies möglich?
 
-```{figure} ../../figs/dive-bell/jean-dominique-bauby.jpeg
+```{figure} ../../figs/archive/dive-bell/jean-dominique-bauby.jpeg
 ---
 height: 100px
 name: jean-dominique-bauby
@@ -756,7 +756,7 @@ Wir können **nicht blinzeln** als $0$ und **blinzeln** als $1$ interpretieren!
 Damit ergibt sich für ``P`` die Folge $0, 1, 1, 0, 1$ oder schlicht das binäre Wort $01101$.
 Eine andere *Codierung* ist natürlich auch möglich.
 
-```{figure} ../../figs/dive-bell/alphabet-code-tree.png
+```{figure} ../../figs/archive/dive-bell/alphabet-code-tree.png
 ---
 width: 800px
 name: fig-alphabet-code-tree

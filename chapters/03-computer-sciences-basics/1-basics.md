@@ -25,7 +25,7 @@ Ein Computer erweitert das EVA-Prinzip um den **Speicher** und damit um einen **
 Wäre der Computer zustandslos würde er bei gleicher **Eingabe** $x$ auch stets die gleiche **Ausgabe** $y$ erzeugen.
 Durch den Speicher kann sich, je nach Eingabe, der Zustand $z$ des Computers verändern und, je nach seinem Zustand, kann dieselbe Eingabe zu unterschiedlichen Ausgaben führen.
 
-```{figure} ../../figs/digital-computer/basics/dfa.png
+```{figure} ../../figs/03-computer-sciences-basics/digital-computer/basics/dfa.png
 ---
 width: 600px
 name: fig-dfa
@@ -53,7 +53,7 @@ Wie wird aus Gattern, elektrischen Leitungen und dem Speicher ein vollwertiger (
 Die *Von-Neumann-Architektur* ist die bekannteste und meist verwendete Hardware-Architektur, die den Aufbau von Computern beschreibt.
 Sie legt fest, wie die wesentlichen Bauteile miteinander interagieren.
 
-```{figure} ../../figs/digital-computer/informationcycle/von-neumann-architecture.png
+```{figure} ../../figs/03-computer-sciences-basics/digital-computer/informationcycle/von-neumann-architecture.png
 ---
 height: 300px
 name: von-neumann-architecture-2
@@ -138,7 +138,7 @@ Das Programm ist eine zusammenhängende Folge von 0 und 1, welche Befehle reprä
 - $\text{LOAD} \ \#15 \ \$5$: Lade Daten aus Hauptspeicheradresse $\#15$ ins Register $\$5$
 - $\text{STORE} \ \$7 \ \#16$: Speichere Daten von Register $\$7$ im Hauptspeicher an Adresse $\#16$
 
-```{figure} ../../figs/digital-computer/informationcycle/program-run.png
+```{figure} ../../figs/03-computer-sciences-basics/digital-computer/informationcycle/program-run.png
 ---
 width: 700px
 name: fig-program-run

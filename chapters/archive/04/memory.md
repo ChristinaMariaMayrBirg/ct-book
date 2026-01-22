@@ -44,7 +44,7 @@ Der Inhalt wird in ein [Register](def-register) der [CPU](def-cpu) geladen und d
 Zudem kann die [CPU](def-cpu) Ergebnisse an die Adresse des Befehlszeigers schreiben.
 Aufgrund der Befehle, welche aus dem [Arbeitsspeicher](def-main-memory) geladen werden, verändert die Kontrolleinheit den Befehlszeiger entsprechend, d.h., die Kontrolleinheit führt das im Speicher stehende Programm aus.
 
-```{figure} ../../figs/digital-computer/informationcycle/program-run.png
+```{figure} ../../figs/03-computer-sciences-basics/digital-computer/informationcycle/program-run.png
 ---
 width: 600px
 name: fig-program-run-memory
@@ -195,7 +195,7 @@ Jedoch soll auch für unsere Liste gelten, dass
 1. sie nur Dezimalzahlen beinhalten darf und
 2. diese durch 8 [Bit](def-bit) darstellbar sind.
 
-```{figure} ../../figs/memory/list-as-memory.png
+```{figure} ../../figs/archive/memory/list-as-memory.png
 ---
 width: 600px
 name: fig-list-as-memory
@@ -296,7 +296,7 @@ Da in ``memory`` nur Zahlen stehen können, ist auch diese Datentypinformation a
 Brauchen wir dann nicht eine weitere Information die uns sagt, dass es sich bei diesem oder jenem Speicherbereich um die Datentypinformation handelt?
 Wenn ja kommen wir aus dem Schlamassel nicht mehr heraus.
 
-```{figure} ../../figs/memory/data-type-key-pair.png
+```{figure} ../../figs/archive/memory/data-type-key-pair.png
 ---
 width: 250px
 name: fig-data-type-key-pair
@@ -513,7 +513,7 @@ Nach dieser Prämisse folgen die eigentlichen Elemente ohne Datentypinformation.
 
 {numref}`Abbildung {number} <fig-datatypes-in-memory>` fasst alle besprochenen Datentypen zusammen.
 
-```{figure} ../../figs/memory/datatypes-in-memory.png
+```{figure} ../../figs/archive/memory/datatypes-in-memory.png
 ---
 width: 500px
 name: fig-datatypes-in-memory
@@ -862,7 +862,7 @@ wobei ``n`` die Anzahl der Listenelemente ist.
 Weshalb subtrahieren wir die eins?
 Da Listenelemente keine Datentypinformation benötigen!
 
-```{figure} ../../figs/memory/list-in-memory.png
+```{figure} ../../figs/archive/memory/list-in-memory.png
 ---
 width: 600px
 name: fig-list-in-memory

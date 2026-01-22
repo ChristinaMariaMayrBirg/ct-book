@@ -159,7 +159,7 @@ $$a_j < b_j$$
 
 gilt.
 
-```{figure} ../../figs/name-register/binary-search.png
+```{figure} ../../figs/archive/name-register/binary-search.png
 ---
 width: 600px
 name: fig-binary-search
@@ -634,7 +634,7 @@ In der *abstrakten Welt* modellieren wir mehrere *Fächer* meist durch eine einf
 Jeder Listeneintrag *repräsentiert* ein *Fach*, was wiederum eine Liste aber auch eine andere [Sammlung (Collection)](def-collection) sein kann, siehe untere 
 {numref}`Abbildung {number} <fig-buckets>`.
 
-```{figure} ../../figs/name-register/bucket.png
+```{figure} ../../figs/archive/name-register/bucket.png
 ---
 width: 600px
 name: fig-buckets
@@ -658,7 +658,7 @@ Wir machen aus ``unique_names_lex`` eine zweidimensionale Liste ``names_by_lette
 + ``names_by_letter[25]`` alle Namen die mit ``Z`` beginnen enthält. 
 
 
-```{figure} ../../figs/name-register/babynames.png
+```{figure} ../../figs/archive/name-register/babynames.png
 ---
 width: 300px
 name: fig-babynames-buckets
@@ -756,7 +756,7 @@ Wir verwenden weiterhin ``unique_names_lex``, fügen aber eine weitere unterstü
 + ...
 + ``marks[25]`` ist der kleinste Index der Indices der Wörter die mit einem ``Z`` beginnen,
 
-```{figure} ../../figs/name-register/marks.png
+```{figure} ../../figs/archive/name-register/marks.png
 ---
 width: 250px
 name: fig-babynames-marks
@@ -928,7 +928,7 @@ Für die weitere Diskussion benötigen wir folgende Definitionen:
 In unserer Fächer-Datenstruktur, lösen wir Kollisionen auf indem wir alle Elemente mit gleichem Index in eine zweite Liste packen.
 Ein solches Verfahren heißt *offenes Hashing mit geschlossener Adressierung*.
 
-```{figure} ../../figs/name-register/open-hashing.png
+```{figure} ../../figs/archive/name-register/open-hashing.png
 ---
 width: 530px
 name: fig-open-hashing
@@ -962,7 +962,7 @@ Sobald die Liste droht voll zu laufen muss sie vergrößert werden.
 Ein solches Verfahren heißt *geschlossenes Hashing mit offener Adressierung*.
 In {numref}`Abbildung {number} <fig-closed-hashing>` ist dieses mit einer der einfachsten Kollisionsauflösungen skizziert: Falls ein Platz belegt ist suchen wir aufsteigend nach dem nächst liegenden freien Platz.
 
-```{figure} ../../figs/name-register/closed-hashing.png
+```{figure} ../../figs/archive/name-register/closed-hashing.png
 ---
 width: 430px
 name: fig-closed-hashing
@@ -1109,7 +1109,7 @@ Angenommen wir fügen die Schlüssel ``'Anna'``, ``'Alex'``, ``'Clara'``, ``'Alb
 Und angenommen wir verwenden als Hashfunktion ``index_of`` und eine *lineare Sondierung*.
 Dann erhalten wir als Resultat die Liste aus {numref}`Abbildung {number} <fig-closed-hashing-deletion>`.
 
-```{figure} ../../figs/name-register/closed-hashing-deletion.png
+```{figure} ../../figs/archive/name-register/closed-hashing-deletion.png
 ---
 width: 600px
 name: fig-closed-hashing-deletion

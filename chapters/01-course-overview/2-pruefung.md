@@ -2,6 +2,8 @@
 
 Abhängig von Ihrem Studienbeginn gelten unterschiedliche Prüfungsordnungen. Bitte prüfen Sie, welche Variante für Sie zutrifft.
 
+## Teilprüfungsregelungen
+
 **Variante 1: Aktuelle Prüfungsordnung (Teilprüfungen)**
 
 Bei dieser Variante melden Sie sich zu zwei separaten Teilprüfungen an:
@@ -26,13 +28,14 @@ Wichtige Regelungen:
 - Die Endnote ergibt sich aus der Gesamtpunktzahl
 - Es muss nicht jeder Prüfungsteil separat bestanden werden
 
-## Prüfungsvorbereitung
 
-Zur Prüfungsvorbereitung dienen Ihnen die Aufgabenbeispiele aus der Vorlesung und den Praktika. Zusätzlich dazu stellen wir Ihnen Prüfungen aus vorhergehenden Semstern bereit.
+## Weitere Informationen
 
-Die Prüfungen finden Sie unter [Downloads](../misc/downloads.html).
+**Prüfungsvorbereitung**
 
-## Zugelassene Unterlagen
+Zur Prüfungsvorbereitung dienen Ihnen die Aufgabenbeispiele aus der Vorlesung und den Praktika. Zusätzlich dazu stellen wir Ihnen Prüfungen aus vorhergehenden Semstern bereit. Die Prüfungen finden Sie unter [Downloads](../misc/downloads.html).
+
+**Zugelassene Hilfsmittel**
 
 Bisher waren folgende Unterlagen zugelassen:
 + Eigene Hilfsmittel (Skripte, ...)

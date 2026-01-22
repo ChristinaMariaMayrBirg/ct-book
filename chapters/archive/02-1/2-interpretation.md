@@ -41,7 +41,7 @@ Das Unterschiedliche wird durch Abstraktion ununterscheidbar.
 
 Die Zeichenfolge ``23.10.2022`` interpretieren wir normalerweise als Datum und folgendes Symbol 
 
-```{figure} ../../figs/digital-computer/interpretation/stop-sign.jpeg
+```{figure} ../../figs/archive/digital-computer/interpretation/stop-sign.jpeg
 ---
 width: 200px
 name: fig-stop-sign

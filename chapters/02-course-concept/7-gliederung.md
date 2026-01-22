@@ -2,10 +2,7 @@
 
 % diese Seite ist finalisiert und soll nicht mehr verändert werden. 
 
-In diesem Teilmodul lernen Sie Programmieren anhand der Programmiersprache Python. Ziel ist nicht, die Syntax von Python „auswendig zu lernen“, sondern Probleme systematisch in Programme zu übersetzen.
-
-Das Modul ist in vier Teile gegliedert.
-Zur Erinnerung an die Metapher aus der Einleitung (siehe {ref}`sec-intro`): Die vier Teile können Sie als Etappen einer Autofahrt lesen – von der „Verkehrsinfrastruktur“ (Teil 1) über das konkrete „Auto“ (Teil 2) und das Üben der Bedienung (Teil 3) bis zur längeren „Fahrt“ (Teil 4).
+In diesem Teilmodul lernen Sie Programmieren anhand der Programmiersprache Python. Ziel ist nicht, die Syntax von Python „auswendig zu lernen“, sondern Probleme systematisch in Programme zu übersetzen. Das Modul ist daher in vier Teile gegliedert. Zur Erinnerung an die Metapher aus der Einleitung (siehe {ref}`sec-intro`): Die vier Teile können Sie als Etappen einer Autofahrt lesen – von der „Verkehrsinfrastruktur“ (Teil 1) über das konkrete „Auto“ (Teil 2) und das Üben der Bedienung (Teil 3) bis zur längeren „Fahrt“ (Teil 4).
 
 Konkret bedeutet das:
 
@@ -23,7 +20,7 @@ Konkret bedeutet das:
 
 ## Einführung (Teil 1)
 
-```{figure} ../../figs/overview/infrastructer-metaphor.png
+```{figure} ../../figs/02-course-concept/overview/infrastructer-metaphor.png
 ---
 height: 320px
 name: infrastructer-metaphor
@@ -46,7 +43,7 @@ In der Regel nicht direkt prüfungsrelevant (außer, wir weisen ausdrücklich da
 
 ## Python verstehen (Teil 2)
 
-```{figure} ../../figs/overview/motorhaube.png
+```{figure} ../../figs/02-course-concept/overview/motorhaube.png
 ---
 height: 320px
 name: motorhaube
@@ -75,7 +72,7 @@ Für die Prüfung meist nicht direkt abgefragt – aber sehr wertvoll: Konzeptwi
 
 ## Python anwenden (Teil 3)
 
-```{figure} ../../figs/overview/bedienung.png
+```{figure} ../../figs/02-course-concept/overview/bedienung.png
 ---
 height: 320px
 name: bedienung
@@ -100,7 +97,7 @@ Sehr prüfungsrelevant: Hier prüfen wir, ob Sie „fahren können“ – also e
 
 ## Anwendungsfall (Teil 4)
 
-```{figure} ../../figs/overview/fahrt.png
+```{figure} ../../figs/02-course-concept/overview/fahrt.png
 ---
 height: 320px
 name: fahrt

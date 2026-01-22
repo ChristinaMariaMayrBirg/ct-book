@@ -1,19 +1,10 @@
 # Programmiersprachen
 
-Es existiert eine Vielzahl an Programmiersprachen. Es gibt nicht die beste Programmiersprache! 
-Welche Programmiersprache Sie verwenden hängt immer von ihrem Problem ab! 
-Ein guter Softwareentwickler kennt viele Programmiersprachen und entscheidet abhängig vom Problem welche dafür geeignet ist.
 
+Was bedeutet es, eine Programmiersprache zu lernen? Das heißt, dass wir …
 
-
-
-
-Was heißt es, eine Programmiersprache zu lernen?
-
-Eine Programmiersprache zu lernen bedeutet, dass wir:
-
-- den **Syntax** der Sprache ("die Grammatik") und deren **Semantik** ("die Bedeutung") verstehen
-- deren **Konzepte** kennen und anwenden können
+- die **Syntax** („Grammatik“) und die **Semantik** („Bedeutung“) der Sprache verstehen,
+- die zentralen **Konzepte** der Sprache kennen und anwenden können.
 
 
 ## Syntax

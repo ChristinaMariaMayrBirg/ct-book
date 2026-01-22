@@ -71,7 +71,7 @@ Und somit können wir mit $n$ Lampen eine Menge mit $2^n$ Elementen repräsentie
 Dieser exponentielle Anstieg ist enorm wichtig.
 Ohne diese Eigenschaft würden die Speicher der Computer sehr schnell volllaufen.
 
-```{figure} ../../figs/digital-computer/representation/lamps-example.png
+```{figure} ../../figs/archive/digital-computer/representation/lamps-example.png
 ---
 width: 600px
 name: fig-lamps-example
@@ -575,7 +575,7 @@ Jeder Pixel hat eine bestimmte Farbe.
 Wir nennen diese Grafiken auch *Rastergrafiken*.
 Farben werden wiederum durch Zahlen repräsentiert.
 
-```{figure} ../../figs/digital-computer/representation/pixel-image.png
+```{figure} ../../figs/archive/digital-computer/representation/pixel-image.png
 ---
 width: 400px
 name: fig-pixel-image
@@ -678,7 +678,7 @@ Vergleichbar ist die Welle die entsteht wenn Sie einen Stein in einen See werfen
 Die Energie bewegt sich durch das Medium bis an unser Ohr.
 Unser Ohr erkennt die oszillierende Druckveränderung (die Welle) und interpretiert diese als das was wir Ton nennen.
 
-```{figure} ../../figs/digital-computer/representation/particle-waves.png
+```{figure} ../../figs/archive/digital-computer/representation/particle-waves.png
 ---
 width: 800px
 name: fig-particle-waves
@@ -697,7 +697,7 @@ Dazu werten wir die Funktion an endlich vielen Stellen $t = t_0, \ldots, t_n$ au
 Dabei ist $\hat{f}(t_i)$ eine Annäherung des eigentlichen Funktionswerts, d.h. $\hat{f}(t_i) \approx f(t_i)$.
 Je mehr *Samples* wir pro Sekunde machen und je genauer wir die Amplitude an den Samplepunkten treffen, desto genauer wird unsere Annäherung an $f(t)$.
 
-```{figure} ../../figs/digital-computer/representation/sound-wave.png
+```{figure} ../../figs/archive/digital-computer/representation/sound-wave.png
 ---
 width: 800px
 name: fig-sound-wave

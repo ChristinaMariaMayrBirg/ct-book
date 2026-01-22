@@ -60,7 +60,7 @@ $$
 \Omega \subset \mathbb{N} \times \mathbb{N}, \text{ und } |\Omega| = k \text{ für irgendein } k \in \mathbb{N}.
 $$
 
-```{figure} ../../figs/roboworld/roboworld.png
+```{figure} ../../figs/archive/roboworld/roboworld.png
 ---
 width: 400px
 name: fig-robo-world-roboworld
@@ -143,7 +143,7 @@ Steht der Roboter an der Stelle ``(i,j)`` kann er durch mehrmaliges Drehen und e
 erreichen. Diese Nachbarschaft heißt im übrigen *Von-Neumann-Nachbarschaft*, siehe {numref}`Abbildung {number} <fig-robo-world-von-neumann-nh>`.
 Beachten Sie, dass wir die Zeile zuerst nennen und von null beginnen zu zählen. ``(3,1)`` steht demnach für die Zeile ``3`` und Spalte ``1`` bzw. für die ``4``-te Zeile und ``2``-te Spalte.
 
-```{figure} ../../figs/roboworld/von-neumann-nh.png
+```{figure} ../../figs/archive/roboworld/von-neumann-nh.png
 ---
 width: 400px
 name: fig-robo-world-von-neumann-nh
@@ -508,7 +508,7 @@ In dieser Art und Weise formuliert, fällt es unserem Gehirn sehr schwer das Spi
 Dabei ist das Spiel nichts anderes als [Tic-Tac-Toe](https://de.wikipedia.org/wiki/Tic-Tac-Toe).
 In visueller Form, ist das Spiel sehr einfach zu verstehen:
 
-```{figure} ../../figs/roboworld/tic-tac-toe.png
+```{figure} ../../figs/archive/roboworld/tic-tac-toe.png
 ---
 width: 200px
 name: fig-tic-tac-toe
@@ -1236,7 +1236,7 @@ Schritte, wobei $\left \lceil{\cdot}\right \rceil$ gleich dem [Aufrunden](sec-ma
 Das animierte Ergebnis sieht wie folgt aus
 
 ```{only} html
-```{figure} ../../figs/roboworld/robo-world-det-walk.gif
+```{figure} ../../figs/archive/roboworld/robo-world-det-walk.gif
 ---
 width: 400px
 name: fig-robo-world-det-walk
@@ -1246,7 +1246,7 @@ Ein determinierter Lauf zum Ziel.
 ```
 
 ```{only} latex
-```{figure} ../../figs/roboworld/robo-world-det-walk.png
+```{figure} ../../figs/archive/roboworld/robo-world-det-walk.png
 ---
 width: 400px
 name: fig-robo-world-det-walk
@@ -1275,7 +1275,7 @@ Die Zelle auf der Ihr Roboter startet gilt als bereits besucht.
 
 Nehmen wir das $3 \times 3$-Zellen Gebiet:
 
-```{figure} ../../figs/roboworld/roboworld-3-times-3.png
+```{figure} ../../figs/archive/roboworld/roboworld-3-times-3.png
 ---
 width: 80px
 name: fig-roboworld-3-times-3
@@ -1299,7 +1299,7 @@ Geben Sie ein Gebiet an für das es nicht möglich ist jede Zelle nur einmal zu 
 
 Ein einfaches Gegenbeispiel ist jedes $1 \times n$ für $n \geq 2$ Gebiet.
 
-```{figure} ../../figs/roboworld/fig-1-times-n.png
+```{figure} ../../figs/archive/roboworld/fig-1-times-n.png
 ---
 width: 240px
 name: fig-1-times-n
@@ -1331,7 +1331,7 @@ Deshalb laufen wir mit dem ersten Schritt immer erst nach Westen und dann nach S
 Zwischen der Drehung nach links (``turn_left()``) und den Schritten (``move()``) können wir folgenden Zusammenhang feststellen:
 Die Anzahl der Schritte erhöht sich nach jeder zweiten Drehung um eins.
 
-```{figure} ../../figs/roboworld/spiral-walk.png
+```{figure} ../../figs/archive/roboworld/spiral-walk.png
 ---
 width: 400px
 name: fig-robo-world-spiral-walk
@@ -1501,7 +1501,7 @@ Jeder Knoten hat genau 4 Kanten:
 Jeder Lauf ist durch ein Blatt (Knoten ohne Kinder) definiert.
 Der Baum ist für Läufe der Länge 2 in {numref}`Abbildung {number} <fig-robo-world-tree>` skizziert.
 
-```{figure} ../../figs/roboworld/robo-world-tree.png
+```{figure} ../../figs/archive/roboworld/robo-world-tree.png
 ---
 width: 700px
 name: fig-robo-world-tree
@@ -1513,7 +1513,7 @@ Ein Baum der alle möglichen Läufe der Länge zwei codiert.
 In anderen Worten wir gehen erst tief in den Baum hinein und springen erst wieder nach oben, wenn alles darunter bereits besucht wurde.
 Zudem wandern wir meist von links nach rechts.
 
-```{figure} ../../figs/roboworld/robo-world-depth-first-search.png
+```{figure} ../../figs/archive/roboworld/robo-world-depth-first-search.png
 ---
 width: 700px
 name: fig-robo-world-depth-first-search
@@ -1525,7 +1525,7 @@ Ein anderer Algorithmus, der einen Baum durchwandert, ist die sogenannte *Breite
 Hierbei gehen wir erst in die nächst tiefere Ebene, wenn alle Knoten der aktuellen Ebene bereits besucht wurden.
 Vergleichen Sie folgende Abbildung.
 
-```{figure} ../../figs/roboworld/robo-world-breadth-first-search.png
+```{figure} ../../figs/archive/roboworld/robo-world-breadth-first-search.png
 ---
 width: 700px
 name: fig-robo-world-breadth-first-search

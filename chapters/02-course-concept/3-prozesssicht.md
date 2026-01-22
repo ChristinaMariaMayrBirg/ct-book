@@ -5,7 +5,7 @@
 Um sicherzustellen, dass die Software am Ende das tut was sie soll wird üblicherweise nach einem bestimmten Schema vorgegangen. Je nach Firma und Projekt gibt es unterschiedliche Schemata wie man Software entwickeln kann, die sich darin unterscheiden, wann welche Aufgabe in einem bestimmten Umfang als erledigt betrachtet wird. Unabhängig davon werden im Rahmen einer Entwicklungsprozesses folgenden Phasen durchlaufen:
 
 
-```{figure} ../../figs/overview/development-phases.png
+```{figure} ../../figs/02-course-concept/overview/development-phases.png
 ---
 width: 600px
 name: fig-development-phases

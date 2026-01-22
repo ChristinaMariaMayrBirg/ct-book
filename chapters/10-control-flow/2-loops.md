@@ -99,7 +99,7 @@ Dennoch zeigt dieses Beispiel, dass die Wiederholung von einfachen Befehlen zu k
 
 ```{only} latex
 
-```{figure} ../../figs/roboworld/loops-screenshot.png
+```{figure} ../../figs/10-control-flow/roboworld/loops-screenshot.png
 ---
 width: 600px
 name: fig-loops-screenshot
