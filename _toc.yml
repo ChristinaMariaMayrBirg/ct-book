@@ -7,8 +7,11 @@ parts:
     - file: chapters/01-course-overview/0-uebersicht
       sections:
       - file: chapters/01-course-overview/1-arbeitsmaterialien
-      - file: chapters/01-course-overview/2-pruefung
-      - file: chapters/01-course-overview/3-inhalte
+      - file: chapters/01-course-overview/2-livecode
+      - file: chapters/01-course-overview/3-beispiele
+      - file: chapters/01-course-overview/4-fallback
+      - file: chapters/01-course-overview/5-pruefung
+      - file: chapters/01-course-overview/6-inhalte
     - file: chapters/02-course-concept/0-uebersicht
       sections:
       - file: chapters/02-course-concept/2-softwaretypen

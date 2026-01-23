@@ -21,8 +21,9 @@ build_website_html:
     # This is safer than running all commands as root
     - chown -R $(id -u jovyan):$(id -g jovyan) "$CI_PROJECT_DIR" || true
   script:
+    - export PYDEVD_DISABLE_FILE_VALIDATION=1
     - gosu jovyan bash -c "rm -rf _build $HTML_BUILD_DIR"
-    - gosu jovyan bash -c "jupyter-book build . --path-output $HTML_BUILD_DIR"
+    - gosu jovyan bash -c "jupyter-book build . --path-output $HTML_BUILD_DIR --verbose"
   artifacts:
     paths:
       - $HTML_BUILD_DIR/_build
@@ -39,6 +40,7 @@ build_book_pdf:
     # This is safer than running all commands as root
     - chown -R $(id -u jovyan):$(id -g jovyan) "$CI_PROJECT_DIR" || true
   script:
+    - export PYDEVD_DISABLE_FILE_VALIDATION=1
     - |
       gosu jovyan sh -c 'find figs -name "*.gif" -print0 | while IFS= read -r -d "" gif; do
         png="${gif%.gif}.png"
@@ -46,7 +48,7 @@ build_book_pdf:
           convert "${gif}[0]" "$png" && echo "generated: $png"
         fi
       done'
-    - gosu jovyan bash -c "export LATEXMKOPTS='-interaction=nonstopmode' && jupyter-book build . --builder pdflatex --path-output $PDF_BUILD_DIR"
+    - gosu jovyan bash -c "export LATEXMKOPTS='-interaction=nonstopmode' && jupyter-book build . --builder pdflatex --path-output $PDF_BUILD_DIR --verbose"
   artifacts:
     paths:
       - $PDF_BUILD_DIR/_build/latex/book.pdf

@@ -50,7 +50,7 @@ sphinx:
 
   config:
     version: "1.7"
-    release: "1.7.0"
+    release: "1.7.1"
 
     myst_enable_extensions:
       - dollarmath
@@ -137,8 +137,8 @@ html:
   #use_issues_button: true
   home_page_in_navbar: true
 
-  analytics:
-    google_analytics_id: G-NP7MM9Y8VG
+ # analytics:
+  #  google_analytics_id: G-NP7MM9Y8VG
 
   extra_navbar: Unterstützt durch <a href="https://jupyterbook.org">Jupyter Book</a>
 
@@ -152,6 +152,6 @@ html:
       <div class="col1">
         Autoren: <a href="/chapters/misc/contributors.html">alle anzeigen</a>.
         Lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>.
-        Version 1.7.0
+        Version 1.7.1
       </div>
     </div>
