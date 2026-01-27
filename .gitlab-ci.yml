@@ -21,7 +21,7 @@ build_website_html:
     # This is safer than running all commands as root
     - chown -R $(id -u jovyan):$(id -g jovyan) "$CI_PROJECT_DIR" || true
   script:
-    - curl -fsSL https://raw.githubusercontent.com/pandas-dev/pandas/main/doc/data/air_quality_no2.csv | head -n 4
+    - wget -qO- https://raw.githubusercontent.com/pandas-dev/pandas/main/doc/data/air_quality_no2.csv | head -n 4
     - export PYDEVD_DISABLE_FILE_VALIDATION=1
     - gosu jovyan bash -c "rm -rf _build $HTML_BUILD_DIR"
     - gosu jovyan bash -c "jupyter-book build . --path-output $HTML_BUILD_DIR --verbose"
