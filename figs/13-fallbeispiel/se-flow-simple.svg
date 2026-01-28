@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1300"
+   height="1400"
+   viewBox="0 0 1300 1400"
+   version="1.1"
+   id="svg36"
+   sodipodi:docname="se-flow-simple.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   inkscape:export-filename="se-flow-simple.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview36"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="336.58283"
+     inkscape:cy="1018.2338"
+     inkscape:window-width="1710"
+     inkscape:window-height="1045"
+     inkscape:window-x="0"
+     inkscape:window-y="62"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg36" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+      .box { fill:#ffffff; stroke:#111; stroke-width:2; }
+      .term { fill:#ffffff; stroke:#111; stroke-width:2; }
+      .diamond { fill:#ffffff; stroke:#111; stroke-width:2; }
+      .label {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-size:18px;
+        fill:#111;
+      }
+      .small { font-size:16px; }
+      .tiny { font-size:14px; }
+      .arrow { stroke:#111; stroke-width:2.5; fill:none; }
+    </style>
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1" />
+    </marker>
+    <marker
+       id="arrowhead-5"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2" />
+    </marker>
+    <marker
+       id="arrowhead-5-2"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2-7" />
+    </marker>
+    <marker
+       id="arrowhead-5-5"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2-8" />
+    </marker>
+    <marker
+       id="arrowhead-5-1"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2-3" />
+    </marker>
+    <marker
+       id="arrowhead-5-5-5"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2-8-9" />
+    </marker>
+    <marker
+       id="arrowhead-7"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-6" />
+    </marker>
+    <marker
+       id="arrowhead-6"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-5" />
+    </marker>
+    <marker
+       id="arrowhead-7-6"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-6-7" />
+    </marker>
+    <marker
+       id="arrowhead-7-6-4"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-6-7-4" />
+    </marker>
+    <marker
+       id="arrowhead-5-1-9"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2-3-0" />
+    </marker>
+    <marker
+       id="arrowhead-5-1-6"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2-3-8" />
+    </marker>
+    <marker
+       id="arrowhead-5-1-9-7"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2-3-0-1" />
+    </marker>
+    <symbol
+       id="sjjb-barrier.svg:exit"
+       viewBox="0 0 476.88324 340.61832">
+      <title
+         id="title7">Exit</title>
+      <path
+         d="M 20.021549,0 A 20.02155,20.02155 0 0 0 0.002018,20.01953 V 320.3125 a 20.02155,20.02155 0 1 0 40.039064,0 V 40.03907 H 204.20123 V 320.3125 a 20.02155,20.02155 0 1 0 40.03907,0 V 20.01953 A 20.02155,20.02155 0 0 0 224.22077,0 H 20.021552 Z M 416.05866,70.71094 a 21.426571,21.426571 0 0 0 -18.98438,31.58008 l 23.10742,44.4375 H 294.88678 a 21.426571,21.426571 0 0 0 -21.49219,24.29687 21.426571,21.426571 0 0 0 21.49219,24.21875 H 420.1817 l -23.10742,44.4375 a 21.426571,21.426571 0 1 0 38.01563,19.76954 l 39.38867,-75.74805 a 21.426571,21.426571 0 0 0 2.20703,-12.76563 21.426571,21.426571 0 0 0 -2.20703,-12.66797 L 435.08991,82.52344 a 21.426571,21.426571 0 0 0 -19.03125,-11.8125 z"
+         id="path8" />
+      <path
+         opacity="0.1"
+         d="M 34.306484,32.66854 H 207.00918 V 316.49791 H 34.306484 Z"
+         id="path9" />
+    </symbol>
+    <symbol
+       id="sjjb-barrier.svg:entrance"
+       viewBox="0 0 477.04105 340.61844">
+      <title
+         id="title6">Entrance</title>
+      <path
+         d="M 252.82029,0 A 20.02155,20.02155 0 0 0 232.80076,20.01953 V 320.3125 a 20.02155,20.02155 0 1 0 40.03906,0 V 40.03907 H 436.99997 V 320.3125 a 20.02155,20.02155 0 1 0 40.03907,0 V 20.01953 A 20.02155,20.02155 0 0 0 457.01951,0 Z M 142.8574,70.71094 a 21.426571,21.426571 0 0 0 -18.98438,31.58008 l 23.10742,44.4375 H 21.68552 A 21.426571,21.426571 0 0 0 0.193334,171.02539 21.426571,21.426571 0 0 0 21.685521,195.24414 H 146.98044 l -23.10742,44.4375 a 21.426571,21.426571 0 1 0 38.01563,19.76954 l 39.38867,-75.74805 a 21.426571,21.426571 0 0 0 2.20703,-12.76563 21.426571,21.426571 0 0 0 -2.20703,-12.66797 L 161.88865,82.52344 A 21.426571,21.426571 0 0 0 142.8574,70.71094 Z"
+         id="path6" />
+      <path
+         opacity="0.1"
+         d="m 267.10523,29.60355 h 172.7027 v 286.89438 h -172.7027 z"
+         id="path7" />
+    </symbol>
+    <marker
+       id="arrowhead-0"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-1" />
+    </marker>
+    <marker
+       id="arrowhead-5-5-5-8"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2-8-9-3" />
+    </marker>
+    <marker
+       id="arrowhead-0-3"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-1-8" />
+    </marker>
+    <marker
+       id="arrowhead-5-1-9-7-6"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-2-3-0-1-9" />
+    </marker>
+    <marker
+       id="arrowhead-7-8"
+       markerWidth="10"
+       markerHeight="8"
+       refX="9"
+       refY="4"
+       orient="auto">
+      <path
+         d="M 0,0 10,4 0,8 Z"
+         fill="#111111"
+         id="path1-6-1" />
+    </marker>
+  </defs>
+  <ellipse
+     style="opacity:1;fill:#b3b3b3;stroke:#000000;stroke-width:2.439;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+     id="path39"
+     cx="608.24377"
+     cy="44.642273"
+     rx="118.81434"
+     ry="35.18536" />
+  <ellipse
+     style="fill:#b3b3b3;stroke:#000000;stroke-width:2.439;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+     id="path39-6"
+     cx="617.91425"
+     cy="1349.2102"
+     rx="118.81434"
+     ry="35.18536" />
+  <!-- Title -->
+  <!-- START -->
+  <text
+     x="608"
+     y="50"
+     text-anchor="middle"
+     class="label"
+     id="text2">Problem / Aufgabe</text>
+  <text
+     x="625.78003"
+     y="1355.8748"
+     text-anchor="middle"
+     class="label"
+     id="text2-1"
+     style="font-size:18px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;fill:#111111">Lösung</text>
+  <!-- Global research -->
+  <rect
+     x="338"
+     y="130"
+     width="540"
+     height="100"
+     rx="16"
+     class="box"
+     id="rect2" />
+  <text
+     x="608"
+     y="170"
+     text-anchor="middle"
+     class="label"
+     id="text3">Recherche: Bibliotheken / Frameworks</text>
+  <rect
+     x="870.92834"
+     y="300.91553"
+     width="355.93176"
+     height="100.01122"
+     rx="15.819189"
+     class="box"
+     id="rect20-5"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.98878" />
+  <text
+     x="608"
+     y="200"
+     text-anchor="middle"
+     class="label small"
+     id="text4">für das gesamte Problem</text>
+  <!-- Decision global -->
+  <polygon
+     class="diamond"
+     points="700,510 540,430 700,350 860,430 "
+     id="polygon4"
+     transform="translate(-92,-80)" />
+  <text
+     x="608"
+     y="345"
+     text-anchor="middle"
+     class="label"
+     id="text5">Gefunden?</text>
+  <!-- Use global lib -->
+  <text
+     x="1062"
+     y="355.78149"
+     text-anchor="middle"
+     class="label"
+     id="text6">Bibliothek einbinden</text>
+  <!-- Decompose -->
+  <rect
+     x="24.593567"
+     y="309.87839"
+     width="323.35593"
+     height="110.24319"
+     rx="12.318322"
+     class="box"
+     id="rect7" />
+  <rect
+     x="24.662933"
+     y="822.68158"
+     width="325.3902"
+     height="110.23772"
+     rx="12.395818"
+     class="box"
+     id="rect7-5"
+     style="fill:#ffffff;stroke:#111111;stroke-width:1.76229" />
+  <text
+     x="198"
+     y="355"
+     text-anchor="middle"
+     class="label"
+     id="text8">Problem zerlegen</text>
+  <text
+     x="198"
+     y="385"
+     text-anchor="middle"
+     class="label small"
+     id="text9">in Teilprobleme (x)</text>
+  <!-- Subproblem research -->
+  <rect
+     x="24.59494"
+     y="481.91953"
+     width="330.49225"
+     height="108.20071"
+     rx="12.590182"
+     class="box"
+     id="rect9" />
+  <text
+     x="198"
+     y="525"
+     text-anchor="middle"
+     class="label"
+     id="text10">Für jedes Teilproblem:</text>
+  <text
+     x="198"
+     y="555"
+     text-anchor="middle"
+     class="label small"
+     id="text11"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;-inkscape-font-specification:'system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan36"
+       x="198"
+       y="555">Recherche nach</tspan><tspan
+       sodipodi:role="line"
+       id="tspan37"
+       x="198"
+       y="575">Bibliotheken / Frameworks</tspan></text>
+  <!-- Decision subproblem -->
+  <polygon
+     class="diamond"
+     points="290,850 150,780 290,710 430,780 "
+     id="polygon11"
+     transform="translate(-92,-80)" />
+  <polygon
+     class="diamond"
+     points="290,850 150,780 290,710 430,780 "
+     id="polygon11-4"
+     transform="translate(-96.72547,447.77188)"
+     style="fill:#ffffff;stroke:#111111;stroke-width:2" />
+  <text
+     x="196.98013"
+     y="707.2384"
+     text-anchor="middle"
+     class="label"
+     id="text12">Gefunden?</text>
+  <text
+     x="200.21486"
+     y="1232.679"
+     text-anchor="middle"
+     class="label"
+     id="text12-1"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;-inkscape-font-specification:'system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       x="200.21486"
+       y="1232.679">Einzige Funktionalität?</tspan></text>
+  <!-- Use sub-lib -->
+  <rect
+     x="438.18457"
+     y="647.9859"
+     width="349.82956"
+     height="110.0282"
+     rx="15.547979"
+     class="box"
+     id="rect12" />
+  <text
+     x="608"
+     y="695"
+     text-anchor="middle"
+     class="label"
+     id="text13">Nutze Teilfunktionalität</text>
+  <text
+     x="608"
+     y="725"
+     text-anchor="middle"
+     class="label small"
+     id="text14">(fremd)</text>
+  <!-- Implement -->
+  <text
+     x="198"
+     y="870"
+     text-anchor="middle"
+     class="label"
+     id="text15">Implementiere Teilfunktionalität</text>
+  <text
+     x="198"
+     y="900"
+     text-anchor="middle"
+     class="label small"
+     id="text16">(eigene Implementierung)</text>
+  <!-- Test -->
+  <rect
+     x="25.549469"
+     y="987.26099"
+     width="326.92029"
+     height="120.09336"
+     rx="14.52979"
+     class="box"
+     id="rect16" />
+  <text
+     x="205.59615"
+     y="1036.0962"
+     text-anchor="middle"
+     class="label"
+     id="text17">Teste Teilfunktionalität</text>
+  <text
+     x="203.59615"
+     y="1068.4231"
+     text-anchor="middle"
+     class="label small"
+     id="text18">(Unit / Komponententest)</text>
+  <!-- All parts ready -->
+  <rect
+     x="888.36603"
+     y="642.63098"
+     width="337.62561"
+     height="120.06264"
+     rx="15.005582"
+     class="box"
+     id="rect18" />
+  <text
+     x="1054"
+     y="698"
+     text-anchor="middle"
+     class="label"
+     id="text19"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;-inkscape-font-specification:'system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#111111"><tspan
+       sodipodi:role="line"
+       id="tspan38"
+       x="1054"
+       y="698">Alle Teilfunktionalitäten</tspan><tspan
+       sodipodi:role="line"
+       id="tspan39"
+       x="1054"
+       y="720.5">vorhanden?</tspan></text>
+  <!-- Integration -->
+  <rect
+     x="868"
+     y="820"
+     width="360"
+     height="100"
+     rx="16"
+     class="box"
+     id="rect20" />
+  <text
+     x="1048"
+     y="875"
+     text-anchor="middle"
+     class="label"
+     id="text21">Integration</text>
+  <!-- Integration test -->
+  <rect
+     x="868"
+     y="980"
+     width="360"
+     height="100"
+     rx="16"
+     class="box"
+     id="rect21" />
+  <text
+     x="1048"
+     y="1035"
+     text-anchor="middle"
+     class="label"
+     id="text22">Integrationstest</text>
+  <!-- END -->
+  <!-- ARROWS -->
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead)"
+     d="m 608,80 v 50"
+     id="path23" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-5)"
+     d="m 768.57763,349.614 h 98.56503"
+     id="path23-7"
+     style="fill:none;stroke:#111111;stroke-width:2.71;stroke-dasharray:none;marker-end:url(#arrowhead-5)" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-5-1)"
+     d="m 788.23839,695.23671 h 98.56503"
+     id="path23-7-8"
+     style="fill:none;stroke:#111111;stroke-width:2.71;stroke-dasharray:none;marker-end:url(#arrowhead-5-1)" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-5-1-9-7)"
+     d="M 193.68924,1348.6839 H 494.71198"
+     id="path23-7-8-5-3"
+     style="fill:none;stroke:#111111;stroke-width:2.6;stroke-dasharray:none;marker-end:url(#arrowhead-5-1-9-7)" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-5-1-9-7-6)"
+     d="M 1274.2382,1348.9962 H 740.13242"
+     id="path23-7-8-5-3-4"
+     style="fill:none;stroke:#111111;stroke-width:2.463;stroke-dasharray:none;marker-end:url(#arrowhead-5-1-9-7-6)" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-5-5)"
+     d="m 336.99418,700.55456 h 98.56503"
+     id="path23-7-4"
+     style="fill:none;stroke:#111111;stroke-width:2.71;stroke-dasharray:none;marker-end:url(#arrowhead-5-5)" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-5-2)"
+     d="M 449.48773,349.8996 H 350.9227"
+     id="path23-7-3"
+     style="fill:none;stroke:#111111;stroke-width:2.71;stroke-dasharray:none;marker-end:url(#arrowhead-5-2)" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead)"
+     d="m 608,230 v 40"
+     id="path24" />
+  <!-- Global decision -->
+  <text
+     x="808"
+     y="335"
+     class="label tiny"
+     id="text25">Ja</text>
+  <text
+     x="423"
+     y="335"
+     class="label tiny"
+     id="text26">Nein</text>
+  <!-- Decompose flow -->
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead)"
+     d="m 198,420 v 60"
+     id="path27" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead)"
+     d="m 198,590 v 40"
+     id="path28" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-6)"
+     d="M 819.89517,722.05807 H 886.0093"
+     id="path28-0"
+     style="fill:none;stroke:#111111;stroke-width:2.675;stroke-dasharray:none;marker-end:url(#arrowhead-6)" />
+  <!-- Subproblem decision -->
+  <text
+     x="363"
+     y="690"
+     class="label tiny"
+     id="text29">Ja</text>
+  <text
+     x="207.02866"
+     y="1322.802"
+     class="label tiny"
+     id="text29-7"
+     style="font-size:14px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;fill:#111111">Ja</text>
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead)"
+     d="m 198,770 v 50"
+     id="path30" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-0)"
+     d="M 192.80769,934.21154 V 984.2115"
+     id="path30-4"
+     style="fill:none;stroke:#111111;stroke-width:2.5;marker-end:url(#arrowhead-0)" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-0-3)"
+     d="m 192.5,1106.9423 v 50"
+     id="path30-4-9"
+     style="fill:none;stroke:#111111;stroke-width:2.5;marker-end:url(#arrowhead-0-3)" />
+  <text
+     x="213"
+     y="795"
+     class="label tiny"
+     id="text30">Nein</text>
+  <text
+     x="345.0528"
+     y="1218.14"
+     class="label tiny"
+     id="text30-2"
+     style="font-size:14px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;fill:#111111">Nein</text>
+  <!-- Implement/test loop -->
+  <!-- Use sub-lib to readiness -->
+  <!-- Integration -->
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead)"
+     d="m 1048,762.70202 v 54.3981"
+     id="path34"
+     style="stroke-width:2.515;stroke-dasharray:none" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-7)"
+     d="M 1048.185,921.08654 V 977.5525"
+     id="path34-0"
+     style="fill:none;stroke:#111111;stroke-width:2.56236;stroke-dasharray:none;marker-end:url(#arrowhead-7)" />
+  <path
+     class="arrow"
+     marker-end="url(#arrowhead-7-8)"
+     d="m 622.19071,1265.4236 v 48.3958"
+     id="path34-0-5"
+     style="fill:none;stroke:#111111;stroke-width:2.94451;stroke-dasharray:none;marker-end:url(#arrowhead-7-8)" />
+  <!-- Done -->
+  <path
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:2.498;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+     d="m 330.74571,1227.8827 h 484.16716 l 5.44005,-506.92124"
+     id="path36" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:2.234;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+     d="m 621.04869,1265.6655 h 420.17261 l 4.721,-185.2066"
+     id="path36-9" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:2.56634;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+     d="m 1228.6571,350.1227 h 44.2335 l 0.4969,996.8546"
+     id="path36-8" />
+  <path
+     style="opacity:1;fill:none;stroke:#000000;stroke-width:2.243;stroke-miterlimit:3.9;stroke-dasharray:none;stroke-opacity:1"
+     d="m 192.87046,1298.3437 0.0322,51.4152"
+     id="path37" />
+  <ellipse
+     style="fill:#000000;stroke:none;stroke-width:2.234;stroke-miterlimit:3.9;stroke-dasharray:none"
+     id="path2"
+     cx="584.24487"
+     cy="1266.428"
+     rx="23.456907"
+     ry="24.476774" />
+  <ellipse
+     style="fill:#000000;stroke:none;stroke-width:2.234;stroke-miterlimit:3.9;stroke-dasharray:none"
+     id="path2-5"
+     cx="792.94519"
+     cy="1317.8738"
+     rx="23.456907"
+     ry="24.476774" />
+  <ellipse
+     style="fill:#000000;stroke:none;stroke-width:2.234;stroke-miterlimit:3.9;stroke-dasharray:none"
+     id="path2-5-6"
+     cx="445.5217"
+     cy="1311.3813"
+     rx="23.456907"
+     ry="24.476774" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;-inkscape-font-specification:'system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;fill:#ffffff;stroke:none;stroke-width:2.234;stroke-miterlimit:3.9;stroke-dasharray:none"
+     x="787.13116"
+     y="1325.5618"
+     id="text7"><tspan
+       id="tspan2"
+       x="787.13116"
+       y="1325.5618"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;-inkscape-font-specification:'system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff">1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;-inkscape-font-specification:'system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;fill:#ffffff;stroke:none;stroke-width:2.234;stroke-miterlimit:3.9;stroke-dasharray:none"
+     x="438.05978"
+     y="1318.9292"
+     id="text7-0"><tspan
+       sodipodi:role="line"
+       id="tspan7"
+       x="438.05978"
+       y="1318.9292">2</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:system-ui, '-apple-system', 'Segoe UI', Roboto, Arial, sans-serif;-inkscape-font-specification:'system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;fill:#ffffff;stroke:none;stroke-width:2.234;stroke-miterlimit:3.9;stroke-dasharray:none"
+     x="576.91724"
+     y="1273.922"
+     id="text7-0-3"><tspan
+       sodipodi:role="line"
+       id="tspan8"
+       x="576.91724"
+       y="1273.922">3</tspan></text>
+</svg>
