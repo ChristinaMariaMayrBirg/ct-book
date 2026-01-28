@@ -12,10 +12,10 @@ Die Website basiert auf Jupyter Notebooks und ermöglicht es Studierenden, inter
 
 ## Binder / Thebe (interaktive Ausführung)
 
-Wenn im Buch **Thebe** aktiviert ist (`_config.yml`: `thebe: true`), wird im Hintergrund standardmäßig ein Kernel über **mybinder.org** gestartet. Bei Repositories auf **self-hosted GitLab** (z.B. `gitlab.lrz.de`) kann das fehlschlagen, weil die “GitLab”-Quelle von mybinder.org primär auf `gitlab.com` ausgelegt ist.
+Wenn im Buch **Thebe** aktiviert ist (`_config.yml`: `thebe: true`), wird im Hintergrund standardmäßig ein Kernel über **mybinder.org** gestartet. 
 
 - **Wichtig (Dependencies)**: Binder erkennt Konfig-Dateien nur mit festen Namen. Daher liegt die Binder-Umgebung unter `binder/environment.yml` (wird von repo2docker automatisch gefunden).
-- **Wichtig (self-hosted GitLab)**: Starte Binder über den generischen `git`-Provider (nicht “GitLab”).
+
 
 Beispiel-Link (Branch `master`, JupyterLab):
 `https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.lrz.de%2Ffk03ingenieurinformatik%2FIngenieurinformatik-buch.git/master?urlpath=lab`
@@ -51,6 +51,14 @@ Um die Website oder das PDF lokal zu bauen, schauen Sie am besten in die CI-Konf
 - Docker muss installiert sein, um den Docker-Container lokal auszuführen
 - Das verwendete Docker-Image: `gitlab.lrz.de:5005/fk03ingenieurinformatik/ingenieurinformatik-buch:latest`
 
+### Build dependencies
+
+Das Docker image kann gebaut werden über:
+```bash
+docker build --platform linux/amd64 -t gitlab.lrz.de:5005/fk03ingenieurinformatik/ingenieurinformatik-buch:latest .
+docker push gitlab.lrz.de:5005/fk03ingenieurinformatik/ingenieurinformatik-buch:latest
+```
+
 **Beispiel für lokalen Build:**
 
 ```bash
@@ -67,7 +75,7 @@ Innerhalb des Containers können Sie dann die Befehle aus der CI-Konfiguration a
 
 **HTML-Website bauen:**
 ```bash
-jupyter-book build . --path-output _website_html
+jupyter-book build . --all --path-output _website_html
 ```
 
 **PDF-Buch bauen:**

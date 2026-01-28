@@ -23,7 +23,7 @@ only_build_toc_files: true
 execute:
   execute_notebooks: auto  # off
   allow_errors: true       # due to CI setup in Gitlab
-  timeout: 2000
+  timeout: 60
 
 # --------------------------------------------------
 # Literatur
@@ -49,8 +49,8 @@ sphinx:
     - sphinx_proof
 
   config:
-    version: "1.7"
-    release: "1.7.1"
+    version: "1.8"
+    release: "1.8.0"
 
     myst_enable_extensions:
       - dollarmath
@@ -152,6 +152,6 @@ html:
       <div class="col1">
         Autoren: <a href="/chapters/misc/contributors.html">alle anzeigen</a>.
         Lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de" target="_blank">CC BY-SA 4.0</a>.
-        Version 1.7.1
+        Version 1.8.0
       </div>
     </div>

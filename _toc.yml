@@ -106,8 +106,17 @@ parts:
     chapters:
     - file: chapters/13-fallbeispiel/0-intro
       sections:
-      - file: chapters/13-fallbeispiel/1-lib-solution
-      - file: chapters/13-fallbeispiel/2-eigenentwicklung
+      - file: chapters/13-fallbeispiel/1-se-Prozess
+      - file: chapters/13-fallbeispiel/2-lib-solution
+      - file: chapters/13-fallbeispiel/3-eigenentwicklung
+        sections:
+        - file: chapters/13-fallbeispiel/31-tests
+        - file: chapters/13-fallbeispiel/32-problem-zerlegung
+        - file: chapters/13-fallbeispiel/33-parsing
+        - file: chapters/13-fallbeispiel/34-histogram
+        - file: chapters/13-fallbeispiel/35-statistics
+    - file: chapters/13-fallbeispiel/40-comparison
+    - file: chapters/13-fallbeispiel/50-summary
   - caption: Appendix
     chapters:
     - file: chapters/misc/contributors
