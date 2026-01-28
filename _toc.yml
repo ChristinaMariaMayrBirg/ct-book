@@ -115,8 +115,8 @@ parts:
         - file: chapters/13-fallbeispiel/33-parsing
         - file: chapters/13-fallbeispiel/34-histogram
         - file: chapters/13-fallbeispiel/35-statistics
-    - file: chapters/13-fallbeispiel/40-comparison
-    - file: chapters/13-fallbeispiel/50-summary
+      - file: chapters/13-fallbeispiel/40-comparison
+      - file: chapters/13-fallbeispiel/50-summary
   - caption: Appendix
     chapters:
     - file: chapters/misc/contributors
